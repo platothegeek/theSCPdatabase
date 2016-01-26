@@ -42,7 +42,7 @@ Make sure it's **something you can accomplish in the limited time we have**, and
 
 ---
 
-## Core Technical Requirements
+## Technical Requirements
 
 ###### What technologies will I be using?
 
