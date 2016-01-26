@@ -1,8 +1,6 @@
 # <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> Project 3 - Feedback
 
-You'll be receiving written feedback from your instructors after completing the project.
-
-Here are the areas in which we evaluate your projects. You may find them helpful as a checklist or guide.
+You'll be receiving written feedback from your instructors after completing the project. Here are the areas in which we evaluate your projects. You may find them helpful as a checklist or guide.
 
 * **Project Workflow**: Did you complete the user stories, wireframes, ERDs, and task-tracking, as specified in the project specs? Did you effectively use version control?
 

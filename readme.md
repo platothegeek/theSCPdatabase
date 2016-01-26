@@ -81,7 +81,7 @@ Make sure it's **something you can accomplish in the limited time we have**, and
 **You should review the following with your instructional team BEFORE you start to code.**
 
 * **Scope:** What are you planning to build? What do you reasonably think you can implement in the time period?
-* **User Stories:** Who is your user? What features will your app have? Set up your project and user stories in <a href="https://trello.com" target="">Trello</a>.
+* **User Stories:** Who is your user? What features will your app have? Set up your project and user stories in <a href="https://trello.com" target="_blank">Trello</a>.
 * **Wireframes:** Sketch out what your core pages will look like and how they will work. Consider making a *paper prototype* to demonstrate and/or test key user interactions.
 * **Data Models:** Draw out the models and any associations for your project in an entity relationship diagram (ERD).
 * **Milestones:** Divide your work into parts - the most essential features for your MVP, features that are important but not essential, and features that can be saved for a later iteration. Create 3-5 major milestones with dates outlining when you expect essential features will be done.
@@ -125,7 +125,7 @@ Make sure it's **something you can accomplish in the limited time we have**, and
 ###### How do I turn in the project?
 
 * As you make code changes, **frequently commit and push to GitHub**.
-* To turn in your project, please add the links to your project on GitHub and Heroku to <a href="" target="">this spreadsheet</a>.
+* To turn in your project, please add the links to your project on GitHub and Heroku to <a href="" target="_blank">this spreadsheet</a>.
 
 ---
 
