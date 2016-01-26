@@ -125,7 +125,7 @@ Make sure it's **something you can accomplish in the limited time we have**, and
 ###### How do I turn in the project?
 
 * As you make code changes, **frequently commit and push to GitHub**.
-* To turn in your project, please add the links to your project on GitHub and Heroku to <a href="" target="_blank">this spreadsheet</a>.
+* To turn in your project, please add the links to your project on GitHub and Heroku to <a href="https://docs.google.com/spreadsheets/d/1JrpLE2REfS9rBUurWOA4OHq3nii98ZaI34WwFJqoNyY/edit?usp=sharing" target="_blank">this spreadsheet</a>.
 
 ---
 
