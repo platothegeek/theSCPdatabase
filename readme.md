@@ -142,7 +142,7 @@ Project 3 presentations will start at **10:00am** on **Thursday, February 4th**.
 
 ---
 
-<!-- ## Instructor Groups
+## Instructor Groups
 
 ###### Who will be my assigned instructor / DIR for this project?
 
@@ -150,13 +150,30 @@ You'll meet with your assigned instructor / DIR daily to guide you throughout th
 
 #### Ben
 
+* André
+* Dave
+* Michael
+
 #### Cameron
+
+* Adam & Trung
+* Cynthia
+* Steven
+* Zohar
 
 #### Erik
 
+* Alan
+* John
+* Victoria
+
 #### Zoe
 
---- -->
+* Carlos
+* Eddy
+* Stanley
+
+---
 
 ## Feedback
 
