@@ -98,7 +98,7 @@ Make sure it's **something you can accomplish in the limited time we have**, and
 * A **working full-stack application**, hosted somewhere on the internet.
 * A **git repository hosted on Github**, with frequent commits dating back to the beginning of the project.
 * A **link to your hosted working app** in the URL section of your Github repo.
-* **A `readme.md` file** with:
+* **A `README.md` file** with:
   * A **link to your hosted working app**.
   * A paragraph-long **description** (elevator pitch) of your project.
   * A list of the **technologies used**.
@@ -114,9 +114,9 @@ Make sure it's **something you can accomplish in the limited time we have**, and
 
 ###### When is the project due?
 
-* **Thursday, January 28th, 10:30am** - [Project planning deliverables](#project-planning-deliverables) due! Before beginning work on your project, your idea, project scope, and other planning deliverables must be approved by an instructor.
+* **{{ENTER PROJECT PLANNING DELIVERABLES HERE}}** - [Project planning deliverables](#project-planning-deliverables) due! Before beginning work on your project, your idea, project scope, and other planning deliverables must be approved by an instructor.
 
-* **Thursday, February 4th, 10:00am** - [Completed project deliverables](#completed-project-deliverables) due and presentations!
+* **{{ENTER PROJECT PRESENTATION AND DUE DATE HERE}}** - [Completed project deliverables](#completed-project-deliverables) due and presentations!
 
 ---
 
@@ -125,7 +125,7 @@ Make sure it's **something you can accomplish in the limited time we have**, and
 ###### How do I turn in the project?
 
 * As you make code changes, **frequently commit and push to GitHub**.
-* To turn in your project, please add the links to your project on GitHub and Heroku to <a href="https://docs.google.com/spreadsheets/d/1JrpLE2REfS9rBUurWOA4OHq3nii98ZaI34WwFJqoNyY/edit?usp=sharing" target="_blank">this spreadsheet</a>.
+
 
 ---
 
@@ -133,7 +133,7 @@ Make sure it's **something you can accomplish in the limited time we have**, and
 
 ###### What should I cover during my presentation?
 
-Project 3 presentations will start at **10:00am** on **Thursday, February 4th**. Each presentation should be **8 minutes or less** and cover the following:
+Project 3 presentations will start at **{{ENTER TIME HERE}}** on **{{ENTER DUE DATE HERE}}**. Each presentation should be **8 minutes or less** and cover the following:
 
 * What was your motivation to build this project?
 * Demo of your project's core functionality.
@@ -148,30 +148,28 @@ Project 3 presentations will start at **10:00am** on **Thursday, February 4th**.
 
 You'll meet with your assigned instructor / DIR daily to guide you throughout the project. They will also be sending you feedback on the project afterwards.
 
-#### Ben
+#### INSTRUCTOR
 
-* André
-* Dave
-* Michael
+* TBD
+* TBD
+* TBD
+* TBD
 
-#### Cameron
 
-* Adam & Trung
-* Cynthia
-* Steven
-* Zohar
+#### INSTRUCTOR
 
-#### Erik
+* TBD
+* TBD
+* TBD
+* TBD
 
-* Alan
-* John
-* Victoria
+#### INSTRUCTOR
 
-#### Zoe
+* TBD
+* TBD
+* TBD
+* TBD
 
-* Carlos
-* Eddy
-* Stanley
 
 ---
 
