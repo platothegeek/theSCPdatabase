@@ -173,7 +173,7 @@ You'll meet with your assigned instructor / DIR daily to guide you throughout th
 
 ---
 
-## Feedback
+## Project Feedback
 
 ###### How will I get feedback from instructors?
 
