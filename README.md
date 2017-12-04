@@ -142,37 +142,6 @@ Project 3 presentations will start at **{{ENTER TIME HERE}}** on **{{ENTER DUE D
 
 ---
 
-## Instructor Groups
-
-###### Who will be my assigned instructor / DIR for this project?
-
-You'll meet with your assigned instructor / DIR daily to guide you throughout the project. They will also be sending you feedback on the project afterwards.
-
-#### INSTRUCTOR
-
-* TBD
-* TBD
-* TBD
-* TBD
-
-
-#### INSTRUCTOR
-
-* TBD
-* TBD
-* TBD
-* TBD
-
-#### INSTRUCTOR
-
-* TBD
-* TBD
-* TBD
-* TBD
-
-
----
-
 ## Project Feedback
 
 ###### How will I get feedback from instructors?
