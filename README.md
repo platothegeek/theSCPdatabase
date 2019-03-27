@@ -113,6 +113,8 @@ Make sure it's **something you can accomplish in the limited time we have**, and
 
 * **1:30pm, Friday 5th, April 2019** - Project check-in. A 3 minutes demo of what you have done so far and 2 minutes spent on discussing future tasks using trello board.
 
+* **9:00pm, Wednesday 10th, April 2019** - Feature Freeze
+
 * **9:30am, Friday 12th, April 2019** - [Completed project deliverables](#completed-project-deliverables) due and presentations!
 
 ---
