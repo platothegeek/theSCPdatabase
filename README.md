@@ -68,7 +68,6 @@ Make sure it's **something you can accomplish in the limited time we have**, and
 * **Implement third-party log in** to allow users to access data from other services.
 * **Build something you can really launch**, and recruit an actual user-base.
 * **Test** critical components of your code to ensure that it works.
-* **Research web accessibility** (e.g., for blind users), and apply accessibility principles to your app.
 
 ---
 
@@ -86,12 +85,6 @@ Make sure it's **something you can accomplish in the limited time we have**, and
 * **Data Models:** Draw out the models and any associations for your project in an entity relationship diagram (ERD).
 * **Milestones:** Divide your work into parts - the most essential features for your MVP, features that are important but not essential, and features that can be saved for a later iteration. Create 3-5 major milestones with dates outlining when you expect essential features will be done.
 * **Feasibility Study:** If you're using an external API or scraping a website, make sure you can get that data. If you're using a new language, framework, or tool, go through its getting started tutorial. We *will* ask to see your results.
-
-**In addition to the above requirements, students working as pairs must:**
-
-* Detail each person's responsibilities and features they will own.
-* Describe your plan for workflow and communication.
-* Demonstrate that each person will be challenged to contribute excellent work.
 
 ### Completed Project Deliverables
 
@@ -114,9 +107,13 @@ Make sure it's **something you can accomplish in the limited time we have**, and
 
 ###### When is the project due?
 
-* ** Friday 6th, 2018 ** - [Project planning deliverables](#project-planning-deliverables) due! Before beginning work on your project, your idea, project scope, and other planning deliverables must be approved by an instructor.
+* **1:30pm, Thursday 28th, March 2019** - Pitch your idea in **3 minutes**
 
-* **Friday 13th, 2018** - [Completed project deliverables](#completed-project-deliverables) due and presentations!
+* **Friday 29th, March 2019** - [Project planning deliverables](#project-planning-deliverables) due! Before beginning work on your project, your idea, project scope, and other planning deliverables must be approved by an instructor.
+
+* **1:30pm, Friday 5th, April 2019** - Project check-in. A 3 minutes demo of what you have done so far and 2 minutes spent on discussing future tasks using trello board.
+
+* **9:30am, Friday 12th, April 2019** - [Completed project deliverables](#completed-project-deliverables) due and presentations!
 
 ---
 
@@ -125,7 +122,7 @@ Make sure it's **something you can accomplish in the limited time we have**, and
 ###### How do I turn in the project?
 
 * As you make code changes, **frequently commit and push to GitHub**.
-* You will be required to submit the GitHub URL and the URL to the live site - watch slack for details.
+* You will be required to submit the GitHub URL and the URL to the live site in the [Project Tracker](https://docs.google.com/spreadsheets/d/1hf9D0cacxPg8xNW_BFNcS-V-3S0r-Z8_FY8BIRofl28/edit#gid=1372837631).
 
 ---
 
@@ -133,12 +130,14 @@ Make sure it's **something you can accomplish in the limited time we have**, and
 
 ###### What should I cover during my presentation?
 
-Project 3 presentations will start at **9:30am** on **Friday 13th, 2018**. Each presentation should be **8 minutes or less** and cover the following:
+Project 3 presentations will start at **9:30am** on **Friday 12th, April 2019**. Each presentation should be **10 minutes or less** and cover the following:
 
 * What was your motivation to build this project?
+* App summary
 * Demo of your project's core functionality.
 * What is one feature you're particularly proud of? (show code)
-* Shout-outs for your fellow classmates!
+* Challenges you faced
+* Shout-outs!
 
 ---
 
@@ -146,4 +145,4 @@ Project 3 presentations will start at **9:30am** on **Friday 13th, 2018**. Each 
 
 ###### How will I get feedback from instructors?
 
-See the [feedback doc](feedback.md) for details.
+You will get the feedback in a 1-1 session with the instructor on **Monday 15th, April 2019**.
