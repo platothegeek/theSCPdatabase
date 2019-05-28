@@ -107,15 +107,11 @@ Make sure it's **something you can accomplish in the limited time we have**, and
 
 ###### When is the project due?
 
-* **1:30pm, Thursday 28th, March 2019** - Pitch your idea in **3 minutes**
+* **Wednesday, May 29th, 2019** - [Project planning deliverables](#project-planning-deliverables) due! Before beginning work on your project, your idea, project scope, and other planning deliverables must be approved by an instructor.
 
-* **Friday 29th, March 2019** - [Project planning deliverables](#project-planning-deliverables) due! Before beginning work on your project, your idea, project scope, and other planning deliverables must be approved by an instructor.
+* **9:00pm, Friday, June 7th, 2019** - Feature Freeze
 
-* **1:30pm, Friday 5th, April 2019** - Project check-in. A 3 minutes demo of what you have done so far and 2 minutes spent on discussing future tasks using trello board.
-
-* **9:00pm, Wednesday 10th, April 2019** - Feature Freeze
-
-* **9:30am, Friday 12th, April 2019** - [Completed project deliverables](#completed-project-deliverables) due and presentations!
+* **9:30am, Monday, June 10th, 2019** - [Completed project deliverables](#completed-project-deliverables) due and presentations!
 
 ---
 
@@ -132,7 +128,7 @@ Make sure it's **something you can accomplish in the limited time we have**, and
 
 ###### What should I cover during my presentation?
 
-Project 3 presentations will start at **9:30am** on **Friday 12th, April 2019**. Each presentation should be **10 minutes or less** and cover the following:
+Project 4 presentations will start at **9:30am** on **Monday, June 10th, 2019**. Each presentation should be **10 minutes or less** and cover the following:
 
 * What was your motivation to build this project?
 * App summary
@@ -141,10 +137,3 @@ Project 3 presentations will start at **9:30am** on **Friday 12th, April 2019**.
 * Challenges you faced
 * Shout-outs!
 
----
-
-## Project Feedback
-
-###### How will I get feedback from instructors?
-
-You will get the feedback in a 1-1 session with the instructor on **Monday 15th, April 2019**.
