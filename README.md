@@ -120,7 +120,7 @@ Make sure it's **something you can accomplish in the limited time we have**, and
 ###### How do I turn in the project?
 
 * As you make code changes, **frequently commit and push to GitHub**.
-* You will be required to submit the GitHub URL and the URL to the live site in the [Project Tracker](https://docs.google.com/spreadsheets/d/1hf9D0cacxPg8xNW_BFNcS-V-3S0r-Z8_FY8BIRofl28/edit#gid=1372837631).
+* You will be required to submit the GitHub URL and the URL to the live site in the [Project Tracker](https://docs.google.com/#).
 
 ---
 
