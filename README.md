@@ -107,11 +107,11 @@ Make sure it's **something you can accomplish in the limited time we have**, and
 
 ###### When is the project due?
 
-* **Wednesday, May 29th, 2019** - [Project planning deliverables](#project-planning-deliverables) due! Before beginning work on your project, your idea, project scope, and other planning deliverables must be approved by an instructor.
+* **Tuesday, September 3rd, 2019** - [Project planning deliverables](#project-planning-deliverables) due! Before beginning work on your project, your idea, project scope, and other planning deliverables must be approved by an instructor.
 
-* **9:00pm, Friday, June 7th, 2019** - Feature Freeze
+* **4:00pm, Tuesday, September 10th, 2019** - Feature Freeze
 
-* **9:30am, Monday, June 10th, 2019** - [Completed project deliverables](#completed-project-deliverables) due and presentations!
+* **10:00am, Wednesday, September 11th, 2019** - [Completed project deliverables](#completed-project-deliverables) due and presentations!
 
 ---
 
