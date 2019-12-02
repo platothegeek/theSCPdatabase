@@ -26,7 +26,7 @@
 
 Make sure it's **something you can accomplish in the limited time we have**, and make sure it's **something that will be visually impressive**.
 
-**You may work on this project individually or in pairs.** See the [project planning deliverables](#project-planning-deliverables) section below for extra planning requirements for pairs.
+**You will work on this project individually** See the [project planning deliverables](#project-planning-deliverables).
 
 ---
 
