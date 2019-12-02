@@ -107,11 +107,11 @@ Make sure it's **something you can accomplish in the limited time we have**, and
 
 ###### When is the project due?
 
-* **Tuesday, September 3rd, 2019** - [Project planning deliverables](#project-planning-deliverables) due! Before beginning work on your project, your idea, project scope, and other planning deliverables must be approved by an instructor.
+* **Wednesday, December 11th, 2019** - [Project planning deliverables](#project-planning-deliverables) due! Before beginning work on your project, your idea, project scope, and other planning deliverables must be approved by an instructor.
 
-* **4:00pm, Tuesday, September 10th, 2019** - Feature Freeze
+* **4:00pm, Tuesday, December 10th, 2019** - Feature Freeze
 
-* **10:00am, Wednesday, September 11th, 2019** - [Completed project deliverables](#completed-project-deliverables) due and presentations!
+* **11:00am, Wednesday, December 11th, 2019** - [Completed project deliverables](#completed-project-deliverables) due and presentations!
 
 ---
 
@@ -120,7 +120,7 @@ Make sure it's **something you can accomplish in the limited time we have**, and
 ###### How do I turn in the project?
 
 * As you make code changes, **frequently commit and push to GitHub**.
-* You will be required to submit the GitHub URL and the URL to the live site in the [Project Tracker](https://docs.google.com/#).
+* You will be required to submit the GitHub URL and the URL to the live site in the business Slack channel.
 
 ---
 
