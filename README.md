@@ -128,7 +128,7 @@ Make sure it's **something you can accomplish in the limited time we have**, and
 
 ###### What should I cover during my presentation?
 
-Project 4 presentations will start at **10:00am** on **Wednesday, September 11th, 2019**. Each presentation should be **10 minutes or less** and cover the following:
+Project 4 presentations will start at **11:00am** on **Wednesday, December 11th, 2019**. Each presentation should be **10 minutes or less** and cover the following:
 
 * What was your motivation to build this project?
 * App summary
