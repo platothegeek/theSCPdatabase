@@ -109,9 +109,9 @@ Make sure it's **something you can accomplish in the limited time we have**, and
 
 * **Friday, March 6th, 2020** - [Project planning deliverables](#project-planning-deliverables) due! Before beginning work on your project, your idea, project scope, and other planning deliverables must be approved by an instructor.
 
-* **4:00pm, Wednesday, March 11th, 2020** - Feature Freeze
+* **4:00pm, Thursday, March 12th, 2020** - Feature Freeze
 
-* **9:30am, Thursday, March 12th, 2020** - [Completed project deliverables](#completed-project-deliverables) due and presentations!
+* **9:30am, Friday, March 13th, 2020** - [Completed project deliverables](#completed-project-deliverables) due and presentations!
 
 ---
 
@@ -128,7 +128,7 @@ Make sure it's **something you can accomplish in the limited time we have**, and
 
 ###### What should I cover during my presentation?
 
-Project 4 presentations will start at **9:30am** on **Thursday, March 12th, 2020**. Each presentation should be **10 minutes or less** and cover the following:
+Project 4 presentations will start at **9:30am** on **Friday, March 13th, 2020**. Each presentation should be **10 minutes or less** and cover the following:
 
 * What was your motivation to build this project?
 * App summary
