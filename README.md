@@ -1,4 +1,4 @@
-# <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> Project 4 - Final Project
+# <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> Project 3 - Capstone Project
 
 **Read this entire document before writing a line of code.**
 
@@ -107,11 +107,11 @@ Make sure it's **something you can accomplish in the limited time we have**, and
 
 ###### When is the project due?
 
-* **Friday, March 6th, 2020** - [Project planning deliverables](#project-planning-deliverables) due! Before beginning work on your project, your idea, project scope, and other planning deliverables must be approved by an instructor.
+* **Thursday, Feb 4th, 2021** - [Project planning deliverables](#project-planning-deliverables) due! Before beginning work on your project, your idea, project scope, and other planning deliverables must be approved by an instructor.
 
-* **4:00pm, Thursday, March 12th, 2020** - Feature Freeze
+* **2:00pm, Thursday, Feb 11th, 2021** - Feature Freeze
 
-* **9:30am, Friday, March 13th, 2020** - [Completed project deliverables](#completed-project-deliverables) due and presentations!
+* **9:30am, Friday, Feb 12th, 2021** - [Completed project deliverables](#completed-project-deliverables) due and presentations!
 
 ---
 
@@ -128,7 +128,7 @@ Make sure it's **something you can accomplish in the limited time we have**, and
 
 ###### What should I cover during my presentation?
 
-Project 4 presentations will start at **9:30am** on **Friday, March 13th, 2020**. Each presentation should be **10 minutes or less** and cover the following:
+Project presentations will start at **9:30am pst** on **Friday, Feb 12th, 2021**. Each presentation should be **10 minutes or less** and cover the following:
 
 * What was your motivation to build this project?
 * App summary
