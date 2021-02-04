@@ -2,7 +2,7 @@
 <p>Rethinking the SCP Foundation</p>
 <br>
 <h2>MVP Pitch</h2>
-<p>This website looks to help the stories and mythology behind the SCP Foundation universe become more easily accessible to a user. The main goal is to simplify the UX and improve the immersiveness while retaining the functionality already present. User’s should be able to view SCP Articles and Tales and search for specific pages by authorship, tag, title, or number. User’s can register and login to their account in order to save existing pages or make their own. Using their profile page users can view their profile’s information and list of saved posts and edit either when they wish to. </p>
+<p>This wesbite it working to help the stories and mythology behind the SCP Foundation universe become more easily accessible to individuals not familiar with the SCP Foundation's website. This is being accomplished through simplifying the UX and improving the immersiveness while retaining the functionality present in the original site. User’s should be able to view SCP Articles and Tales and search for specific pages by authorship, tag, title, or number. User’s can register and login to their account in order to save existing pages or make their own. Using their profile page users can view their profile’s information and list of saved posts and edit either when they wish to. </p>
 <h2>User Stories</h2>
 <ul>
 <li>The website presents a loading screen before the homepage.</li>
