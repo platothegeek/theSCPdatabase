@@ -23,6 +23,6 @@
 <li>Make listing by series and search function.</li>
 </ol>
 <h2>Wireframe Link</h2>
-<img src="https://wireframe.cc/pro/pp/d34b9f462412233" />
+<a href="https://wireframe.cc/pro/pp/d34b9f462412233">Link to Wireframe</a>
 <h2>ERD</h2>
 <img src="Images/SCP ERD.jpeg" />
