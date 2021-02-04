@@ -1,4 +1,3 @@
-{% load bootstrap4 %}
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
@@ -10,19 +9,15 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
 </head>
 <body>
-    <ul class="logoBar">
-        <li><img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0a/Logo_of_the_SCP_Foundation.png/1024px-Logo_of_the_SCP_Foundation.png" alt="SCP logo"></li>
-        <li>
-            <h1>The SCP Foundation</h1>
-            <p>Secure. Contain. Protect.</p>
-        </li>
-    </ul>
     <ul class="navBar">
-        <li>Home</li>
-        <li>About</li>
-        <li>Login</li>
-        <li>|</li>
-        <li>Sign Up</li>
+        <li style="float: left; margin-top: -1vh; margin-left: 0px; background: transparent; "><img src="{% static 'images/scp_logo.png' %}" alt="SCP logo" style="max-height: 8vh; background-color: transparent;"></li>
+        <li style="float: left;  margin-left: 0px;">
+            <h1 style="margin-top: -1vh;">The SCP Foundation</h1>
+            <p style="margin-top: -3vh;">Secure. Contain. Protect.</p>
+        </li>
+        <li><p>Sign Up | Login</p></li>
+        <li><p>About</p></li>
+        <li><p>Home</p></li>
     </ul>
 </body>
 </html>

@@ -1,0 +1,21 @@
+.navBar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.navBar li {
+    display: inline;
+    float: right;
+    margin-left: 2vw;
+    color: #ffffff;
+}
+.navBar h1 {
+    font-size: 4vh;
+}
+.navBar p {
+    font-size: 2vh;
+    margin-top: -.5vh; 
+}
+body {
+    background-color: #191919;
+}
