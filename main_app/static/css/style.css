@@ -44,19 +44,7 @@ body {
     color: #ffffff;
     font-size: 4vh;
 }
-@media only screen and (max-width: 600px) {
-    .leftScpColumn li a {
-        font-size: 2vh;
-        margin-left: -5vw;
-    }
-    .leftScpColumn {
-        margin-left: -4vw;
-    }
-    .phoneNavBar {
-        margin-left: 15vw; 
-        margin-right: 18vw;
-    }
-}
+
 @media only screen and (min-width: 1000px) {
     .leftScpColumn li a {
         font-size: 7vh;
@@ -104,7 +92,8 @@ a {
     font-size: 1.5vw;
 }
 .submitTable {
-    width: 100vw;
+    width: 102.5vw;
+    margin-left: -2.5vw;
 }
 .submitTable th {
     border: none;
@@ -144,4 +133,30 @@ a {
     font-family: 'Roboto Mono', monospace;
     color: #ffffff;
     font-size: 1.8vh;
+}
+@media only screen and (max-width: 600px) {
+    .leftScpColumn li a {
+        font-size: 2vh;
+        margin-left: -5vw;
+    }
+    .leftScpColumn {
+        margin-left: -4vw;
+    }
+    .phoneNavBar {
+        margin-left: 15vw; 
+        margin-right: 18vw;
+    }
+    .phoneNavBar p {
+        font-size: 4vw;
+    }
+    .submitTitle {
+        font-size: 3vh;
+    }
+    .submitHead{
+        font-size: 2.5vh;
+        color: #8d0000;
+    }
+    .submitWarning{
+        font-size: 1.2vh;
+    }
 }
