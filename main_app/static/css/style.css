@@ -10,7 +10,7 @@
     color: #ffffff;
 }
 .navBar h1 {
-    font-size: 4vh;
+    font-size: 3.5vh;
 }
 .navBar p {
     font-size: 2vh;
@@ -18,4 +18,16 @@
 }
 body {
     background-color: #191919;
+    font-family: 'Playfair Display', serif;
+    color: #ffffff;
+}
+.column-left {
+    width: 30vw;
+    float: left;
+    border-top: 2px solid white;
+}
+.column-right {
+    width: 70vw;
+    float: left;
+    border-top: 2px solid white;
 }

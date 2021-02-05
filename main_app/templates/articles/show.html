@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+{% block content %}
+        <h1>SCP - {{ scp.number }} - {{ scp.title}}</h1>
+        {{ scp.body | safe }}
+
+{% endblock %}
