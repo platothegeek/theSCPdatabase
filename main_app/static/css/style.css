@@ -88,3 +88,60 @@ a {
 .page-rate-widget-box {
     display: none;
 }
+.submitTitle {
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    font-size: 2.5vw;
+}
+.submitHead {
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    font-size: 2vw;
+}
+.submitWarning{
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    font-size: 1.5vw;
+}
+.submitTable {
+    width: 100vw;
+}
+.submitTable th {
+    border: none;
+    width: 10vw;
+    font-family: 'Roboto Mono', monospace;
+    text-align: left;
+    vertical-align: top;
+}
+.submitTable label {
+    font-size: 2.5vh;
+}
+.submitTable td {
+    border: none;
+    width: 70vw;
+}
+.submitTable input{
+    background-color: #111111;
+    font-family: 'Roboto Mono', monospace;
+    color: #ffffff;
+    font-size: 1.8vh;
+    border: 1px #767676 solid;
+    width: 20vw;
+}
+.submitTable #id_number {
+    width: 10vh;
+}
+.submitTable select {
+    background-color: #111111;
+    font-family: 'Roboto Mono', monospace;
+    color: #ffffff;
+    font-size: 1.8vh;
+}
+.submitTable textarea {
+    width: 70vw;
+    height: 50vh;
+    background-color: #111111;
+    font-family: 'Roboto Mono', monospace;
+    color: #ffffff;
+    font-size: 1.8vh;
+}

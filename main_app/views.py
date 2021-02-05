@@ -7,6 +7,7 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.decorators import login_required
 
 from .models import Scp, User, Canon, Tales
+from .forms import Scp_Form, Edit_Scp_Form, Tale_Form, Edit_Tale_Form
 # Create your views here.
 def home(request):
     return render(request, 'home.html')
@@ -37,9 +38,9 @@ def scp_new(request):
             print(form.errors)
             error_message = form.errors
     # current_user = request.user
-    form = Scp_form()
-    contet = {'form' : form, 'error_message': error_message, 'user': current_user}
-    return render(request, 'posts/new.html', context)
+    form = Scp_Form()
+    context = {'form' : form, 'error_message': error_message}
+    return render(request, 'articles/new.html', context)
 def tale_new(request):
     error_message=''
     if requet.method == "POST":
