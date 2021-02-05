@@ -1,6 +1,18 @@
 {% extends 'base.html' %}
 {% block content %}
-        <h1>SCP - {{ scp.number }} - {{ scp.title}}</h1>
-        {{ scp.body | safe }}
-
+<div class="row">
+        <div class="leftScpColumn">
+                <ul>
+                        <li><a href="">Series 1</a></li>
+                        <li><a href="">Series 2</a></li>
+                        <li><a href="">Series 3</a></li>
+                        <li><a href="">Series 4</a></li>
+                        <li><a href="">Series 5</a></li>
+                </ul>
+        </div>
+        <div class="rightScpColumn">        
+                <h1 style="margin-top: 5vh; text-align: center;">SCP-<strong>{{ scp.number }}</strong> : {{ scp.title}}</h1>
+                {{ scp.body | safe }}
+        </div>
+</div>
 {% endblock %}

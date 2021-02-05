@@ -1,0 +1,5 @@
+{% extends 'base.html' %}
+{% block content %}      
+                <h1 style="margin-top: 5vh; text-align: center;">{{ tale.title }}</h1>
+                {{ tale.body | safe }}
+{% endblock %}

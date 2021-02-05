@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SCP Database</title>
@@ -15,13 +16,19 @@
         <li style="float: left; margin-top: -1vh; margin-left: 0px; background: transparent; "><img src="{% static 'images/scp_logo.png' %}" alt="SCP logo" style="max-height: 8vh; background-color: transparent;"></li>
         <li style="float: left;  margin-left: 0px;">
             <h1 style="margin-top: -1vh;">The SCP Foundation</h1>
-            <p style="margin-top: -3vh;">SECURE. CONTAIN. PROTECT.</p>
+            <p style="margin-top: -3vh; font-size: 2vh;">SECURE. CONTAIN. PROTECT.</p>
         </li>
+        <div class="phoneNavBar">
         <li><p>SIGN UP | LOGIN</p></li>
         <li><p>ABOUT</p></li>
         <li><p>HOME</p></li>
+        </div>
     </ul>
+    <br>
+    <br>
+    <div>
     {% block content %}
     {% endblock %}
+    </div>
 </body>
 </html>

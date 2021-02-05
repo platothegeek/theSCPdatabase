@@ -21,13 +21,70 @@ body {
     font-family: 'Playfair Display', serif;
     color: #ffffff;
 }
-.column-left {
-    width: 30vw;
-    float: left;
-    border-top: 2px solid white;
+.row {
+    content: "";
+    display: table;
+    clear: both;
 }
-.column-right {
-    width: 70vw;
+
+.leftScpColumn {
+    font-family: 'EB Garamond', serif;
+    width: 15vw;
     float: left;
-    border-top: 2px solid white;
+    height: 50vh;
+    background-color: #191919;
+    margin-left: -1vw;
+    margin-right: 1vw;
+    border-right: 1px white solid;
+}
+.leftScpColumn li {
+    list-style-type: none;
+}
+.leftScpColumn li a {
+    color: #ffffff;
+    font-size: 4vh;
+}
+@media only screen and (max-width: 600px) {
+    .leftScpColumn li a {
+        font-size: 2vh;
+        margin-left: -5vw;
+    }
+    .leftScpColumn {
+        margin-left: -4vw;
+    }
+    .phoneNavBar {
+        margin-left: 15vw; 
+        margin-right: 18vw;
+    }
+}
+@media only screen and (min-width: 1000px) {
+    .leftScpColumn li a {
+        font-size: 7vh;
+    }
+}
+.rightScpColumn {
+    width: 85vw;
+    height: 100vh;
+    margin-left: 17vw;
+}
+.wiki-content-table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 0.5em auto;
+    background-color: #8f8f8f;
+}
+#page-content {
+    font-size : 1.75vh;
+}
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+}
+a {
+    color: #ffffff;
+}
+.page-rate-widget-box {
+    display: none;
 }
