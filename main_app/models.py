@@ -3,6 +3,7 @@ from django.urls import reverse
 from datetime import date
 from django.contrib.auth.models import AbstractUser, User
 import django.utils.timezone
+from django_quill.fields import QuillField
 
 # Create your models here.
 class Profile(AbstractUser):
@@ -15,13 +16,13 @@ class Canon(models.Model):
 class Scp(models.Model):
     title = models.CharField(max_length=50)
     number = models.IntegerField(unique=True)
-    body = models.CharField(max_length=500000)
+    body = QuillField()
     author = models.ForeignKey(Profile, on_delete=models.CASCADE, related_name="scps", default=1)
     timestamp = models.DateTimeField(default=django.utils.timezone.now)
     canon = models.ForeignKey(Canon, on_delete=models.CASCADE, related_name="scps", default=1)
 class Tales(models.Model):
     title = models.CharField(max_length=50)
     author = models.ForeignKey(Profile, on_delete=models.CASCADE, related_name="tales", default=1)
-    body = models.CharField(max_length=500000)
+    body = QuillField()
     timestamp = models.DateTimeField(default=django.utils.timezone.now)
     canon = models.ForeignKey(Canon, on_delete=models.CASCADE, related_name="tales", default=1)

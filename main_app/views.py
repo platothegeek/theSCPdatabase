@@ -7,14 +7,14 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.decorators import login_required
 
 from .models import Scp, User, Canon, Tales
-from .forms import Scp_Form, Edit_Scp_Form, Tale_Form, Edit_Tale_Form
+from .forms import Scp_Form, Edit_Scp_Form, Tale_Form, Edit_Tale_Form, QuillFormField
 # Create your views here.
 def home(request):
     return render(request, 'home.html')
 
 def scp_show(request, scp_number):
     scp = Scp.objects.get(number=scp_number)
-    print(scp.title)
+    print(scp.body)
     context = { 'scp' : scp }
     print(context)
     return render(request, 'articles/show.html', context)
@@ -43,7 +43,7 @@ def scp_new(request):
     return render(request, 'articles/new.html', context)
 def tale_new(request):
     error_message=''
-    if requet.method == "POST":
+    if request.method == "POST":
         form = Tale_Form(request.POST)
         if form.is_valid():
             author = 1 #request.user
@@ -56,6 +56,6 @@ def tale_new(request):
             print(form.errors)
             error_message = form.errors
     # current_user = request.user
-    form = Scp_form()
-    contet = {'form' : form, 'error_message': error_message, 'user': current_user}
-    return render(request, 'posts/new.html', context)
+    form = Tale_Form()
+    context = {'form' : form, 'error_message': error_message}
+    return render(request, 'tales/new.html', context)

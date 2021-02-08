@@ -12,7 +12,7 @@
         </div>
         <div class="rightScpColumn">        
                 <h1 style="margin-top: 5vh; text-align: center;">SCP-<strong>{{ scp.number }}</strong> : {{ scp.title}}</h1>
-                {{ scp.body | safe }}
+                {{ scp.body.html | safe }}
         </div>
 </div>
 {% endblock %}

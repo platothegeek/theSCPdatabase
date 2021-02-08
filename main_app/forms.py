@@ -3,10 +3,13 @@ from django import forms
 from .models import Scp, Tales, Profile, Canon
 from django.contrib.auth.forms import UserCreationForm, UserChangeForm
 from datetime import datetime
+from django_quill.forms import QuillFormField
 
 class CanonModelChoiceField(ModelChoiceField):
     def label_from_instance(self, obj):
         return obj.name
+class QuillFieldForm(forms.Form) :
+    content = QuillFormField()
 class RegisterForm(UserCreationForm):
     summary = forms.CharField(max_length=250)
     class Meta:
@@ -24,7 +27,7 @@ class EditUserForm(UserChangeForm):
 class Scp_Form(ModelForm):
     title = forms.CharField(max_length=50, required=True)
     number = forms.IntegerField(required=True)
-    body = forms.CharField(max_length=500000, widget=forms.Textarea)
+    body = QuillFieldForm()
     canon = CanonModelChoiceField(queryset=Canon.objects.all())
     class Meta:
         model = Scp
@@ -39,7 +42,7 @@ class Edit_Scp_Form(ModelForm):
         fields=['title','number','canon','body']
 class Tale_Form(ModelForm):
     title = forms.CharField(max_length=50)
-    body = forms.CharField(max_length=500000)
+    body = QuillFieldForm()
     canon = CanonModelChoiceField(queryset=Canon.objects.all())
     class Meta:
         model = Tales
@@ -47,7 +50,7 @@ class Tale_Form(ModelForm):
 class Edit_Tale_Form(ModelForm):
     title = forms.CharField(max_length=50, required=False)
     canon = CanonModelChoiceField(queryset=Canon.objects.all())
-    body = forms.CharField(max_length=500000, required=False)
+    body = forms.CharField(max_length=500000, required=False, widget=forms.Textarea)
     class Meta:
         model = Tales
         fields =['title','canon','body']

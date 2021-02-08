@@ -42,12 +42,12 @@ body {
 }
 .leftScpColumn li a {
     color: #ffffff;
-    font-size: 4vh;
+    font-size: 4vw;
 }
 
 @media only screen and (min-width: 1000px) {
     .leftScpColumn li a {
-        font-size: 7vh;
+        font-size: 4vw;
     }
 }
 .rightScpColumn {
@@ -85,6 +85,7 @@ a {
     font-family: 'Roboto Mono', monospace;
     text-align: center;
     font-size: 2vw;
+    color: #8d0000;
 }
 .submitWarning{
     font-family: 'Roboto Mono', monospace;
@@ -92,10 +93,11 @@ a {
     font-size: 1.5vw;
 }
 .submitTable {
-    width: 102.5vw;
+    width: 101vw;
     margin-left: -2.5vw;
 }
 .submitTable th {
+    padding-left: 2.5vw;
     border: none;
     width: 10vw;
     font-family: 'Roboto Mono', monospace;
@@ -133,6 +135,16 @@ a {
     font-family: 'Roboto Mono', monospace;
     color: #ffffff;
     font-size: 1.8vh;
+}
+.ql-toolbar {
+    background-color: white;
+}
+.ql-editor {
+    min-height: 40vh;
+    background-color: #111111;
+    font-family: 'Roboto Mono', monospace;
+    color: #ffffff;
+    font-size: 1.5vh;
 }
 @media only screen and (max-width: 600px) {
     .leftScpColumn li a {
