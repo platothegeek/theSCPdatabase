@@ -10,7 +10,9 @@ from .models import Scp, User, Canon, Tales
 from .forms import Scp_Form, Edit_Scp_Form, Tale_Form, Edit_Tale_Form, QuillFormField
 # Create your views here.
 def home(request):
-    return render(request, 'home.html')
+    tales_list = Tales.objects.all()
+    context = {'tales_list' : tales_list}
+    return render(request, 'home.html', context)
 
 def scp_show(request, scp_number):
     scp = Scp.objects.get(number=scp_number)

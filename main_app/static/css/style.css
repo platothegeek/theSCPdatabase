@@ -37,6 +37,49 @@ body {
     margin-right: 1vw;
     border-right: 1px white solid;
 }
+.leftHomeColumn {
+    width: 25vw;
+    float: left;
+    height: 75vh;
+    background-color: #202020;
+    margin-left: -1vw;
+    margin-right: 1vw;
+    border-right: 1px white solid;
+}
+.taleTitleBorder {
+    margin-top: 1vw;
+    border-bottom: 1px solid white;
+    width: 12.5vw;
+    margin-bottom: -2vw;
+}
+#taleListBorder {
+    width: 20vw;
+}
+.taleTitle {
+    margin-left: -3vw;
+}
+.leftHomeColumn h2 {
+    font-size: 4vw;
+    margin-top: -1vw;
+    margin-left: 1vw;
+    margin-bottom: -1.5vw;
+    text-align: center;
+}
+.leftHomeColumn a {
+    text-decoration: none;
+
+}
+.editTaleChoice {
+    margin-left: 1vw;
+    margin-top: -2vw; 
+    font-size: 1.5vw;
+}
+
+.leftHomeColumn h3 {
+    font-size: 2vw;
+    margin-bottom: -.4vw;
+    text-align: center;
+}
 .leftScpColumn li {
     list-style-type: none;
 }
