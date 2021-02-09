@@ -77,10 +77,10 @@ body {
     margin-top: .5vw;
 }
 .editTaleChoice {
-    margin-left: 1vw;
     margin-top: -2vw; 
     font-size: 1.5vw;
-    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 .homeTaleList {
     overflow: hidden;
@@ -113,9 +113,30 @@ body {
 .rightHomeColumn {
     width: 65vw;
     height: 100vh;
+    margin-left: 35vw;
+    margin-top: -1.75vh;
 }
 .rightHomeColumn li{
-
+    height: 20vh;
+    font-size: 9vw;
+    list-style-type: none;
+    font-family: 'EB Garamond', serif;
+}
+.rightHomeColumn li a {
+    text-decoration: none;
+}
+.categBorderTop {
+    border: none;
+    margin-left: -50vw;
+    margin-bottom: -.15vh;
+    border-bottom: 1px solid white;
+    width: 150vw;
+}
+#longCateg {
+    font-size: 4vw;
+}
+#longCateg2 {
+    font-size: 4.5vw;
 }
 .wiki-content-table {
     border-collapse: collapse;
@@ -247,4 +268,10 @@ a {
     .submitWarning{
         font-size: 1.2vh;
     }
+}
+.categBorder {
+    border: none;
+    border-bottom: .25px solid white;
+    width: 75vw;
+    margin-left: -10vw;
 }

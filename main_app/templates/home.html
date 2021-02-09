@@ -3,7 +3,8 @@
 {% load static %}
 <link rel="stylesheet" href="{% static 'css/homestyle.css' %}">
 {% endblock%}
-{% block content %}      
+{% block content %}
+<hr class="categBorderTop">
 <div class="row home">
     <div class="leftHomeColumn">
            <h2>Tales</h2><hr class="taleTitleBorder">
@@ -16,12 +17,15 @@
                {% endfor %}
            </ul>
     </div>
-    <div class="rightHomeColumn">        
+    <div class="rightHomeColumn">
         <ul>
             <li><a href="">SCPs</a></li>
+            <hr class="categBorder">
             <li><a href="">Canons</a></li>
-            <li><a href="">Anomolous Items, Events, and Locations</a></li>
-            <li><a href="">Miscellaneous</a></li>
+            <hr class="categBorder">
+            <li><a href="">Minor Anomolies</a></li>
+            <hr class="categBorder">
+            <li><a href="">Sites and Staff</a></li>
         </ul>
     </div>
 </div>
