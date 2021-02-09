@@ -12,15 +12,15 @@
            <ul class="homeTaleList">
                {% for Scp in scp_list %}
                {% if Scp.number == 002 %}
-               <li class="seriesOneMarker"> <a href="tale/{{ Scp.id }}"><div class="homeTaleTitle">SCP - {{ Scp.number }} </div> <div  class="homeTaleAuthor">{{ Scp.title }} </div></a></li>
+               <li class="seriesOneMarker"> <a href="{{ Scp.id }}"><div class="homeTaleTitle">SCP - {{ Scp.number }} </div> <div  class="homeTaleAuthor">{{ Scp.title }} </div></a></li>
                {% elif Scp.number == 1000 %}
-               <li class="seriesTwoMarker"> <a href="tale/{{ Scp.id }}"><div class="homeTaleTitle">SCP - {{ Scp.number }} </div> <div  class="homeTaleAuthor">{{ Scp.title }} </div></a></li>
+               <li class="seriesTwoMarker"> <a href="{{ Scp.id }}"><div class="homeTaleTitle">SCP - {{ Scp.number }} </div> <div  class="homeTaleAuthor">{{ Scp.title }} </div></a></li>
                {% elif Scp.number == 2000 %}
-               <li class="seriesThreeMarker"> <a href="tale/{{ Scp.id }}"><div class="homeTaleTitle">SCP - {{ Scp.number }} </div> <div  class="homeTaleAuthor">{{ Scp.title }} </div></a></li>
+               <li class="seriesThreeMarker"> <a href="{{ Scp.id }}"><div class="homeTaleTitle">SCP - {{ Scp.number }} </div> <div  class="homeTaleAuthor">{{ Scp.title }} </div></a></li>
                {% elif Scp.number == 3000 %}
-               <li class="seriesFourMarker"> <a href="tale/{{ Scp.id }}"><div class="homeTaleTitle">SCP - {{ Scp.number }} </div> <div  class="homeTaleAuthor">{{ Scp.title }} </div></a></li>
+               <li class="seriesFourMarker"> <a href="{{ Scp.id }}"><div class="homeTaleTitle">SCP - {{ Scp.number }} </div> <div  class="homeTaleAuthor">{{ Scp.title }} </div></a></li>
                {% else %}
-               <li> <a href="tale/{{ Scp.id }}"><div class="homeTaleTitle">SCP - {{ Scp.number }} </div> <div  class="homeTaleAuthor">{{ Scp.title }} </div></a></li>
+               <li> <a href="{{ Scp.id }}"><div class="homeTaleTitle">SCP - {{ Scp.number }} </div> <div  class="homeTaleAuthor">{{ Scp.title }} </div></a></li>
                {% endif %}
                {% endfor %}
            </ul>

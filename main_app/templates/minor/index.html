@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block styles %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/homestyle.css' %}">
+{% endblock%}
+{% block content %}
+<hr class="categBorderTop">
+<div class="row home">
+    <div class="row home">
+        <div class="leftHomeColumn">
+               <h3 class="taleTitle"> - SCPs - </h3>
+               <ul class="homeTaleList">
+                   {% for Scp in scp_list %}
+                   {% if Scp.number == 002 %}
+                   <li class="seriesOneMarker"> <a href="{{ Scp.id }}"><div class="homeTaleTitle">SCP - {{ Scp.number }} </div> <div  class="homeTaleAuthor">{{ Scp.title }} </div></a></li>
+                   {% elif Scp.number == 1000 %}
+                   <li class="seriesTwoMarker"> <a href="{{ Scp.id }}"><div class="homeTaleTitle">SCP - {{ Scp.number }} </div> <div  class="homeTaleAuthor">{{ Scp.title }} </div></a></li>
+                   {% elif Scp.number == 2000 %}
+                   <li class="seriesThreeMarker"> <a href="{{ Scp.id }}"><div class="homeTaleTitle">SCP - {{ Scp.number }} </div> <div  class="homeTaleAuthor">{{ Scp.title }} </div></a></li>
+                   {% elif Scp.number == 3000 %}
+                   <li class="seriesFourMarker"> <a href="{{ Scp.id }}"><div class="homeTaleTitle">SCP - {{ Scp.number }} </div> <div  class="homeTaleAuthor">{{ Scp.title }} </div></a></li>
+                   {% else %}
+                   <li> <a href="{{ Scp.id }}"><div class="homeTaleTitle">SCP - {{ Scp.number }} </div> <div  class="homeTaleAuthor">{{ Scp.title }} </div></a></li>
+                   {% endif %}
+                   {% endfor %}
+               </ul>
+        </div>
+    <div class="rightHomeColumn minor">
+        <ul>
+            <li class="firstHomeChoice"><a href="items/">Anomolous Items</a></li>
+            <hr class="categBorder">
+            <li><a href="events/">Extranormal Events</a></li>
+            <hr class="categBorder">
+            <li><a href="locations/">Unexplained Locations</a></li>
+        </ul>
+    </div>
+</div>
+{% endblock %}

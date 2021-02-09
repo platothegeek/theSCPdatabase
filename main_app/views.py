@@ -13,6 +13,20 @@ def home(request):
     tales_list = Tales.objects.all()
     context = {'tales_list' : tales_list}
     return render(request, 'home.html', context)
+def minor_index(request):
+    scp_list = Scp.objects.all().order_by('number')
+    context = {'scp_list' : scp_list}
+    return render(request, 'minor/index.html', context)
+def minor_events(request):
+    return render(request, 'minor/events.html')
+def minor_locations(request):
+    return render(request, 'minor/locations.html')
+def minor_items(request):
+    return render(request, 'minor/items.html')
+def minor_items1(request):
+    return render(request, 'minor/items1.html')
+def minor_items2(request):
+    return render(request, 'minor/items2.html')
 def staff_new(request):
     error_message=''
     if request.method == "POST":
@@ -29,7 +43,7 @@ def staff_new(request):
     context = {'form' : form }
     return render(request, 'staff/new.html', context)
 def scp_show(request, scp_number):
-    scp = Scp.objects.get(number=scp_number)
+    scp = Scp.objects.get(id=scp_number)
     print(scp.body)
     context = { 'scp' : scp }
     print(context)

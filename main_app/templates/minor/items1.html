@@ -1,0 +1,1091 @@
+{% extends 'base.html' %}
+{% block styles %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/scpstyle.css' %}">
+{% endblock%}
+{% block content %}
+<div class="row">
+        <div class="leftScpColumn">
+                <ul>
+                        <li><a href="/minor/events">Events</a></li>
+                        <li><a href="/minor/items">Items</a></li>
+                        <li><a href="/minor/locations" style="font-size: 3vw;">Locations</a></li>
+                </ul>
+        </div>
+        <div class="rightScpColumn">        
+            <div id="page-content">
+                        
+
+
+                <blockquote>
+                <p><strong>Foreword:</strong> The SCP Foundation has discovered a substantial number of items which are simply too useless to merit further attention. This document lists those items which have prompted some curiosity. It may be used as a resource should knowledge of these items become useful or necessary in the future.<br>
+                – Dr. █████ █████, Head of Research, Site-██</p>
+                </blockquote>
+                <p>This is the second volume of the log. Access to the first and third volume of the log can be found <a href="/minor/items">here</a> and <a href="/minor/items/2">here</a>, respectively.</p>
+                <p><em><strong>Note:</strong> Please add new entries to the bottom of the list, not the middle or the top.</em></p>
+                <p><strong>Item Description:</strong> A long-egg reversal machine, resembling a table-top sausage grinder. When a long egg is introduced in the hopper at the top of the device and the crank is turned, the long egg is consumed and a series of normal raw chicken eggs, complete with shell, emerge from the lower chute.<br>
+                <strong>Date of Recovery:</strong> 10-9-2017<br>
+                <strong>Location of Recovery:</strong> Royal Wootton Bassett, Wiltshire, England<br>
+                <strong>Current Status:</strong> In the Site-17 culinary experimentation kitchens.</p>
+                <p><strong>Item Description:</strong> A common raven (<em>Corvus corax</em>) that, when viewed for prolonged periods, causes subjects to temporarily perceive text as passages from the poem "The Raven" by American writer Edgar Allan Poe. The effect roughly lasts between 15 minutes to 1 hour. Several researchers have reported hearing the raven call them "Edgar", though none have the name Edgar.<br>
+                <strong>Date of Recovery:</strong> 05-23-2016<br>
+                <strong>Location of Recovery:</strong> Boston, Massachusetts<br>
+                <strong>Current Status:</strong> In Site-66's aviary.</p>
+                <p><strong>Item Description:</strong> A VHS tape with an adhesive sticker that reads "OH FIVE FOOLS" written in black marker containing an hour and twenty minutes of footage. The contents of the tape depict former and current members of the O5 Council tied up and being tortured by robed figures wearing masks demanding to know "Where is our god?" before fading into static. The tape ends with a final still of the disemboweled corpses of the Council members and the message "Soon." Members of the Council report no unusual activity.<br>
+                <strong>Date of Recovery:</strong> 12-7-1981<br>
+                <strong>Location of Recovery:</strong> At Site-01<br>
+                <strong>Current Status:</strong> In the possession of Mobile Task Force Alpha-1 ("Red Right Hand") to aid in an investigation ordered by the O5 Council.</p>
+                <p><strong>Item Description:</strong> A collection of 216 fountain pens. Each pen, when used to write, will deploy the user's blood in the place of ink.<br>
+                <strong>Date of Recovery:</strong> ██-██-████<br>
+                <strong>Location of Recovery:</strong> Grave, The Netherlands<br>
+                <strong>Current Status:</strong> Each pen has been clearly labeled, and is pending approval for use by the Foundation's Demonology Division.</p>
+                <p><strong>Item Description:</strong> A heavily burned corpse of a nearly hairless primate with a highly developed brain and nervous system. No RHIt marker of any encryption or RAND-tech label was found within the creature's DNA, suggesting that it was either owned by and, if sapient, living as a Sticker Man and/or a pilot. The skull is fractured in a way not consistent with energy or siphon weaponry and thus any further research was halted.<br>
+                <strong>Date of Recovery:</strong> 33 by 17&nbsp;A/H (null cycle)<br>
+                <strong>Location of Recovery:</strong> An above-ground heated mineral disposal device in sector-████/██ of New India.<br>
+                <strong>Current Status:</strong> Determined to contain illegal implications and thus was transported to the ███████'s on-site incinerator. All in-depth and detailed records were secured in L-KON-4 level harmful media storage.</p>
+                <p><strong>Item Description:</strong> An external hard drive that, when plugged into any computer not housed within a Lenovo brand shell, contains only a collection of random photos of cats, rendering it impossible add files to the drive, or move, rename, copy, edit, or delete the photos. The pictures are different every time the hard drive is unplugged and plugged back in. When used with a computer housed within a Lenovo brand shell, it works like a normal external hard drive and shows no anomalous properties.<br>
+                <strong>Date of Recovery:</strong> 02/06/2005.<br>
+                <strong>Location of Recovery:</strong> A house in San Diego, California.<br>
+                <strong>Current Status:</strong> In storage.</p>
+                <p><strong>Item Description:</strong> A preserved rat carcass (<em>Rattus norvegicus</em>), wrapped in black adhesive tape and pierced by several dozen cocktail sticks. When held, grants the holder complete and perfect knowledge of the circumstances surrounding the recent death of one Arthur Long.<br>
+                <strong>Date of Recovery:</strong> 13/04/1956.<br>
+                <strong>Location of Recovery:</strong> The residence of Maria Carney, fiancee of Mr. Long, also recently deceased.<br>
+                <strong>Current Status:</strong> Missing.</p>
+                <p><strong>Item Description:</strong> A wooden barrel that, when opened, manifests a mummified capuchin monkey (<em>Cebinae</em>) in a clown outfit. The cadaver rapidly decomposes into dust and ash when the barrel is closed.<br>
+                <strong>Date of Recovery:</strong> 09/12/2006<br>
+                <strong>Location of Recovery:</strong> ██████, Missouri<br>
+                <strong>Current Status:</strong> In storage.</p>
+                <p><strong>Item Description:</strong> A large NASA t-shirt. The stars depicted on the shirt emit very small amounts of solar radiation and light via an anomalous manner.<br>
+                <strong>Date of Recovery:</strong> 14/2/2012.<br>
+                <strong>Location of Recovery:</strong> ████████, Virginia<br>
+                <strong>Current Status:</strong> Framed in Researcher Caroll's office.</p>
+                <p><strong>Item Description:</strong> A document describing "spontaneous pattern annihilation," a phenomenon that has not been observed in reality.<br>
+                <strong>Location of Recovery:</strong> Site-02 ████████████ Department<br>
+                <strong>Date of Recovery:</strong> 2018-06-01<br>
+                <strong>Current Status:</strong> Storage</p>
+                <p><strong>Item Description:</strong> A severed mummified human foot that randomly causes visual hallucinations during observation. Individuals will see an emaciated humanoid entity that has a large mouth for a face with multiple tongues licking the foot. Affected subjects report feeling uncomfortable or uneasy, and that the entity is staring at them despite reportedly lacking eyes. The effect lasts until the subject turns away or after roughly a minute when observing it.<br>
+                <strong>Date of Recovery:</strong> 5/12/1998<br>
+                <strong>Location of Recovery:</strong> ██████, Peru<br>
+                <strong>Current Status:</strong> In containment.</p>
+                <p><strong>Item Description:</strong> A nail used in the left hand of Researcher Yeshua during execution by █████ alliance against the ██████ for ███████ ████ ██ ████ that when used to puncture a human hand will cause no bleeding. The wound retains all other negative health effects.<br>
+                <strong>Date of Recovery:</strong> [REDACTED]<br>
+                <strong>Location of Recovery:</strong> ██████ mid-transport to ████████████ tomb.<br>
+                <strong>Current Status:</strong> In storage.</p>
+                <p><strong>Item Description:</strong> A copy of the book █ ███████ ██ ████ that doesn’t appear on any reflective surface. Individual pages do not retain anomalous behavior.<br>
+                <strong>Date of Recovery:</strong> █/██/2015<br>
+                <strong>Location of Recovery:</strong> █████, Pennsylvania.<br>
+                <strong>Current Status:</strong> Storage.</p>
+                <p><strong>Item Description:</strong> An orange, ███████-brand Phillips-head screwdriver that, when inserted into a screw, will always screw it outwards, regardless of the direction of twisting.<br>
+                <strong>Date of Recovery:</strong> 8/6/2016<br>
+                <strong>Location of Recovery:</strong> Inside an abandoned ████ █████ brand toolbox in ███████, New Jersey<br>
+                <strong>Current Status:</strong> In storage.<br>
+                <strong>Note:</strong> Toolbox contained space for at least seven other tools.</p>
+                <p><strong>Item Description:</strong> A black Sharpie pen that, when used to write, instead hovers toward the nearest wall and draws upon it horizontal marks representing the heights of all humans within a ten-meter radius.<br>
+                <strong>Date of Recovery:</strong> 8/9/2016<br>
+                <strong>Location of Recovery:</strong> ███████, Oregon<br>
+                <strong>Current Status:</strong> In storage.</p>
+                <p><strong>Item Description:</strong> A recipe for meatloaf which will always result in a meat-free dish, regardless of ingredients used. To date, this has included tofu, salads, and egg-free pastries.<br>
+                <strong>Date of Recovery:</strong> 2/15/2007<br>
+                <strong>Location of Discovery:</strong> ██████ Family Cookbook in Holmes County, Ohio<br>
+                <strong>Current Status:</strong> In storage.</p>
+                <p><strong>Item Description:</strong> A photosynthetic Red-footed tortoise (<em>Chelonoidis carbonarius</em>).<br>
+                <strong>Date of Recovery:</strong> 7/13/2017<br>
+                <strong>Location of Discovery:</strong> Newark, New Jersey<br>
+                <strong>Current Status:</strong> In animal containment.</p>
+                <p><strong>Item Description:</strong> A golden-mantled ground squirrel genetically identical to an artichoke.<br>
+                <strong>Date of Recovery:</strong> 12/12/2012<br>
+                <strong>Location of Discovery:</strong> Billings, Montana<br>
+                <strong>Current Status:</strong> In animal containment.</p>
+                <p><strong>Item Description:</strong> A digital folder holding exactly 3000 copies of a single JPG of a cartoon skeleton. The folder cannot be copied, deleted, or edited in any way. It can, however, be moved onto a hard drive. Looking at the folder causes large amounts of stress and fear for the user.<br>
+                <strong>Date of Recovery:</strong> 9/13/2017<br>
+                <strong>Location of Recovery:</strong> Public computer at the ████ Library in █████, Maine.<br>
+                <strong>Current Status:</strong> Backed up to Dr. ██████’s workstation.</p>
+                <p><strong>Item Description:</strong> An earbud with a missing jack that transmits SCP-██'s date and geographical location of recovery in Morse Code.<br>
+                <strong>Date of Recovery:</strong> 12/01/1999<br>
+                <strong>Location of Recovery:</strong> Vancouver, Canada<br>
+                <strong>Current Status:</strong> In storage.<br>
+                <strong>Note:</strong> SCP-██ possesses anomalous effects relating to radio waves.</p>
+                <p><strong>Item Description:</strong> An abnormally notable piece of 2x4 board. When test subjects are asked to randomly select a wood board from a set of wood boards that includes the object, the object will always be chosen. When questioned on their reasoning, subjects report a nonspecific sense of notability.<br>
+                <strong>Date of Recovery:</strong> 07/12/2009<br>
+                <strong>Location of Recovery:</strong> Springfield, Illinois<br>
+                <strong>Current Status:</strong> In storage.</p>
+                <p><strong>Item Description:</strong> One cow cadaver. Cadaver shows no anomalous properties other than the location of discovery.<br>
+                <strong>Date of Recovery:</strong> ██-██-20██<br>
+                <strong>Location of Recovery:</strong> South Pole–Aitken basin, the Moon.<br>
+                <strong>Current Status:</strong> Remains in location of discovery.</p>
+                <p><strong>Item Description:</strong> A single double AA battery that possesses an unlimited amount of energy despite extensive use.<br>
+                <strong>Date of Recovery:</strong> 03/12/2018<br>
+                <strong>Location of Recovery:</strong> A Prometheus Labs Facility located in Iceland.<br>
+                <strong>Current Status:</strong> In storage.<br>
+                <em>NOTE: Retrieved by Mobile Task Force Omega-20 ("Thought Police") as part of Operation Red Thunder.</em></p>
+                <p><strong>Item Description:</strong> A plain composition notebook that is ordinary in every way, with the exception of the conversion tables in the back. The table contains conversions that are impossible in real life, such as 'Joules' to 'Decibels per Second'. When calculated in the notebook, the calculations work out in a sensible and reliable manner. When transferring to other media, the mathematics abruptly falls apart, making all of the equations false.<br>
+                <strong>Date of Recovery:</strong> 09/10/2018<br>
+                <strong>Location of Recovery:</strong> The engineering department office of [REDACTED] University.<br>
+                <strong>Current Status:</strong> Located in the extra-dimensional research laboratory for use in calculations.</p>
+                <p><strong>Item Description:</strong> A snowglobe that, when shaken, causes snow to fall within 3 meters of the user for a period of 20-30 minutes. Effects still occur in locations where snow is irregular.<br>
+                <strong>Date of Recovery:</strong> 01/18/2016<br>
+                <strong>Location of Recovery:</strong> ████████, Pennsylvania<br>
+                <strong>Current Status:</strong> Storage. May be used during winter holidays to improve morale with a wintry atmosphere.</p>
+                <p><strong>Item Description:</strong> An unmarked wooden box of 100 steel paperclips. The objects, when bent, return to their proper shape and will automatically link together when placed in clumps.<br>
+                <strong>Date of Recovery:</strong> 03/26/2005<br>
+                <strong>Location of Recovery:</strong> Abandoned Staples shipping crate in Sacramento, California.<br>
+                <strong>Current Status:</strong> In storage.</p>
+                <p><strong>Item Description:</strong> A 19th-century iron maiden that plays "Iron Maiden" from Iron Maiden's debut album <em>Iron Maiden</em> at approximately 100 decibels when closed. This sound is only audible within the device itself.<br>
+                <strong>Date of Recovery:</strong> 6/9/2017<br>
+                <strong>Location of Recovery:</strong> In the cargo compartment of a van discovered in a parking lot of a bar located in █████████, North Carolina. The owner of the bus is unknown; at the time of discovery, an Iron Maiden cover band known as ███████ was scheduled to play in the venue on the following day. No solid link between the vehicle, either band, or the venue can be ascertained at this time.<br>
+                <strong>Current Status:</strong> In storage.</p>
+                <p><strong>Item Description:</strong> An aluminum thermos that, when filled with water, will begin emitting a low-voltage electric current. When empty, or filled with any other substance, the object will instead emit low frequencies of microwave radiation.<br>
+                <strong>Date of Recovery:</strong> 1932<br>
+                <strong>Location of Recovery:</strong> Beijing, China<br>
+                <strong>Current Status:</strong> In storage</p>
+                <p><strong>Item Description:</strong> A washing machine that, upon starting a cycle, becomes transparent for the entirety of the cycle. The laundry remains fully visible.<br>
+                <strong>Date of Recovery:</strong> █/█/20██<br>
+                <strong>Location of Recovery:</strong> █████████, Virginia<br>
+                <strong>Current Status:</strong> In storage</p>
+                <p><strong>Item Description:</strong> A compass that always points to the closest human with B-positive blood type.<br>
+                <strong>Date of Recovery:</strong> 6/5/198█<br>
+                <strong>Location of Recovery:</strong> A hospital in ███████, Oklahoma<br>
+                <strong>Current Status:</strong> In Site-██'s infirmary</p>
+                <p><strong>Item Description:</strong> An AOL free trial CD that constantly emits the sound of a dial-up modem.<br>
+                <strong>Date of Recovery:</strong> ██/██/████.<br>
+                <strong>Location of Recovery:</strong> New York, NY, USA.<br>
+                <strong>Current Status:</strong> In storage.</p>
+                <p><strong>Item Description:</strong> A chrysanthemum blossom that instantly turns to iron when touched by a human being. Object returns to organic form when released.<br>
+                <strong>Date of Recovery:</strong> 09/17/2013<br>
+                <strong>Location of Recovery:</strong> An apartment in Los Angeles, California.<br>
+                <strong>Current Status:</strong> In a vase at the Site-19 break room.</p>
+                <p><strong>Item Description:</strong> A plant-like organism that does not resemble any known terrestrial species. Does not have any other anomalous properties until fully grown. When fully grown, it asexually produces a seed pod. The seed pod starts as a small ball of dough and grows to bloom into a pizza with a diameter of 30 centimeters. Pizza has no anomalous effects when consumed. Pepperoni is present on the upward side of the pizza. The pepperoni function as seeds.<br>
+                <strong>Date of Recovery:</strong> 10/2/2016<br>
+                <strong>Location of Recovery:</strong> Lexington, Kentucky.<br>
+                <strong>Current Status:</strong> Seeds stored in Class-VI Long-Term Cryogenic Storage. Wild instances confirmed neutralized. Pending SCP designation.</p>
+                <p><strong>Item Description:</strong> A remote control whose mute button can affect anything it is pointed at, turning on or off their ability to make noise for 48 hours.<br>
+                <strong>Date of Recovery:</strong> 02/19/2023<br>
+                <strong>Location of Recovery:</strong> ██████ Prison, ████ ████ St., Maryland<br>
+                <strong>Current State:</strong> In Armory at Site-33. Permission may be granted for limited use during stealth missions.</p>
+                <p><strong>Item Description:</strong> One (1) Marlboro Menthol cigarette carton, of which contains one-hundred ninety-eight (198) cigarettes. Upon using one (1) cigarette, the user will immediately contract severe lung cancer. Upon unfolding the wrapping, they will read "Don't [expletive] smoke cigarettes."<br>
+                <strong>Date of Recovery:</strong> 08/24/2001<br>
+                <strong>Location of Recovery:</strong> [REDACTED], a convenience store in [REDACTED].<br>
+                <strong>Current Status:</strong> In medium-threat storage in Site-45.</p>
+                <p><strong>Item Description:</strong> A cube made of a red, metallic substance similar to darmstadtium, one inch on a side. If cut, both pieces will regenerate.<br>
+                <strong>Date of Recovery:</strong> 12/17/2018<br>
+                <strong>Location of Recovery:</strong> Barrie, ON, Canada<br>
+                <strong>Current Status:</strong> 192 in storage, available as requested. Unknown if there are instances still uncontained.</p>
+                <p><strong>Item Description:</strong> A white blanket which causes severe tactile hallucinations when worn by individuals aged 12-29.<br>
+                <strong>Date of Recovery:</strong> 22/01/2005<br>
+                <strong>Location of Recovery:</strong> Central London, UK.<br>
+                <strong>Current Status:</strong> In Storage. Accessible to Level 2 personnel or above.</p>
+                <p><strong>Item Description:</strong> A metallic folding chair which slides backwards when a human is trying to sit on it, thus making the victim fall on their rear. There is no detectable means of the chair's movement.<br>
+                <strong>Date of Recovery:</strong> 09/15/199█<br>
+                <strong>Location of Recovery:</strong> ██████ High school, Columbus, Ohio.<br>
+                <strong>Current Status:</strong> In Storage.</p>
+                <p><strong>Item Description:</strong> A diary with no name on the covers or pages, which reveals a seemingly endless amount of pages if attempted to be flipped to the previous page. Each diary entry gets increasingly ambiguous the more the reader flips the pages backwards. Longest recorded run is 7███ pages, where it states "Day ████. I have done it. It shall take us. all of us" Research about the ambiguous messages is currently ongoing.<br>
+                <strong>Date of Recovery:</strong> ██/██/████<br>
+                <strong>Location of Recovery:</strong> A home in ██████, Pennyslvania. The item was found on a desk in the inhabiting family's home. Memories of the recovery purged.<br>
+                <strong>Current Status:</strong> In Testing.</p>
+                <p><strong>Item Description:</strong> An opening in a basement wall which connected to an alternate but largely similar version of reality. The homeowner contacted local authorities after witnessing a person from the other reality exit through the wall. Local Foundation agents intercepted the call and dispatched a containment team.<br>
+                <strong>Date of Recovery:</strong> <a href="http://www.scp-wiki.net/inside-the-wall">08/27/18</a><br>
+                <strong>Location of Recovery:</strong> A single-family home in Lexington, Kentucky<br>
+                <strong>Current Status:</strong> Neutralized</p>
+                <p><strong>Item Description:</strong> A ████ brand soap bar which possesses a corrosive effect when used on human skin. The item has no effect on non-biological objects. The item also has no effect on domesticated animals.<br>
+                <strong>Date of Recovery</strong> 23/10/20██<br>
+                <strong>Location of Recovery</strong> ██████, UK.<br>
+                <strong>Current Status:</strong> In Storage.</p>
+                <p><strong>Item Description:</strong> A █████ brand mechanical watch that, when a bipedal animal of any species has a line of sight to it, will cause said bipedal animal to vomit.<br>
+                <strong>Date of Recovery:</strong> 04/10/20██.<br>
+                <strong>Location of Recovery:</strong> ██████, Canada.<br>
+                <strong>Current Status:</strong> An opaque box in storage; may be used for testing if authorized by level 2 personnel.</p>
+                <p><strong>Item Description:</strong> A plush doll of an elephant-cat hybrid. Subject will always remark the object is "Nice".<br>
+                <strong>Date of Recovery:</strong> 11/06/20██<br>
+                <strong>Location of Recovery:</strong> █████, Mexico<br>
+                <strong>Current Status:</strong> In Dr. Richard’s office.<br>
+                <em>Note: Nice. -Dr Richard</em></p>
+                <p><strong>Item Description:</strong> A wooden stick that, when measured in yards, shows 2.1 yards of length. When measured in metres, shows 1 metre of length. This is theoretically impossible.<br>
+                <strong>Date of Recovery:</strong> 02/25/2011<br>
+                <strong>Location of Recovery:</strong> ██████, Germany<br>
+                <strong>Current status:</strong> In storage.<br>
+                <em>Note: All measuring equipment has been double-checked. -Dr. █████</em></p>
+                <p><strong>Item Description:</strong> A Podium which gives the person standing behind it minor anxiety, whether or not anyone else is in the same room as them.<br>
+                <strong>Date of Recovery:</strong> 06/28/1999.<br>
+                <strong>Location of Recovery:</strong> █████ Center, ███████.<br>
+                <strong>Current Status:</strong> In storage.</p>
+                <p><strong>Item Description</strong>: A right-handed ██████ brand baseball glove with all construction materials composed of human tissue. DNA tests have concluded that the epidermis which stands in for the leather belongs to ██████████ █████████, ███ ███████, and ███████████ █████, all citizens of ███████ St. Houston, Texas. When a human inserts their hand into the baseball glove, it physically connects itself to the subject, becoming part of the body and replacing the hand. Amputation is the only form of removal.<br>
+                <strong>Date of Recovery</strong>: 3/15/2018<br>
+                <strong>Location of Recovery</strong>: The house of Little League Baseball coach ██████ ████, Houston, Texas.<br>
+                <strong>Current Status</strong>: Kept in chilled storage in the medical ward of Site-██.</p>
+                <p><strong>Item Description:</strong> A metal desk fan whose fan blade is capable of reaching speeds of █████ RPM when on the highest setting. The effect is linear, as the fan blade's speed increases at a constant rate of ████ RPM until reaching the top speed. All other settings have no anomalous properties. This effect allows for the fan to 'fly' around the area it is in.<br>
+                <strong>Date of Recovery:</strong> ██/██/19██<br>
+                <strong>Location of Recovery:</strong> ██████, Alabama.<br>
+                <strong>Current Status:</strong> In storage.</p>
+                <p><strong>Item Description:</strong> A Bosch washing machine which makes clothes dirtier instead of cleaning them.<br>
+                <strong>Date of Recovery:</strong> 21/5/2018<br>
+                <strong>Location of Recovery:</strong> ██████ Dry Cleaners<br>
+                <strong>Current Status:</strong> In storage.</p>
+                <p><strong>Item Description:</strong> A fully organic apple whose skin is invulnerable.<br>
+                <strong>Date of Recovery:</strong> 02/05/2015<br>
+                <strong>Location of Recovery:</strong> Discovered in the home of Mr. ████ when he was in the hospital for a tooth injury from attempting to bite the apple.<br>
+                <strong>Current Status:</strong> Insides rotted. Skin still remains in storage.</p>
+                <p><strong>Item Description:</strong> 20&nbsp;1 meter long glue gun refills. Objects regenerate while being used, consistent with how fast it's being used.<br>
+                <strong>Date of Recovery:</strong> 25/1/2018<br>
+                <strong>Location of Recovery:</strong> Room 318 in ██████ ████ K-8 school.<br>
+                <strong>Current Status:</strong> In storage.<br>
+                <em>Note: Anyone who needs hot glue is welcome to use these, there's a glue gun by the box they’re in. Just put them back. -Researcher Lime</em></p>
+                <p><strong>Item Description:</strong> The object appears to be a standard United States fire extinguisher, though in place of the text "Fire Extinguisher" is "Fire Distinguisher." When pointed at any item and the trigger mechanism is activated, the object will release a male voice which is described as "condescending" and determine what the item is.<br>
+                <strong>Date of Recovery:</strong> 03/28/20██<br>
+                <strong>Location of Recovery:</strong> ████████ High School located in Ohio.<br>
+                <strong>Current Status:</strong> In secure storage at Site-██.</p>
+                <p><strong>Item Description:</strong> A wooden leg prosthetic that would kick a subject when their backs are turned to it.<br>
+                <strong>Date of Recovery:</strong> 2/6/1978<br>
+                <strong>Location of Recovery:</strong> Stockholm, Sweden<br>
+                <strong>Current Status:</strong> In storage.</p>
+                <p><strong>Item Description:</strong> <span style="text-decoration: line-through;">13</span> 12 goldfish that can "swim" and breathe outside of water and sink and drown when put inside of water.<br>
+                <strong>Date of Recovery:</strong> 1/08/2019<br>
+                <strong>Location of Recovery:</strong> ███████ fair, Los Angeles, California.<br>
+                <strong>Current Status:</strong> In storage.</p>
+                <p><strong>Item Description:</strong> A toilet seat that lifts itself whenever it is unobserved.<br>
+                <strong>Date of Recovery:</strong> ██/██/████<br>
+                <strong>Location of Recovery:</strong> Woman's restroom at Site 11.<br>
+                <strong>Current Status:</strong> Swapped with a non-anomalous seat in the men's room.</p>
+                <p><strong>Item Description:</strong> A 60's era CRT television that plays "lost episodes" of television programmes aired prior to 1965. Several series are featured, with programmes airing as they appeared when they were first broadcast. The episodes are played on loop from oldest to newest. At this point in time, staff have not found a way to turn it off. Attempts to destroy the object remain unsuccessful.<br>
+                <strong>Date of Recovery:</strong> 17/08/2009<br>
+                <strong>Location of Recovery:</strong> ███████, England<br>
+                <strong>Current Status:</strong> In storage at site-█ (next to Dr. Spoon's office, for research.<br>
+                <em>Note: Several episodes known to be "lost" are missing from the loop. This implies that these still exist in a recorded form somewhere. - Dr. Spoon</em></p>
+                <p><strong>Item Description</strong> A DVD of the 1994 film Pulp Fiction. When the scene in which Uma Thurman's character overdoses on heroin is reached, viewers will experience symptoms in line with a heroin overdose, resulting in death.<br>
+                <strong>Date of Recovery</strong> 2/9/10<br>
+                <strong>Location of Recovery</strong> Los Angeles, California.<br>
+                <strong>Current Status</strong> In storage.</p>
+                <p><strong>Item Description:</strong> A globe that, when spun makes subjects feel as though they're currently on a rocking boat. Subjects often lose their balance because of this feeling. It is recommended that those who often experience sea sickness do not interact with this item. Feeling dissipates after 2-13 minutes. Where America is has been replaced by the text "I hate botes" [sic].<br>
+                <strong>Date of Recovery:</strong> 3/20/2019<br>
+                <strong>Location of Recovery:</strong> Earth, Texas.<br>
+                <strong>Current Status:</strong> Contained at Storage Site-██.</p>
+                <p><strong>Item Description:</strong> An invulnerable redwood tree. The branches and pines tie in knots outside direct observation.<br>
+                <strong>Date of Recovery:</strong> Unknown.<br>
+                <strong>Location of Recovery:</strong> ███████ █████████, Sacramento, California<br>
+                <strong>Current Status:</strong> Remaining in ███████ █████████, monitored by camera.</p>
+                <p><strong>Item Description:</strong> A small cloth "sling bag" full of clothes which, when swung at a person's head, will hit them with a force equal to a thrown rock.<br>
+                <strong>Date of Recovery:</strong> 3/22/2019<br>
+                <strong>Location of Recovery:</strong> ██████████ School, ██████ City, Cavite, Philippines<br>
+                <strong>Current Status:</strong> Contained at Site-25</p>
+                <p><strong>Item Description:</strong> A yellow graphite pencil that constantly levitates 0.9 meters off the ground. Additionally, it always points towards 54.5028° N, 3.1486° W, which is the town of Borrowdale, England.<br>
+                <strong>Date of Recovery:</strong> 7/11/2005<br>
+                <strong>Location of Recovery:</strong> Thomas Robinson High School in Tampa, Florida.<br>
+                <strong>Current Status:</strong> In storage.</p>
+                <p><strong>Item Description:</strong> A male giant anteater (<em>Myrmecophaga tridactyla</em>). Periodically, various species of the family <em>Formicidae</em> will appear in and emerge from any cracks and holes in a 1.5&nbsp;m radius from it.<br>
+                <strong>Date of Recovery:</strong> 03/02/2014<br>
+                <strong>Location of Recovery:</strong> Reid Park Zoo, Tucson, Arizona<br>
+                <strong>Current Status:</strong> In animal containment.</p>
+                <p><strong>Item Description:</strong> A set of 8 Matryoshka dolls with distorted internal geometries; the doll with the largest external dimensions features the smallest internal dimensions, while the doll with the smallest external dimensions features the largest internal dimensions. Objects were recovered placed inside one another in order of decreasing internal dimensions.<br>
+                <strong>Date of Recovery:</strong> 6/4/2002<br>
+                <strong>Location of Recovery:</strong> Leeds, United Kingdom<br>
+                <strong>Current Status:</strong> Objects were separated and placed into individual storage at Site 25.</p>
+                <p><strong>Item Description:</strong> 12 paper straws of unknown make, which cause whatever fluid they are inserted into to become identical to ████'█ brand sweet tea.<br>
+                <strong>Date of recovery:</strong> 4/11/2005<br>
+                <strong>Location of recovery:</strong> A small 750 square feet apartment in ███████████, FL.<br>
+                <strong>Current status:</strong> In storage.</p>
+                <p><strong>Item Description:</strong> A stainless steel spoon that only reflects the face of individuals whose names contain anagrams of the word "spoon".<br>
+                <strong>Date of Recovery:</strong> 02/01/2019<br>
+                <strong>Location of Recovery:</strong> The Home of Dr. Spoon.<br>
+                <strong>Current Status:</strong> Storage. Documentation contains photographs of the object dressed in a doll's lab coat with paper bow tie, with images taken at such an angle to show Dr. Spoon's face reflected in the object.</p>
+                <p><strong>Item Description:</strong> A plastic decorative skull that, when thrown, will change trajectory towards another person's face.<br>
+                <strong>Date of Recovery:</strong> 09/19/1998<br>
+                <strong>Location of Recovery:</strong> Civilian hotdog stand, ████, New Mexico<br>
+                <strong>Current Status:</strong> Storage.</p>
+                <p><strong>Item Description:</strong> A blue horseshoe magnet that is only attracted to non-magnetic materials.<br>
+                <strong>Date of Recovery:</strong> 4/20/2019<br>
+                <strong>Location of Recovery:</strong> Found in a dumpster behind a department store in Des Moines, Iowa.<br>
+                <strong>Current Status:</strong> In Dr. █████'s office.<br>
+                <em>Note: Can we do more research with this? It’s attracted to air and won’t stop floating. -Dr. █████</em></p>
+                <p><strong>Item Description:</strong> Windows.System.OntologicalException.<br>
+                <strong>Date of Recovery:</strong> 2016-11-03<br>
+                <strong>Location of Recovery:</strong> Microsoft Corporation Headquarters in Redmond, Washington.<br>
+                <strong>Current Status:</strong> Bug closed. Could not reproduce.</p>
+                <p><strong>Item Description:</strong> Two 10 x 6.5 x 5&nbsp;cm wooden jewelry boxes that, when both lids are closed, swap contents between the boxes.<br>
+                <strong>Date of Recovery:</strong> 1-6-2019<br>
+                <strong>Location of Recovery:</strong> One of the boxes was found in a thrift store in █████, Illinois. Its anomalous properties were observed when Researcher ███████ noticed that whatever he put in the box would vanish when closed, and reappear when closed and opened again. A GPS device was used to find the location of the other box in a nearby home.<br>
+                <strong>Current Status:</strong> Storage at Site-██, pending investigation for SCP status.</p>
+                <p><strong>Item Description:</strong> A toothbrush with a compulsory effect. People using it to brush their teeth will invariably hold the brush steady and instead intensely shake their heads.<br>
+                <strong>Date of Recovery:</strong> 17/5/1997<br>
+                <strong>Location of Recovery:</strong> At a residential home in Lidköping, Sweden.<br>
+                <strong>Current Status:</strong> In storage.</p>
+                <p><strong>Item Description:</strong> A blood bag that, when used, does not empty. The blood inside when tested shows a type of blood never before seen, researchers have labelled it Type-X. It can be used on any patient and it gains the properties of their own blood type.<br>
+                <strong>Date of Recovery:</strong> 21/3/1941<br>
+                <strong>Location of Recovery:</strong> A field hospital in Vichy-France.<br>
+                <strong>Current Status:</strong> In storage.</p>
+                <p><strong>Item Description:</strong> A graphite pencil, when used to write, instead forces the holder to produce a photorealistic drawing of a █████ brand audio speaker.<br>
+                <strong>Date of Recovery:</strong> ██/██/████<br>
+                <strong>Location of Recovery:</strong> ██████,██<br>
+                <strong>Current Status:</strong> In storage.</p>
+                <p><strong>Item Description:</strong> A coffee table that stubs a subject's right toe when not in direct line of sight.<br>
+                <strong>Date of Recovery:</strong> ██-██-2015<br>
+                <strong>Location of Recovery:</strong> █████████████, Oak Creek, Wisconsin<br>
+                <strong>Current Status:</strong> Stored at Site-██. If access is needed, contact Dr. ████████████</p>
+                <p><strong>Item Description:</strong> A notebook in which all drawings made on it appear to be governed by 2D physics. Drawings locomote as if they are in a liquid medium.<br>
+                <strong>Date of Recovery:</strong> 10/05/2019<br>
+                <strong>Location of Discovery:</strong> ████ ██████ college at ███████, █████<br>
+                <strong>Current Status:</strong> In storage.</p>
+                <p><strong>Item Description:</strong> A 7" vinyl copy of MC Hammer's 1990 album <em>Please Hammer, Don't Hurt 'Em</em> that generates an impenetrable, invisible force-field around it, roughly 3&nbsp;cm in radius from all points on the record. Replicas of the record based off of visual scans reveal that it contains the song "U Can't Touch This" looped 13 times.<br>
+                <strong>Date of Recovery:</strong> 12/02/2019<br>
+                <strong>Location of Discovery:</strong> A dumpster in ████, Ohio.<br>
+                <strong>Current Status:</strong> In storage.</p>
+                <p><strong>Item Description:</strong> An opaque, light blue liquid that, when drunk by any human, renders them unable to perceive shades of blue.<br>
+                <strong>Date of Recovery:</strong> 05/█/2007<br>
+                <strong>Location of Discovery:</strong> Abandoned chemistry lab, ██████, Wyoming.<br>
+                <strong>Current Status:</strong> In storage pending further research.</p>
+                <p><strong>Item Description:</strong> A Sony 1979 Walkman portable media player that only plays Earth, Wind, &amp; Fire's <em>September</em> on loop. Any human who hears the song within 5 meters will believe the date is September 21, 1978 until out of range.<br>
+                <strong>Date of Recovery:</strong>21/██/2000<br>
+                <strong>Location of Discovery:</strong> A flea market in Chicago, Illinois.<br>
+                <strong>Current Status:</strong> In storage at Site-15</p>
+                <p><strong>Item Description:</strong> A small set of wooden Russian nesting dolls, the largest marked "1.99" at the bottom. When putting the nesting dolls back inside one another, another smaller nesting doll appears in the smallest nesting doll.<br>
+                <strong>Date of Recovery:</strong> 05/09/2008<br>
+                <strong>Location of Discovery:</strong> In the "Miscellaneous Object" section of a Good Will.<br>
+                <strong>Current Status:</strong> In storage.</p>
+                <p><strong>Item Description:</strong> A 1968 Pontiac Ventura painted in an off-white color, which only has three wheels. Despite this, it remains evenly balanced, as if it has four wheels. Attempts to put a fourth wheel on result in the tire with the most wear to simply "fall off" if the car is moved, regardless if the lug nuts are tightened. Anomalous feature had gone unnoticed until Agent ████████ attempted to drive the car off the lot, at which point the right-rear wheel fell off.<br>
+                <strong>Date of Recovery:</strong> 04/14/1995<br>
+                <strong>Location of Discovery:</strong> "Mad Sam's Used Cars", Detroit, Michigan<br>
+                <strong>Current Status:</strong> Stored in Site-77 Sector-B Parking Garage.</p>
+                <p><strong>Item Description:</strong> A General Electric U25B Locomotive (Numbered 20█), wearing the paint scheme for the (defunct) Rock Island Line. The engine is capable of movement at low speeds (~10 mph/16 kph or less) without the need to start the engine. Was sold to the Foundation as it required an overhaul which RIL could not afford to do as a result of financial troubles. Overhaul was performed within six months of purchase by Foundation.<br>
+                <strong>Date of Recovery:</strong> 02/██/1966<br>
+                <strong>Location of Discovery:</strong> Chicago, Illinois<br>
+                <strong>Current Status:</strong> In-use at Site-45's Rail Depot<br>
+                <em>Note: It is unknown if 20█ had this anomalous property before or after it was rebuilt. Interviews with former owners/operators are inconclusive. 20█ underwent a second rebuild in 2009, and it retained the anomalous property after the overhaul was completed.</em></p>
+                <p><strong>Item Description:</strong> An M60 Machine Gun that will act as if jammed after firing exactly twelve (12) consecutive shots. The only way to clear the jam is to open the magazine cover and observe that there is no obstruction. Upon closing the magazine cover, the gun will fire again, provided there is nothing else fouling the firing sequence. If a burst of eleven (11) shots or less is fired, the gun will not jam, provided no dirt or debris enters the system.<br>
+                <strong>Date of Recovery:</strong> 8/14/1979<br>
+                <strong>Location of Recovery:</strong> ████████, South Africa<br>
+                <strong>Current Status:</strong> <span style="text-decoration: line-through;">Jammed</span> In Site 06 Weapon Storage.</p>
+                <p><strong>Item Description:</strong> A metallic spinning wheel about a meter in diameter, attached to a pedestal. The wheel spins with the power provided by the motor, which gets fuel from the spin of the wheel, violating the first and the second law of thermodynamics.<br>
+                <strong>Date of Recovery:</strong> 27-2-2011<br>
+                <strong>Location of Recovery:</strong> A laboratory located in Washington, USA<br>
+                <strong>Current Status:</strong> In display at the foundation physics research branch.</p>
+                <p><strong>Item Description:</strong> A tape measure with a seemingly infinite amount of measuring tape, numbered at every inch of length. At multiples of 5280 inches, the numbers restart from 1.<br>
+                <strong>Date of Recovery:</strong> 5/28/2000<br>
+                <strong>Location of Recovery:</strong> A Home Depot store in the UK.<br>
+                <strong>Current Status:</strong> In storage at Site-77.</p>
+                <p><strong>Item Description:</strong> A bottle of ███ █████ ██████ Lager that contains a liquid chemically similar to human sweat. Any amount emptied from the bottle is spontaneously refilled when the cap is replaced. Only one bottle out of a six-pack displayed this anomalous property.<br>
+                <strong>Date of Recovery:</strong> 11-10-2015<br>
+                <strong>Location of Recovery:</strong> █████ ████ ███████████ convenience store, Newton, MA<br>
+                <strong>Current Status:</strong> <span style="text-decoration: line-through;">In storage.</span> Missing, presumably stolen.</p>
+                <p><strong>Item Description:</strong> A CD copy of metalcore band A Day To Remember's "What Separates Me From You" which, when the listener listens to one of the songs from the album, replaces the man in the album art with the listener.<br>
+                <strong>Date of Recovery:</strong> 6/21/2012<br>
+                <strong>Location of Recovery:</strong> Birmingham, England.<br>
+                <strong>Current Status:</strong> General media storage.</p>
+                <p><strong>Item Description:</strong> A double-barreled shotgun with an over/under configuration, with the furniture made of pine wood. The gun lacks any markings, aside from a name scratched onto the upper-barrel near the break-action. The anomaly is that the name scratched into the side of the gun changes almost daily, and only does so when it is not observed directly. While there does not appear to be a pattern behind the name it selects, the gun has frequently chosen the names "Shelby", "Tony", "Arik" (<em>sic</em>), and "Bobby".<br>
+                <strong>Date of Recovery:</strong> 10/19/1918<br>
+                <strong>Location of Recovery:</strong> Abandoned trench near the French/Belgium border<br>
+                <strong>Current Status:</strong> Site-85 Firing Range</p>
+                <p><strong>Item Description:</strong> A 49-year-old Hispanic man. He can speak any language, even made up ones, but cannot read or write.<br>
+                <strong>Date of Recovery:</strong> 9-10-2003<br>
+                <strong>Location of Recovery:</strong> San Jose, California<br>
+                <strong>Current Status:</strong> Living at family home, but must stay in contact with The Foundation at all times.</p>
+                <p><strong>Item Description:</strong> An ████████ brand black microwave, which heats the center plate at a perfectly even rate, while not heating any area outside of this plate.<br>
+                <strong>Date of Recovery:</strong> 3-21-20██<br>
+                <strong>Location of Recovery:</strong> "Peculiar Pieces" store in Denver, Colorado<br>
+                <strong>Current Status:</strong> Kept in Site-██ cafeteria for personnel usage.</p>
+                <p><strong>Item Description:</strong> A nineteen-ninety-nine Window's Ninety-Eight computer that prohibits the user from using numbers. Pressing any of the number keys result in the number being spelled out. The computer will adjust wording to reflect on the addition of more "numbers". Device lacks a serial number.<br>
+                <strong>Date of Recovery:</strong> July Twenty-First, Nineteen-Ninety-Nine<br>
+                <strong>Location of Recovery:</strong> "Best Buy" located in Warner, New Hampshire<br>
+                <strong>Current Status:</strong> Located in Site-Eighty-Four <span style="text-decoration: line-through;">Break Room</span> Relocated to library. Not to be accessed unless requested directly.</p>
+                <p><strong>Item Description:</strong> A brown coffee mug of the ████ brand. Drinking from the mug's left (as of the handle) side causes any liquid to taste much warmer than usually, and drinking from its right side causes liquids to taste colder. This effect applies to all drinkable liquids, but it won't apply to liquids that are not meant to be put in a coffee mug, such as magma, snow, etc. However, the mug won't be damaged in any way by such liquids.<br>
+                <strong>Date of Recovery:</strong> 27-6-20██<br>
+                <strong>Location of Recovery:</strong> "Hoshe's Store", Washington DC.<br>
+                <strong>Current status:</strong> On Site-0█ cafeteria, for site director use only.</p>
+                <p><strong>Item Eggscription:</strong> An egg carton containing 8 eggs; when talking or writing about the egg carton, the subjeggct's communications will become scrambled with egg puns of questionable quality. The anomelet does not function while eggs are outside of the yolk of the carton.<br>
+                <strong>Date of Poaching:</strong> 11-8-2012<br>
+                <strong>Location of Poaching:</strong> "FoodChute", Columbia, South Crackalina.<br>
+                <strong>Current status:</strong> In Site-303's cafeggteria.</p>
+                <p><strong>Item Description:</strong> A white, quilted, coil mattress, measuring 135&nbsp;cm by 190&nbsp;cm. All tags meant for instruction or identification have an absence of text or symbols. All attempts to fit a fitted sheet onto the bed, regardless of dimensions of the sheet or number of personnel participating, will result in at least one corner failing to fit.<br>
+                <strong>Date of Recovery:</strong> 01-19-2013<br>
+                <strong>Location of Recovery:</strong> London, Ontario, Canada<br>
+                <strong>Current Status:</strong> Permanent storage at Site-19.</p>
+                <p><strong>Item description:</strong> A wooden box with the drawing of the sun on it. All subjects exposed to the box, as in standing closer than 3 meters to it, touching it or looking at it for more than 5 continuous minutes, will report the feeling that they are watching the sun itself. They report feeling unusual heat, generating from the box, and the drawing looking exactly as a colored picture of the real sun. The box lacks any other unusual, anomalous effects.<br>
+                <strong>Date of Recovery:</strong> 7-6-2012<br>
+                <strong>Location of Recovery:</strong> [REDACTED], USA<br>
+                <strong>Current status:</strong> Used as decoration on Dr. ███'s office, Site-██</p>
+                <p><strong>Item Description:</strong> A pink colored DVD with no visible markings to identify any previous owner. When viewed the DVD appears unwritten. When played on a DVD player, an image of English actor Benedict Cumberbatch appears spinning on a pink background with the song <em>Kiss Me Thru The Phone</em> by Soulja Boy playing. The video will play on repeat until DVD is removed.<br>
+                <strong>Date of Recovery:</strong> 14/2/20██<br>
+                <strong>Location of Recovery:</strong> A dumpster behind a record store in ███ █████████, CA<br>
+                <strong>Current Status:</strong> Shredded on 14/2/20██<br>
+                <em>Note: I ordered it to be destroyed after the first three hours - Dr. Landon</em></p>
+                <p><strong>Item Description:</strong> A rogue US Military reconnaissance satellite with the designation RD-███ █. On the 30/██/200█ at 20:21 UTC the AFSC (Air Force Space Command) lost contact with RD-███ █, though its position was still being monitored by ground satellites. AFSC scientists attempted to re-establish radio contact and regain control of the satellite, but failed. 3 hours later at 23:25 UTC the satellite began sending coded signals back to ground control. These were then deciphered to reveal the message "Hippity Hoppity this satellite is our property". The US Military immediately suspected an expertly performed hacking, and the Foundation were contacted to help with further investigations.<br>
+                <strong>Date of Recovery:</strong> 30/05/201█ at 23:25 UTC<br>
+                <strong>Location of Recovery:</strong> Some 450 Km somewhere above the southern pacific ocean.<br>
+                <strong>Current Status:</strong> As of 5/██/201█, the satellite completely deviated from its current orbit. It now resides at 526 Km above Earth, with an orbital inclination of 25<sup>°</sup> relative to Earth's equatorial plane. Currently being monitored and tracked by ground satellites at Site-<strong>[REDACTED]</strong>. The hacker(s) have not been identified, though signal tracing determines that the hacking originated from somewhere in the state of South Australia, Australia.</p>
+                <p><strong>Item Description:</strong> A red balloon that cannot be popped by any <span style="text-decoration: line-through;">known means</span> nonanomalous means.<br>
+                <strong>Date of Recovery:</strong> 28-05-2019<br>
+                <strong>Location of Recovery:</strong> Found jammed in the turbine of a downed commercial airplane in Mexico.<br>
+                <strong>Current Status:</strong> Popped. Remains are nonanomalous.</p>
+                <p><strong>Item Description:</strong> A pair of blue skinny jeans of an unknown brand. When worn, its pockets anomalously fills with sand, giving the wearer an urge to throw the sand into someone's face while yelling, "Pocket sand!"<br>
+                <strong>Date of Recovery:</strong> 28-05-2019<br>
+                <strong>Location of Recovery:</strong> █████████, CA<br>
+                <strong>Current Status:</strong> Missing</p>
+                <p><strong>Item Description:</strong> A drawing of a <span style="color: red">r</span><span style="color: orange">a</span><span style="color: yellow">i</span><span style="color: green">n</span><span style="color: blue">b</span><span style="color: indigo">o</span><span style="color: purple">w</span> in crayon. Any instances of the word <span style="color: red">r</span><span style="color: orange">a</span><span style="color: yellow">i</span><span style="color: green">n</span><span style="color: blue">b</span><span style="color: indigo">o</span><span style="color: purple">w</span> will be colorized similarly to the drawing if appearing in a sentence that mentions the drawing. Personnel report a similar effect when the drawing is discussed verbally, found to be caused by [REDACTED CLEARANCE LEVEL 5/PATAPHYSICS].<br>
+                <strong>Date of Recovery:</strong> 3/3/2003<br>
+                <strong>Location of Recovery:</strong> Wizard Island, OR<br>
+                <strong>Current Status:</strong> Lost in a fire, infohazardous effect still present.</p>
+                <p><strong>Item Description:</strong> A blue IPhone 6 Plus. If the battery goes below 50% charge it will begin to vibrate violently without the vibration motor being activated, and will continue to vibrate even after the battery reaches 0% charge.<br>
+                <strong>Date of recovery:</strong> 10/8/2017<br>
+                <strong>Location of Recovery:</strong> Cupertino, California<br>
+                <strong>Status:</strong> Incineration Approved by Dr. █████████ on 26/5/2019<br>
+                <em>Note: Stop making inappropriate remarks about the item please, be professionals - Dr. █████████</em></p>
+                <p><strong>Item Description:</strong> A simple clay pot painted with unknown writing thought to be a derivative of Swahili. When broken or smashed, the object will dissipate into a large swarm of flies recognized as the genus <em>Glossina</em> (commonly known as tsetse flies). The swarm will then press together into the shape of the original, undamaged pot and reform.<br>
+                <strong>Date of Recovery:</strong> 06/12/1979<br>
+                <strong>Location of Recovery:</strong> ██████, Tanzania<br>
+                <strong>Current Status:</strong> In Storage</p>
+                <p><strong>Item Description:</strong> A marble that can only be perceived as two marbles<br>
+                <strong>Date of Recovery:</strong> 9/21/2019<br>
+                <strong>Location of Recovery:</strong> Dr. Smith's personal marble collection<br>
+                <strong>Current Status:</strong> On display in Dr. Smith's office</p>
+                <p><strong>Item Description:</strong> A member of the Alpheidae family of animals (commonly referred to as pistol shrimp) with firearms of an unknown make and model instead of claws.<br>
+                <strong>Date of Recovery:</strong> 9/22/2019<br>
+                <strong>Location of Recovery:</strong> Atlantic Ocean<br>
+                <strong>Current Status:</strong> In Reinforced aquatic anomaly containment unit in site-██</p>
+                <p><strong>Item Description:</strong> A document describing "spontaneous pattern annihilation," a phenomenon that has not been observed in reality.<br>
+                <strong>Location of Recovery:</strong> Site-02<br>
+                ████████████ Department<br>
+                <strong>Date of Recovery:</strong> 2018-06-01 <sub>Caution: [DATA CORRUPTED]ard</sub><br>
+                <strong>Item Description:</strong> A document describing spontaneous pattern annihilation," a phenomenon that <sub>tic</sub> has not been observed in reality and never will be observed in any reality where reality is real. <sup>A+B=MC2</sup><br>
+                <strong>Current Srtatus:</strong> So you j ust do whatever they tell you?<br>
+                <strong>Current Status:</strong> Storage<br>
+                <em>Quote by ██ Floyd - “Can someone else fix the memetic scrambling in the data please? This is the third time I’ve had to sort through corrupted duplicates for this single entry in a month. That can’t be a coincidence! This stupid document is supposed to be harmless! For Gods sake if pataphysics doesn’t take a look at this bloody paperwork soon I’m going to [DATA EXPUNGED]”</em><br>
+                <sup><strong><tt>ehazmëm</tt></strong></sup></p>
+                <p>Cont<strong>ainme</strong> P<strong>ro:</strong> NULL.cosma<br>
+                <tt>A+∞=?</tt></p>
+                <p><span style="color: blue"><span style="text-decoration: underline;">ANTI-MEMETIC LOCK ENGAGED</span></span></p>
+                <p><span style="color: blue"><em>(<strong>In my bonds I brand a ring of seven singing scythes. With my cup I drink the day and think of dying lives. In my bonds I brand a ring of seven singing scythes. With my cup I drink the day and think of dying lives. In my bonds I brand a ring of seven singing scythes. With my cup I drink the day and think of dying lives.</strong>)</em></span></p>
+                <p><span style="color: blue">• <strong>Item Description</strong> ~ 2 entries detailing a document describing "spontaneous pattern annihilation,” including the original file and an anomalously generated false duplicate. Both had been discovered to have been corrupted by a previously unknown memetic agent and a debilitating cognitohazard. This effect is now known to have originated from the document both detailed, and has spread to most known files regarding the item.</span></p>
+                <p><span style="color: blue">• <strong>Date of Incident</strong> ~ [MEMELOCKED/CLEARANCE REQUIRED]</span></p>
+                <p><span style="color: blue">• <strong>Location of Recovery</strong> ~ N/A</span></p>
+                <p><span style="color: blue">• <strong>Current Status</strong> ~ Neutralized. <em>NOTE: Memetic hazards and cognitohazards within the documents contained in these entries have been thoroughly neutralized and are safe for viewing by foundation personnel. All nonrelated files regarding this item except [MEMELOCKED/CLEARANCE REQUIRED] are to be terminated. The termination of the item in question is pending approval. The corrupted files in their non memetic forms will remain untouched in this database so further study may be performed. Foundation personnel affected by these memetic effects have been administered amnestics. Personnel without Level 3 Clearance or higher not given proper authorization are prohibited from research into the item. Investigation into foundation researchers [MEMELOCKED/CLEARANCE REQUIRED] and [MEMELOCKED/CLEARANCE REQUIRED] in the foundation ████████████ Department have been initiated. - [MEMELOCKED/CLEARANCE REQUIRED], Director of Foundation Pataphysics</em></span></p>
+                <p><span style="color: blue"><em><strong>(Break the scythe upon my knee and burn the cups of gold, sing and dance and die in vain and howl to moons untold.)</strong></em></span></p>
+                <p><span style="color: blue"><span style="text-decoration: underline;">END ANTI-MEMETIC LOCK</span></span></p>
+                <h6 id="toc0"></h6>
+                <p><strong>Item Description:</strong> A life-sized doll filled with interstellar particulate matter and trace amounts of metallic hydrogen. The item mimics the appearance of <a href="/scp-4519">the late astronomer Carl Edward Sagan</a>.<br>
+                <strong>Date of Recovery:</strong> 1996/12/21<br>
+                <strong>Location of Recovery:</strong> Fred Hutchinson Research Center, Seattle, Washington<br>
+                <strong>Recovery Log:</strong> On the morning after Carl Sagan's death, mortuary technicians noticed Sagan's body had gone missing. Law enforcement dispatched on-site reported that a person or group of persons had stolen and replaced the body, discovering the doll alongside a Freedom From Religion brochure. Foundation agents later released a cover story proposing that the incident was a practical joke.</p>
+                <p>For the ensuing two months, Sagan's cadaver could not be located. To mitigate distress within the Sagan family, Foundation agents planned a necessary cover-up funeral. On February 27, 1997, the Amnestics Department orchestrated a secular public memorial service for Carl Sagan's life. Throughout the service, personnel posing as funerary staff dispersed a specialized gaseous Class-E/W "Solace" a/mnestic cocktail. As a result, persons attending the service had memories and feelings associated with melancholy and grief replaced with a reinforced mass fondness for the late Sagan.<br>
+                <strong>Current Status:</strong> Item is contained within a shrine to Carl Sagan at Site-64.</p>
+                <p><strong>Item Description:</strong> A worn dish-cloth with an effective mass of 0 grams, which is unaffected by gravitation. The composition of the cloth has been analyzed and found to be non-anomalous fabric. The cloth can otherwise be manipulated as typical, despite acting as if it were in a microgravity environment.<br>
+                <strong>Date of Recovery:</strong> 3/08/2018<br>
+                <strong>Location of Recovery:</strong> SpaceX Falcon 9 Booster, post-landing. No such object was included in the flight's manifest.<br>
+                <strong>Current Status:</strong> In storage.</p>
+                <p><strong>Item Description:</strong> He's an adorable little ████-brand trainer that makes people communicate about him as if he's a cute animal of some sort.<br>
+                <strong>Date of Recovery:</strong> 13/06/2019<br>
+                <strong>Location of Recovery:</strong> ████████, England<br>
+                <strong>Current Status:</strong> In a desk drawer in Dr. ███████'s office.<br>
+                <em>Note: I've named him Jerry. Also, he likes to attack other, less worthy shoes. - Dr. ███████</em></p>
+                <p><strong>Item Description:</strong> A small plastic button colored red, that lights up when pressed. Subsequently, smooth jazz permeates the room from an unidentified source.<br>
+                <strong>Date of Recovery:</strong> 28/09/2019<br>
+                <strong>Location of Recovery:</strong> A pawn shop in Windom, Minnesota<br>
+                <strong>Current Status:</strong> Sitting on Dr. ██████'s desk.<br>
+                <em>Note: Stop taking my button. The jazz helps me work. - Dr. ██████</em></p>
+                <p><strong>Item Description:</strong> A black plastic domino with one white pip on each side. The domino can only be knocked over by a human index finger, and it always falls backwards, making it almost useless as a domino.<br>
+                <strong>Date of Recovery:</strong> 09/09/19██<br>
+                <strong>Location of Recovery:</strong> A toy store in Vicksburg, Mississippi, on top of a full box of normal dominoes<br>
+                <strong>Current Status:</strong> In storage. The normal dominoes were placed in the Site-19 break room after examination.</p>
+                <p><strong>Item Description:</strong> <span style="text-decoration: line-through;">Twenty</span> Nineteen sheets of construction paper that change color every 10 minutes. The papers can only be damaged if cut with a pair of safety scissors. If a sheet of paper is cut into pieces one tenth of its original size, the paper becomes "stuck" on whatever color it last displayed and no longer shows any anomalous properties.<br>
+                <strong>Date of Recovery:</strong> ██/██/2017<br>
+                <strong>Location of Recovery:</strong> ███████ Elementary School in ████ ██████, Kentucky<br>
+                <strong>Current Status:</strong> In storage.</p>
+                <p><strong>Item Description:</strong> A USB flashdrive that becomes invisible when held in the hand. After leaving the hand, it becomes visible again. It contains no data and any files saved to it are unrecoverable.<br>
+                <strong>Date of Recovery:</strong> 04/10/2019<br>
+                <strong>Location of Recovery:</strong> ██████████████ Forest, ██°██′██″N ██°██′██″W<br>
+                <strong>Current Status:</strong> In Storage<br>
+                <em>Note: Worthless piece of junk deleted my backups — Agent Greg</em></p>
+                <p><strong>Item Description:</strong> A no book no that no when no described no will no put no the no word no ‘no’ no in no between no of no every no word no and no will no replace no numbers no with no the no word no ‘no’. No the no remains no of no the no book no retain no the no same no anomalous no properties.<br>
+                <strong>Date of Recovery:</strong> No No/No No/No No No No<br>
+                <strong>Location of Recovery:</strong> A no Library no in no the no Philippines.<br>
+                <strong>Current Status:</strong> Incinerated<br>
+                <em>Note: Thank [EXPLETIVE]. - Dr. ███</em></p>
+                <p><strong>Item Description:</strong> A correction tape that will change the colour of the tape to black if used on the word ‘white’.<br>
+                <strong>Date of Recovery:</strong> 8/10/2019<br>
+                <strong>Location of Recovery:</strong> In a shut down school in ██████.<br>
+                <strong>Current Status:</strong> In Storage<br>
+                <em>Note: Ironic. -Dr. ███</em></p>
+                <p><strong>Item Description:</strong> A standard working Foundation computer entirely made of various types of cheeses that immediately transforms all electronics in 30&nbsp;cm radius into cheese. The affected electronics will not lose their functionality despite being made of cheese.<br>
+                <strong>Date of Recovery:</strong> 10/10/2019<br>
+                <strong>Location of Recovery:</strong> Dr. ██████████’s office located in Site-19 Facility 23<br>
+                <strong>Current Status:</strong> In Storage<br>
+                <em>Note: Rosen, why couldn’t you fix my computer like a normal person? - Dr. ██████████</em></p>
+                <p><strong>Item Description:</strong> A standard Target franchise uniform that when being worn will make the wearer believe they work for the Walmart franchise. Wearers will then proceed to move in the direction of the nearest Walmart branch, regardless of the conditions in the aforementioned direction. If the location is met, then the wearer will begin to work as if they were an employee (stocking shelves, operating registers, helping customers, etc). Effects will wear off roughly 5-10 minutes when removing the uniform.<br>
+                <strong>Date of Recovery:</strong> 16/10/19<br>
+                <strong>Location of Recovery:</strong> An air vent inside of a Montana Target location's storage room.<br>
+                <strong>Current Status:</strong> Incinerated</p>
+                <p><strong>Item Description:</strong> A minor indie game which has a variable "cooldown" mechanic that, when reduced below zero actually causes it's effect before activation. Results in time-loops and has a slight statistical effect to enforce this. Anomalous section of code isolated, removed and replaced with non-anomalous version.<br>
+                <strong>Date of Recovery:</strong> 24/01/2003<br>
+                <strong>Location of recovery:</strong> An office building in London, now demolished and replaced for unrelated reasons, see records for details.<br>
+                <strong>Current</strong>Primary copy stored in the causal research division's hardened databank for research purposes.<br>
+                <em>Not as usefull as it may seem, gets exponentially harder to set up beyond a few seconds and throws an error message if activation is forced from a more distant causal system while in a situation unsuited for time-loops. Hmm, that alone could be pretty useful, some sort of measurement system? Research needed. -Dr. Hengzel Baker</em></p>
+                <p><strong>Item Description:</strong> An anomalous bank account which is capable of changing the deposited currency into a different currency. The altered currency was discovered to be replaced with the closest form; the type of which is determined by the heritage of the depositor.<br>
+                <strong>Date of Recovery:</strong> 4/12/2007<br>
+                <strong>Location of Recovery:</strong> Bank of Forest, Forest, Mississippi, USA. The owner whom had originally setup the account was identified as Warren Cooper, and was found dead five (5) days before the discovery of the anomaly. Warren was known to collect abundances of unique forms of cash.<br>
+                <strong>Current Status:</strong> Deleted</p>
+                <p><strong>Item Description:</strong> A drawing of a triangle with two right angles on a white board in permanent marker.<br>
+                <strong>Date of Recovery:</strong> 3/03/2003<br>
+                <strong>Location of Recovery:</strong> In an abandoned school in ████, New Zealand.<br>
+                <strong>Current Status:</strong> In Storage<br>
+                <em>Note: The whiteboard is safely in storage, but the triangle still doesn’t make sense! -Dr.██</em></p>
+                <p><strong>Item Description:</strong> Two wild morph bearded dragons (Pogona vitticeps) which have sociality comparable to domesticated dogs, becoming lethargic and depressed when separated from social contact and stimulation.<br>
+                <strong>Date of Recovery:</strong> 3/08/1990<br>
+                <strong>Location of Recovery:</strong> In an abandoned reptile breeding facility, in ███ ██, Texas.<br>
+                <strong>Current Status:</strong> Being held together in a 75 gallon terrarium with proper husbandry at Low-Maintenance Animal Storage Site ███.</p>
+                <p><strong>Item Description:</strong> A fragment of space rock which relocates via teleportation to specific Foundation sites every time a new anomaly is discovered.<br>
+                <strong>Date of Recovery:</strong> 12/10/2000<br>
+                <strong>Location of Recovery:</strong> The right wing of Lunar Site-20.<br>
+                <strong>Current Status:</strong> Kept on display at its current location, Site-112.</p>
+                <p><strong>Item Description:</strong> A size M forest camouflage T-shirt that causes anyone to wear it to believe they are invisible. Subjects wearing the shirt are reported to say things about how they cannot be seen. This anomalous effect only manifests when the shirt is worn as the outermost layer of clothing.<br>
+                <strong>Date of Discovery:</strong> 2/6/2005<br>
+                <strong>Location of discovery:</strong>██████, United States of America<br>
+                <strong>Current Status:</strong> Kept in low-tier anomalous storage at Site-██</p>
+                <p><strong>Item Description:</strong> A paperback copy of the book <em>The Things They Carried</em> by Tim O'Brien. Whenever someone reads the first chapter, they become emotionally attached to the book and refuse to let it go. The only way to remove the effect is through amnestics.<br>
+                <strong>Date of Recovery:</strong> ██/██/████<br>
+                <strong>Location of Recovery:</strong> Uninhabited portion of the Sahara Desert, Algeria<br>
+                <strong>Current Status:</strong> In Dr. ████'s office.</p>
+                <p><strong>Item Description:</strong> A species of the Order Carnivora in which males resemble wild canines and females resemble wild cats.<br>
+                <strong>Date of Recovery:</strong> ██-██-2018<br>
+                <strong>Location of Recovery:</strong> Amazon Rainforest, near Manaus, Brazil<br>
+                <strong>Current Status:</strong> In specialized animal containment, search teams have been dispatched to locate remaining wild instances.</p>
+                <p><strong>Item Description:</strong> An anomalous anomaly. The anomalous properties of the anomaly are unknown.<br>
+                <strong>Date of Recovery:</strong> Anomalous<br>
+                <strong>Location of Recovery:</strong> Anomalous<br>
+                <strong>Current Status:</strong> Anomalous</p>
+                <p><strong>Item Description:</strong> Two panes of glass that act as a portal for light. When pane-A is viewed it appears to display the image expected to be seen through pane-B and vice versa<br>
+                <strong>Date of Recovery:</strong> ██-██-2019<br>
+                <strong>Location of Recovery:</strong> An abandoned house located in [REDACTED] used as windows<br>
+                <strong>Current Status:</strong> In Site 19 storage</p>
+                <p><strong>Item Description:</strong> A matchbox containing 100 matches which, when lit, make the person holding the match want to set fire to someone's hair.<br>
+                <strong>Date of Recovery:</strong> █/██/20██<br>
+                <strong>Location of Recovery:</strong> A convenience store in ████████, Ireland<br>
+                <strong>Current Status:</strong> In a drawer in Dr. █████'s office<br>
+                <em>Note: I don't want anyone trying to set fire to my beard, it cost $70 to get it like this - Dr. █████</em></p>
+                <p><strong>Item Description:</strong> 220g of sugar which, when dissolved in water, produce an air-spread effect of<br>
+                accelerated energy and BPM of the heart. When digested, the user generally feels happier than before. Source of more of this anomalous item have been found, but not easy to obtain.<br>
+                <strong>Date of Recovery:</strong> 16-11-2013<br>
+                <strong>Location of Recovery:</strong> ████████ Residence, England<br>
+                <strong>Current Status:</strong> Kept in a locker at Site-50, provisional field usage approved in select circumstances by Foundation Overwatch.<br>
+                <em>Note: Family reported they had bought this pack of sugar from a shop that also contained ██ bottles of <a href="http://www.scp-wiki.net/scp-207">SCP-207.</a> Links between this item and SCP-207 are ongoing.</em></p>
+                <p><strong>Item Description:</strong> A blue plastic comb, roughly 5 inches long, with 16 bristles. Upon use, it instantly removes hair knots, matting, and tangles.<br>
+                <strong>Date of Recovery:</strong> 01/23/19<br>
+                <strong>Location of Recovery:</strong> Tuscaloosa, Alabama<br>
+                <strong>Current Status:</strong> In Storage.</p>
+                <p><strong>Item Description:</strong> A transportable cooler manufactured by the Igloo company which spontaneously dispenses a large abundance of flames when opened. Objects within proximity of this manifestation may catch fire regardless of material flammability. Anomaly's effects diminish in temperatures of -7°C or lower.<br>
+                <strong>Date of Recovery:</strong> 04-15-2008<br>
+                <strong>Location of Recovery:</strong> Tybee Island, Georgia, USA.<br>
+                <strong>Current Status:</strong> In Site-56's freezer.</p>
+                <p><strong>Item Description:</strong> A 12" Record of the 4th studio album <em>Ghost in the Machine</em> by the English band The Police that cause the person who placed the record on the turn table to start singing in the exact voice of lead singer Gordon Sumner or each song.<br>
+                <strong>Date of Recovery:</strong> 11/1/1982<br>
+                <strong>Location of Discovery:</strong> Dumpster outside of A&amp;M Record Headquarters, Santa Monica, California<br>
+                <strong>Current Status:</strong> Accidentally made unplayable on 2/2/1984 after <span style="text-decoration: line-through;">SOMEONE</span> a researcher started to scratch the disc then snapped it. Pieces no longer show the anomalous property.<br>
+                <em>Notes:I TOLD YOU NOT TO SCRATCH THE DAMN DISC DR. MARTIAN, I SWEAR TO GOD - Dr. Andrews</em></p>
+                <p><strong>Item Description:</strong> A calculator with the answer to 0÷0 on it.<br>
+                <strong>Date of Recovery:</strong> 06-02-2011<br>
+                <strong>Location of Recovery:</strong> Third floor of the University of Barcelona, Barcelona, Spain.<br>
+                <strong>Current Status:</strong> In storage.</p>
+                <p><strong>Item Description:</strong><sup class="footnoteref"><a id="footnoteref-1" href="javascript:;" class="footnoteref" onclick="WIKIDOT.page.utils.scrollToReference('footnote-1')">1</a></sup><br>
+                <strong>Date of Recovery:</strong><sup class="footnoteref"><a id="footnoteref-2" href="javascript:;" class="footnoteref" onclick="WIKIDOT.page.utils.scrollToReference('footnote-2')">2</a></sup><br>
+                <strong>Location of Recovery:</strong><sup class="footnoteref"><a id="footnoteref-3" href="javascript:;" class="footnoteref" onclick="WIKIDOT.page.utils.scrollToReference('footnote-3')">3</a></sup><br>
+                <strong>Current Status:</strong><sup class="footnoteref"><a id="footnoteref-4" href="javascript:;" class="footnoteref" onclick="WIKIDOT.page.utils.scrollToReference('footnote-4')">4</a></sup></p>
+                <p><strong>Item Description:</strong> A Polaroid photograph of a common sunflower that gives those who view it a sense of nostalgia, regardless of if they have seen a sunflower or a Polaroid photograph in their life.<br>
+                <strong>Date of Recovery:</strong> 04-16-2002<br>
+                <strong>Location of Recovery:</strong> A thrift shop in Manchester, New Hampshire<br>
+                <strong>Current Status:</strong> Framed in Dr. █████’s office.</p>
+                <p><strong>Item Description:</strong> A framed photograph of <a href="http://www.scp-wiki.net/scp-173">SCP-173</a> in its containment chamber. The image shows SCP-173 teleporting around its chamber regardless of it someone is viewing it or not. The object also remains unchanged if SCP-173 is out of its containment chamber.<br>
+                <strong>Date of Recovery:</strong> ██-██-████<br>
+                <strong>Location of Recovery:</strong> Pawn shop in ██████████, ████████<br>
+                <strong>Current Status:</strong> In storage at Site-19.</p>
+                <p><strong>Item Description:</strong> A “That’s Easy” button that when pressed, plays the sound expected except the point of origin is two feet above the button itself.<br>
+                <strong>Date of Recovery:</strong> 04-██-████<br>
+                <strong>Location of Recovery:</strong> A Staples brand store located in ████████, Maryland<br>
+                <strong>Current Status:</strong> <span style="text-decoration: line-through;">In storage.</span> Currently in possession of Researcher █████</p>
+                <p><strong>Item Description:</strong> A metal fishing hook that, when submerged in any kind of liquid, will pull a tiny old leather boot. The subject that placed the hook in the water will say “Damn it, not again!” upon seeing the boot. The caught boot will disappear 2 days after its date of manifestation.<br>
+                <strong>Date of Recovery:</strong> ██-██-████<br>
+                <strong>Location of Recovery:</strong> A bait and tackle shop in ████, Massachusetts<br>
+                <strong>Current Status:</strong> In storage.</p>
+                <p><strong>Item Description:</strong> A stovepipe hat and fake beard resembling those of American President Abraham Lincoln that make those who wear it perfectly recite speeches from the aforementioned president. The subject’s voice anomalously changes to what historians believe Abraham Lincoln sounded like.<br>
+                <strong>Date of Recovery:</strong> ██-██-████<br>
+                <strong>Location of Recovery:</strong> American history museum in ███████, Georgia<br>
+                <strong>Current Status:</strong> In storage.</p>
+                <p><strong>Item Description:</strong> A shoebox diorama that alternates between a fantasy scene where a ragtag group of adventurers are fighting a dragon and a sci-fi scene where astronauts fight a giant alien. Paper cutouts of <a href="http://www.scp-wiki.net/scp-111">SCP-111</a> and <a href="http://www.scp-wiki.net/scp-1230">SCP-1230-1</a> can be found in the fantasy scene, and paper cutouts of <a href="http://www.scp-wiki.net/scp-2006">SCP-2006</a> in the form of Ro-Man and <a href="http://www.scp-wiki.net/scp-811">SCP-811</a> dressed like and alien can be seen in the sci-fi scene.<br>
+                <strong>Date of Recovery:</strong> ██-██-████<br>
+                <strong>Location of Recovery:</strong> Suburban home in ███████, ████████. Child used it for a project at their school.<br>
+                <strong>Current Status:</strong> In possession of Researcher █████.</p>
+                <p><strong>Item Description:</strong> A torn whoopee cushion that causes any person who sits on it to anomalously flatulate. Only living humans can activate its effect.<br>
+                <strong>Date of Recovery:</strong> 04-01-████<br>
+                <strong>Location of Recovery:</strong> Joke prop store in ███████, ██████████<br>
+                <strong>Current Status:</strong> In storage.</p>
+                <p><strong>Item Description:</strong> A 10” by 8” American flag that quietly plays the United States national anthem on the Fourth of July. The music becomes louder when held and waved.<br>
+                <strong>Date of Recovery:</strong> 07-04-████<br>
+                <strong>Location of Recovery:</strong> P████ ████ brand store in █████████, ███████████<br>
+                <strong>Current Status:</strong> Placed in Site-19’s break room.</p>
+                <p><strong>Item Description:</strong> A brick that disappears when thrown, but will appear near the person who threw it five minutes later.<br>
+                <strong>Date of Recovery:</strong> 12-03-████<br>
+                <strong>Location of Recovery:</strong> ███████, ██████<br>
+                <strong>Current Status:</strong> Hasn’t returned after ██ tests involving its anomalous properties.</p>
+                <p><strong>Item Description:</strong> A handmade drawn Mother’s Day card that anomalously says “love you mom” in a child’s voice when opened. No sound devices are present in the card. If any mother reads the card or hears the voice message, they will become happy.<br>
+                <strong>Date of Recovery:</strong> 05-13-2012<br>
+                <strong>Location of Recovery:</strong> ████████, Louisiana<br>
+                <strong>Current Status:</strong> In storage.</p>
+                <p><strong>Item Description:</strong> A living goldfish made entirely out of gold. It does not require food, but does require water to remain in an active state. In its active state, it swims around, interacting with whatever it’s provided with in its space. In its inactive state, it looks like a gold model of a goldfish.<br>
+                <strong>Date of Recovery:</strong> ██-██-████<br>
+                <strong>Location of Recovery:</strong> █████, China<br>
+                <strong>Current Status;</strong> Currently owned by Researcher ██████.</p>
+                <p><strong>Item Description:</strong> A wooden model of an “M” that completely convinces people it’s a “W” when it’s flipped over. The same effect happens when the “W” is turned over to make a “M”.<br>
+                <strong>Date of Recovery:</strong> ██-██-████<br>
+                <strong>Location of Recovery:</strong> ███████, ████████<br>
+                <strong>Current Status:</strong> In storage.</p>
+                <p><strong>Item Description:</strong> A small rubber bouncy ball that anomalously produces a cartoon “boing” sound when it bounces off any surface. The volume of the sound depends on the amount of force applied to the bounce of the ball.<br>
+                <strong>Date of Recovery:</strong> ██-██-████<br>
+                <strong>Location of Recovery:</strong> Convenience store in Lynn, Massachusetts<br>
+                <strong>Current Status:</strong> In storage.</p>
+                <p><strong>Item Description:</strong> A fire extinguisher that contains an infinite amount of soft marshmallow fluff rather than nitrogen or carbon dioxide.<br>
+                <strong>Date of Recovery:</strong> 07-18-2003<br>
+                <strong>Location of Recovery:</strong> Burnt down suburban home in ████████, █████████<br>
+                <strong>Current Status:</strong> In storage.<br>
+                <strong>Notes:</strong> <em>On-site personnel are not to use this object as a candy machine. I get it that some people here really like marshmallow, but have some self control guys. The Foundation isn’t run by children. - Site Director ██████.</em></p>
+                <p><strong>Item Description:</strong> A folding chair that unfolds when put together and placed on the ground. Anyone who sits on the chair will feel obligated to fold it once they stand up. After anywhere from 10-20 attempts, subject will grunt and state “I give up”.<br>
+                <strong>Date of Recovery:</strong> ██-██-████<br>
+                <strong>Location of Recovery:</strong> ██████, █████████<br>
+                <strong>Current Status:</strong> In storage.</p>
+                <p><strong>Item Description:</strong> A stress ball in the shape of <a href="http://www.scp-wiki.net/scp-999">SCP-999</a>. Object shows no anomalous properties besides the threat of an information breach that it poses.<br>
+                <strong>Date of Recovery:</strong> 07-20-199█<br>
+                <strong>Location of Recovery:</strong> Therapist's office in ███████, Rhode Island<br>
+                <strong>Current Status:</strong> <span style="text-decoration: line-through;">In storage.</span> Placed in Site-██'s Break Room.</p>
+                <p><strong>Item Description:</strong> A cardboard box full of plastic grocery bags. If any item weighing over 300 grams is placed inside one of the plastic bags, the bag’s bottom will immediately tear, the object inside falling to the ground. The bag usually waits until there are over 5 objects inside to tear, and even then, there is a delay until the carrier of the grocery bag is in motion. The bag will tear immediately upon motion if eggs are placed inside, even if they are the only object in the bag.<br>
+                <strong>Date of Recovery:</strong> 3/5/2019<br>
+                <strong>Location of Recovery:</strong> A Walmart in Colorado, USA<br>
+                <strong>Current Status:</strong> In storage at Site-19</p>
+                <p><strong>Item Description:</strong> An Outback Steakhouse cardboard coaster. Any container, containing any liquid, that is placed on the coaster will inevitably fall over and spill, no matter how stable it is, if it's being held in place, or if there's a lid on it. The coaster is immune to any damage a coaster of it's type would normally receive from the spills.<br>
+                <strong>Date of Recovery:</strong> 11/18/2019<br>
+                <strong>Location of Recovery:</strong> An Outback Steakhouse in Indiana, USA<br>
+                <strong>Current Status:</strong> In storage.</p>
+                <p><strong>Item Description:</strong> Item is a white wooden shed which cannot be captured by photographs or video recordings.<br>
+                <strong>Date of Recovery:</strong> 7/12/2008<br>
+                <strong>Location of Recovery:</strong> Holly, Michigan, USA.<br>
+                <strong>Current Status:</strong> The item in question has been forcefully removed from its original property and transported to Site-56. It is currently used for containment of other logged anomalous items with the support of it's anomalous properties using various CCTV cameras in it's containment chamber.</p>
+                <p><strong>Item Description:</strong> A rubber duck that anomalously transforms into a real duck for an hour at noon every day. This duck doesn't need anything to live, and immediately turns back into a rubber duck at one o'clock PM.<br>
+                <strong>Date of Recovery:</strong> ██-██-2011<br>
+                Location of Recovery: Daycare in Rhode Island, USA<br>
+                <strong>Current Status:</strong> In animal containment at Site-██.</p>
+                <p><strong>Item Description:</strong> A grandfather clock that makes anyone under the age of 60 feel like they are rapidly aging; no physiological anomalies have been noted. The only people under 60 whom are immune to this anomalous effect are men who have grandchildren.<br>
+                <strong>Date of Recovery:</strong> ██-██-████<br>
+                <strong>Location of Recovery:</strong> Antique store in ████████, New York<br>
+                <strong>Current Status:</strong> In storage.</p>
+                <p><sup><strong>Item Description:</strong> A push pin that makes all information typed about it appear in superscript format.<br>
+                <strong>Date of Recovery:</strong> ██/██/2007<br>
+                <strong>Location of Recovery:</strong> On the desk of Dr. ████<br>
+                <strong>Current Status:</strong> On a bulletin board in the Site-██ break room.</sup><br>
+                <em>Note: Well, at least we know that it's functional. - Dr. ████</em></p>
+                <p><strong>Item Description:</strong> A laptop with exactly one pixel out on its screen. Every time it is reopened, the dead pixel with be in a completely different location on the screen. Anyone who sees this dead pixel will be immediately enraged and try to destroy the laptop, which has been proven on several cases to be indestructible.<br>
+                <strong>Date of Recovery:</strong> 03-12-20██<br>
+                <strong>Location of Recovery:</strong> A Best Buy brand technology store in ██████, Georgia<br>
+                <strong>Current Status:</strong> In storage.</p>
+                <p><strong>Item Description:</strong> A boston terrier (<em>Canis lupus familiaris</em>) breed house dog which exhibits the exact DNA as an extinct passenger pigeon (<em>Ectopistes migratorius</em>), despite possessing the traits and bodily functions as a canine.<br>
+                <strong>Date of Recovery:</strong> 23/9/2017<br>
+                <strong>Location of Recovery:</strong> A Petco shop in Austin, Texas, USA.<br>
+                <strong>Current Status:</strong> Used as Researcher Bernal's emotional support animal.</p>
+                <p><strong>Item Description:</strong> A flag ten centimetres in length and five centimetres wide which changes its appearance depending on the prominent ethnicity of the holder. If there are two holders it will assume the appearance of the flag of the prominent country between the two.<br>
+                <strong>Date of Recovery:</strong> █/██/████<br>
+                <strong>Location of Recovery:</strong> ███████, England.<br>
+                <strong>Current Status:</strong> In storage.</p>
+                <p><strong>Item Description:</strong> A bronze crucifix with a rope on the back that cannot hang correctly on any wall, as it will always turn upside-down upon being hung, phasing through anything that intervenes. The eyes of Jesus have been painted red, and the paint is unable to be removed.<br>
+                <strong>Date of Recovery:</strong> 06/06/2016<br>
+                <strong>Location of Recovery:</strong> Eleanor Slater Hospital in Cranston, Rhode Island, on the wall above the bed of a recently deceased Satanist<br>
+                <strong>Current Status:</strong> On the wall of Dr. ████████'s office.</p>
+                <p><strong>Item Description:</strong> A 6" by 4" piece of cardboard folded in the style of a birthday card with the text "thIs is uR HaPPie BerTdAy" written in thick black ink on the front facing side. When opened, will show the birthday of the person opening the card and a small piece of white wrapped chocolate will fall out. If a person attempts to open the card a second time the card will refuse to open until the person's birthday. If a person was to open the card on their birthday the text inside the card will read "HApPY BETHDaY, HERE iS CONFETTEE", after which a small amount of confetti will drop out of the card and the card cannot be opened until the following year.<br>
+                <strong>Date of Discovery:</strong> 5/4/1946<br>
+                <strong>Location of Recovery:</strong> █████████, Germany<br>
+                <strong>Current Status:</strong> Decomposed as of 2/2/2007 at Area-███</p>
+                <p><strong>Item Description:</strong> A box of Totino's Party Pizza: Triple Pepperoni. The pizza will remain frozen even after being baked in an oven or cooked in a microwave.<br>
+                <strong>Date of Recovery:</strong> 21/11/2019<br>
+                <strong>Location of Recovery:</strong> █████████████ Super Market, San Bernardino, California<br>
+                <strong>Current Status:</strong> Eaten by a Site-██ staff's pet dog after the item fell on the floor of the break room. Time of neutralization, 1:09 PM on 30/11/19</p>
+                <p><strong>Item Description:</strong> A wheel of cheddar cheese capable of telepathic speech with humanoids within a 5-meter radius. Deaf subjects, however, are incapable of hearing this item. Communication with this item is described as annoying or unbearable, with most subjects wishing to suspend the conversation after a few minutes.<br>
+                <strong>Date of Recovery:</strong> ██/██/1921<br>
+                <strong>Location of Recovery:</strong> Dayton, Ohio, USA<br>
+                <strong>Current Status:</strong> <span style="text-decoration: line-through;">In Storage</span> Destroyed when item was left near the Site Cafeteria and deaf kitchen staff member, Roseanne ██████, unknowingly transferred it to the kitchen and began grating it. Item was reported to have "Screamed bloody murder," by another kitchen staff member during this process. Item no longer exhibited anomalous properties after the incident and was cleared for consumption.<br>
+                <em>Note: Good riddance. - Researcher ████</em></p>
+                <p><strong>Item Description:</strong> A ███ Brand black ink pen that when used in writing will cause the person using it to draw an 's' in the popular 'Cool S' style on a random part of the paper/document without noticing until done writing.<br>
+                <strong>Date of Discovery:</strong> 2/12/2019<br>
+                <strong>Location of Discovery:</strong> ████████ High School, CT<br>
+                <strong>Current Status:</strong> In Dr. █████ office desk</p>
+                <p><strong>Item Description:</strong> A Funko Pop Vinyl figure of Hulk Hogan with unblinking red human eyes. Eyes appear human, but testing has revealed that they have the DNA of a human botfly <em>(Dermatobia hominis)</em>.<br>
+                <strong>Date of Recovery:</strong> 06-20-2019<br>
+                <strong>Location of Recovery:</strong> T█████ brand store in ████████, New Hampshire<br>
+                <strong>Current Status:</strong> In storage.<br>
+                <strong>Notes:</strong> <em>I know we aren't supposed to neutralize anomalies for no apparent reason, but please let me kill that thing.</em> -Dr ███████</p>
+                <p><strong>Item Description:</strong> A 2 liter pepsi bottle that contains infinite soda inside of it. It also does not appear to spoil. The bottle along with the cap is confirmed to be indestructible.<br>
+                <strong>Date of Recovery:</strong> 4/8/2007<br>
+                <strong>Location of Recovery:</strong> Site-18<br>
+                <strong>Current Status:</strong> In the Site-18 cafeteria<br>
+                <em>Note: Once again, we would like to apologize to all the on-site janitors and the suffering they had to go through to clean this up. Dr. ████ didn't mean to knock it over, and has already suffered the consequences for his actions.</em></p>
+                <p><strong>Item Description:</strong> A 0.5 meter statue, depicting the Virgin Mary from the Christian faith. When direct physical contact is made, the subject will experience auditory hallucinations of Hymns commonly sung in Roman Catholic Churches throughout the United States. Initial testing has concluded that the object's outer layer is effectively impermeable.<br>
+                <strong>Date of Recovery:</strong> 3/27/2005<br>
+                <strong>Location of Recovery:</strong> Our Lady of Lourdes Catholic Church, NY<br>
+                <strong>Current Status:</strong> A low-value storage locker at Site-77</p>
+                <p><strong>Item Description:</strong> A wireless computer mouse that produces a stock "coconut hit" sound every time any functional part of the mouse is pressed.<br>
+                <strong>Date of Recovery:</strong> ██-██-20██<br>
+                <strong>Location of Recovery:</strong> Best Buy brand store in Lynn, Massachusetts<br>
+                <strong>Current Status:</strong> Currently in possession of Dr. Robin.</p>
+                <p><strong>Item Description:</strong> A bubble-eye goldfish in a plastic bag full of water that <span style="text-decoration: line-through;">never ages.</span> doesn't age unless removed from its bag.<br>
+                <strong>Date of Recovery:</strong> 07-12-197█<br>
+                <strong>Location of Recovery:</strong> Town fair in ███████, Alabama<br>
+                <strong>Current Status:</strong> <span style="text-decoration: line-through;">In animal containment at Site-██.</span> Immediately died when removed from plastic bag. Impromptu funeral given to item as requested by Researcher █████.</p>
+                <p><strong>Item Description:</strong> A pumpkin with the face of <a href="http://www.scp-wiki.net/scp-173">SCP-173</a> that doesn't rot or age. Substance that was found inside the pumpkin was revealed to be blood and feces similar to that produced by SCP-173. On Halloween, a lit candle appears inside the item.<br>
+                <strong>Date of Recovery:</strong> 10-31-2007<br>
+                <strong>Location of Recovery:</strong> Suburban home in ███████, North Carolina<br>
+                <strong>Current Status:</strong> Contained at Site 19. Placed in Site-19's break room during the month of October.</p>
+                <p><strong>Item Description:</strong> A barren field, with the exception of four gymnosperm trees similar in appearance to that of Pine trees. These trees are incapable of being subject to damage including being put ablaze. Every year on December 25<sup>th</sup> the trees will undergo a change in appearance being decorated in commonly used for Christmas and will be coated in a thin layer of snow.<br>
+                <strong>Date of Recovery:</strong> 12/25/1987<br>
+                <strong>Location of Recovery:</strong> An abandoned field in Lancaster County, Pennsylvania<br>
+                <strong>Current Status:</strong> The objects are incapable of being moved and are to be maintained at their location of origin.</p>
+                <p><strong>Item Description:</strong> A DVD for the animated film <em>Shrek</em> where the voices of the characters Shrek and Donkey are switched. No other changes are present.<br>
+                <strong>Date of Recovery:</strong> ██-██-████<br>
+                <strong>Location of Recovery:</strong> Blockbuster brand video store in ███████, Colorado.<br>
+                <strong>Current Status:</strong> In storage.</p>
+                <p><strong>Item Description:</strong> A member of the species <em>Coccinella septempunctata</em> (seven-spot ladybird) whose spots form a random shape every day at noon. Recorded shapes include a circle, square, triangle, and a nonagon. Number of dots change to accommodate number of sides (tens of dots make a complete circle).<br>
+                <strong>Date of Recovery:</strong> ██-██-20██<br>
+                <strong>Location of Recovery:</strong> Greenhouse in Webb, Mississippi<br>
+                <strong>Current Status:</strong> In animal containment at Site-23.</p>
+                <p><strong>Item Description:</strong> A D███████ brand AAA battery that never runs out of power.<br>
+                <strong>Date of Recovery:</strong> ██-██-████<br>
+                <strong>Location of Recovery:</strong> Well's City, Nevada<br>
+                <strong>Current Status:</strong> In storage.</p>
+                <p><strong>Item Description:</strong> A green 100-page college ruled notebook filled with a series of paragraphs and equations describing how to calculate negative zero.<br>
+                <strong>Date of Recovery:</strong> 12/15/20██<br>
+                <strong>Location of Recovery:</strong> In the office of the recently deceased Dr. ████<br>
+                <strong>Current Status:</strong> Located in the extra-dimensional research laboratory for use in calculations.<br>
+                <strong>Note:</strong> <em>Dr. ████'s death was a suicide, presumably due to stress. It is believed that he wanted to finish these calculations before he died and that he wanted us to find the item.</em></p>
+                <p><strong>Item Description:</strong> A wooden picnic table with the words "Periodic Table" carved into it. It appears to completely disappear and re-appear at random intervals in its previous position<br>
+                <strong>Date of Recovery:</strong> ██-██-2018<br>
+                <strong>Location of Recovery:</strong> An abandoned science lab thought to be used for a AWCY art display<br>
+                <strong>Current Status:</strong> In storage, Outline to be marked by tape to prevent other items from being stored in its area of affect</p>
+                <p><strong>Item Description:</strong> A "see and say" children's toy, consisting of a pale pink plastic case, with 12 (twelve) images of animals around the face (common name below the image), a rotating pointer in the center of the case, and a pull-string on the left side; generally consistent with known non-anomalous examples of this type of toy from multiple manufacturers. Animal images are all well-known animals commonly kept as livestock or pets in North America and Europe. When an animal is selected with the pointer and the string pulled, a high-fidelity recording of a female voice can be heard speaking in the operator's native language: "The <em>(name of animal selected)</em> says", followed by an animal sound entirely unrelated to any of the animals portrayed on the device. Any subject operating the device will become firmly and unshakably convinced that the sound produced matches the animal image selected. Treatment with targeted Class-C amnestics are effective at removing the anomalous effect.<br>
+                <strong>Date of Recovery:</strong> ████-09-13<br>
+                <strong>Location of Recovery:</strong> The preschool classroom of Gatewood Elementary, in ███████, ██.<br>
+                <strong>Current Status:</strong> Site-23 low-security storage wing.<br>
+                <strong>Additional Notes</strong> As of ████-██-██, over 1,100 distinct animal sounds have been produced by the device and recorded for research purposes, 334 of which have been conclusively identified. All of the identified animal sounds have been confirmed to belong to species on the IUCN Red List of Threatened Species, classed between Vulnerable and Extinct in the Wild. Disassembly of the device for research purposes did not nullify the anomalous effect; but did turn up a small paper label pasted inside the plastic shell, reading <em>Dr. Wondertainment - Let's Hear Them Before They Disappear… prototype G7</em></p>
+                <p><strong>Item Description:</strong> A set of 9 ███████-█████-brand Halloween ghost costumes. When worn, subjects will believe themselves to be ghosts, and proceed to act in a manner consistent with depictions of ghosts in children's animated programs, producing frequent "woo-oo" or "boo" vocalizations. After 22 minutes, subject gains the ability to move through any and all solid, non-anomalous objects at will. Costumes can be removed from stationary subjects with little effort, and subjects can be induced to voluntarily remove costume by speaking some variation of "Take that silly costume off" within hearing of the subject. Anomalous effects cease immediately upon removing costume; while subject retains full memory of said effects.<br>
+                <strong>Date of Recovery:</strong> ████-10-31<br>
+                <strong>Location of Recovery:</strong> ████████ Thrift Store in, ████████, OR.<br>
+                <strong>Current Status:</strong> All 9 instances held at Site-206. 8 instances of item stored in High-Security Vault 98. 1 instance of item currently undergoing examination in Research and Development Laboratory Sigma.<br>
+                <em>If we can nullify the cognitive effect while retaining the physical effect, these would be invaluable tactical equipment for field agents. -Dr. S. Rachasthani</em></p>
+                <p><strong>Item Description:</strong> A glass mason jar filled with an unknown opaque red substance with the consistency of peanut butter that emits the song "No Love" by the group Death Grips on repeat at 46hZ. When removed, the substance will inevitably return to the jar.<br>
+                <strong>Date of Discovery:</strong> 9/9/2013<br>
+                <strong>Loaction:</strong> ██████, Vermont<br>
+                <strong>Current Status:</strong> Locked in a storage refrigerator<br>
+                <em>Note: We tried to remove the substance to see if there was a speaker inside. Nothing; we still don't know how it's playing the song. - Dr. █████████</em></p>
+                <p><strong>Item Description:</strong> One half of the shell of a Pacific Geoduck (Panopea generosa) with a common nail of unknown make stuck in its center. It is impossible to remove this nail, and the shell is indestructible.<br>
+                <strong>Date of Discovery:</strong> 10-16-2004<br>
+                <strong>Location of Recovery:</strong> Revere Beach in Revere, MA<br>
+                <strong>Current Status:</strong> In storage.</p>
+                <p><strong>Item Description:</strong> A can of P████ brand soda that immediately begins begging to not have its contents consumed whenever placed within 5 inches of an open human mouth. If the contents of the can are consumed, the voice begins screaming in pain and crying. No audio devices have been found inside the can. Voice grows weaker as the can gets closer to being empty. Filling the can with any sort of liquid replenishes the strength of the voice.<br>
+                <strong>Date of Recovery:</strong> 05-21-2005<br>
+                <strong>Location of Recovery:</strong> ████████, Iowa<br>
+                <strong>Current Status:</strong> In storage.</p>
+                <p><strong>Item Description:</strong> A 10cm by 10cm by 10cm cube of concrete with the name "Humphrey Caroline" carved into it. Any water that is poured on the surface of this cube immediately vaporizes, producing a cloud of steam from the cube. Whenever any amount of liquid &gt;= 1 liter is poured upon its surface, the object will change from gray to sky blue for 2 hours.<br>
+                <strong>Date of Recovery:</strong> ██-██-1994<br>
+                <strong>Location of Recovery:</strong> ██████████, Kentucky<br>
+                <strong>Current Status:</strong> In Low-Value Anomaly wing at Site-██.</p>
+                <p><strong>Item Description:</strong> An indestructible Amazon brand cardboard box that, when photographed, shows a domestic cat sitting inside it. The text "if it fits, i sits" appears in comic sans font regardless of device used.<br>
+                <strong>Date of Recovery:</strong> ██-15-2018<br>
+                <strong>Location of Recovery:</strong> Post office in Greenbelt City, Maryland<br>
+                <strong>Current Status:</strong> In storage.</p>
+                <p><strong>Item Description:</strong> A brown rat with human teeth. The teeth are absurdly large for the rat's mouth, and its snout is heavily disfigured due to this. Rat was immediately killed by only witness, who was given Class-A Amnestics.<br>
+                <strong>Date of Recovery:</strong> 12/07/2004<br>
+                <strong>Location of Recovery:</strong> Alleyway in New York City, New York<br>
+                <strong>Current Status:</strong> Body is kept in cryogenic storage at Site-23.</p>
+                <p><strong>Item Description:</strong> A painting, 24" by 12", depicting a white horse in a field of grass. When the painting is hung "crooked", no anomalous effects occur. If the painting is ever straightened, the rest of the room will become crooked, to an angle corresponding to the angle the painting was hung at before it was straightened. Adjusting the painting to hang at any angle other than straight ends the effect.<br>
+                <strong>Date of Recovery:</strong> 12/6/2019<br>
+                <strong>Location of Recovery:</strong> Home of a private art collector in New York City, New York.<br>
+                <strong>Current status:</strong> Hanging on the wall of an unused office, for research purposes.<br>
+                <em>Note: As tempting as it might be to play with this object, staff are reminded to interact with it only during scheduled testing. There could be more to this than we know about.</em></p>
+                <p><strong>Item Description:</strong> An object that, under normal circumstances, is an ordinary granite rock weighing 42.2&nbsp;kg. When in contact with living human cells, it undergoes an instantaneous process in which its entire physical structure is changed into that of a down pillow with a pillowcase that takes the exact shape and appearance of the rock, though with a standard texture for its material. It is subject to reshaping while transformed into a pillow, and after twenty seven seconds of sustained lack of contact with living human cells, it will instantly revert to an ordinary rock, though in whatever shape it was in before the time period ended.<br>
+                <strong>Date of Recovery:</strong> 12/3/2019<br>
+                <strong>Location of Recovery:</strong> Near non-anomalous rocks along the side of a path in the Site-11 Recreational Park.<br>
+                <strong>Current Status::</strong> <span style="text-decoration: line-through;">In Dr. Harley's office.</span> Update 12/8/2019: In storage.<br>
+                <em>Note: Staff are advised not to throw objects at other staff unless necessary, especially objects one could interpret as serving as a threat to their physical health. - Director Barneda</em><br>
+                <em>Note: It was worth it. - Dr. Harley</em></p>
+                <p><strong>Item Description:</strong> A hinged silver fortune cookie keychain containing two dice with joke phrases, such as "wash the car" or "rub my back" printed on each side. When rolled by a subject under substantial emotional distress, the dice will invariably return with "relax" and/or "sleep" depending on the time of day.<br>
+                <strong>Date of Recovery:</strong> 1/12/2020<br>
+                <strong>Location of Recovery:</strong> ████████, Wisconsin, USA<br>
+                <strong>Current Status:</strong> In Storage.</p>
+                <p><strong>Item Description:</strong> Wireless microphone, which, when pointed at printed zeroes, transforms them into pairs of colons (appears as "<tt>::</tt>"). Transforms other digits to random hexadecimal in a similar manner. Labelled <a href="https://en.wikipedia.org/wiki/IPv6">"eye pee b 6 by dado"</a>.<br>
+                <strong>Date of Recovery:</strong> 2014/02/13<br>
+                <strong>Location of Recovery:</strong> Discovered while investigating SCP-████<br>
+                <strong>Current Status:</strong> In storage at Site-11.</p>
+                <p><strong>Item Description:</strong> Poster of an unidentified woman wearing a traffic jacket. Woman is seen to be looking away from the camera, toward something out of view. When viewed by anyone who has stolen anything, regardless of value, in the last 72 hours, the woman is always seen to be looking directly at the viewer with an expression often described as "a mixture of accusation and disapproval." Viewers who have not stolen anything within 72 hours see only the standard image, even when the poster is viewed by multiple subjects simultaneously.<br>
+                <strong>Date of Recovery:</strong> 2019/8/17<br>
+                <strong>Location of Recovery:</strong> On a wall near a public restroom in Bond Street Station, London, England.<br>
+                <strong>Current Status:</strong> On the wall of an office belonging to the head of Site-42 Security.</p>
+                <p><strong>Item Description:</strong> A manual spotlight that, when operated, gradually makes the person operating it decide to quit their job.<br>
+                <strong>Date of Recovery:</strong> 4/4/2019<br>
+                <strong>Location of Recovery:</strong> Sent to the foundation by a group calling themselves “Narro Theater.”<br>
+                <strong>Current Status:</strong> In storage.</p>
+                <p><strong>Item Description:</strong> A bronze 27&nbsp;cm sword that give anyone who wields it the ability to see any weapons that a person is carrying.<br>
+                <strong>Date of Recovery:</strong> August 13, 1965<br>
+                <strong>Location of Recovery:</strong> Found on man shot by police after attacking ██ Officers, Watts Neighborhood, Los Angeles, California<br>
+                <strong>Current Status:</strong> Used by Site-██ Security to detect weapons on incoming personnel.</p>
+                <p><strong>Item Description:</strong> A 30&nbsp;cm ruler that measures any object as exactly 23.4&nbsp;cm regardless of its actual length.<br>
+                <strong>Date of Recovery:</strong> 13/04/2007<br>
+                <strong>Location of Recovery:</strong> Recovered from ██ ███████ University, Leicestershire.<br>
+                <strong>Current Status:</strong> Located in Dr. ████'s office at Site-63.</p>
+                <p><strong>Item Description:</strong> An antimemetic anomaly affecting the professional ice hockey team █████████ ████ which causes people to forget details about the team at a slightly faster rate than other teams in the franchise.<br>
+                <strong>Date of Discovery:</strong> April 2, 1995<br>
+                <strong>Location of Discovery:</strong> Saint Paul, Minnesota<br>
+                <strong>Current Status:</strong> Currently being researched. No misinformation campaign is required, as the public simply attributes this phenomenon to the team's remote location and lack of significant events affecting the team.</p>
+                <p><strong>Item Description:</strong> A container of Red Delicious Apples, mislabeled "Abbles". Biting into an apple will begin to play one song from the Swedish band Abba from the apple's flesh.<br>
+                <strong>Date of Recovery:</strong> 2/5/1982<br>
+                <strong>Location of Recovery:</strong> Stockholm, Sweden<br>
+                <strong>Current Status:</strong> Neutralized (Apples rotted, and displayed no further effects)</p>
+                <p><strong>Item Description:</strong> A U.S dime minted in 2003 that, when flipped, always lands on its side.<br>
+                <strong>Date of Recovery:</strong> 1/28/2020<br>
+                <strong>Location of Recovery:</strong> Walden, New York<br>
+                <strong>Current Status:</strong> Located on Dr. Mahood's desk at Site-73</p>
+                <p><strong>Item Description:</strong> A lava lamp that was filled with lava that was always molten (the lava, not the lamp); the lamp itself was not affected by the lava in any way.<br>
+                <strong>Date of Recovery:</strong> 08/16/2017<br>
+                <strong>Location of Recovery:</strong> St. Johns, Canada<br>
+                <strong>Current Status:</strong> Neutralized (Dr. █████ wanted to see if the lamp was invulnerable by dropping it on the floor, it smashed, causing the lava to pour out killing Dr. █████, severely burning two personnel, and causing $120 in property damage before the lava solidified).</p>
+                <p><strong>Item Description:</strong> A white silver-edged plate that have a falling speed 16x times slower than the normal falling speed. All attempts to speed up the fall speed failed<br>
+                <strong>Date of Recovery:</strong> 7/11/2008<br>
+                <strong>Location of Recovery:</strong> Arizona, United States<br>
+                <strong>Current Status:</strong> In containment of Site-██'s storage room. Recently used to practice throwing for field agents.<br>
+                <em>Seeing it falling slowly is so painful that you wish it shatters into a thousand pieces - Dr.███</em></p>
+                <p><strong>Item Description:</strong> A bottle labeled "one 100&nbsp;% brain-use pills by dado" containing 94 pills chemically identical to chalk. Consuming said pills results in an immediate epileptic seizure.<br>
+                <strong>Date of Recovery:</strong> 27/9/2011<br>
+                <strong>Location of Recovery:</strong> Seized from the residence of a hospitalized civilian.<br>
+                <strong>Current Status:</strong> In storage. Item's original owner amnesticized and seizure attributed to an isolated medical occurrence.</p>
+                <p><strong>Item Description:</strong> An indestructible red plastic cup that turns any consumable liquid into a jello with the same flavor as the liquid poured. This transformation occurs exactly 3 seconds after pouring ceases. Regardless of how much liquid is poured in, the jello always fills the cup all the way to the top.<br>
+                <strong>Date of Recovery:</strong> 8-12-2012<br>
+                <strong>Location of Recovery:</strong> Office at Site-██<br>
+                <strong>Current Status:</strong> In storage. All other red plastic cups on-Site checked for anomalous properties. No other anomalous items found.</p>
+                <p><strong>Item Description:</strong> A leaf from a member of the genus <em>Quercus</em><sup class="footnoteref"><a id="footnoteref-5" href="javascript:;" class="footnoteref" onclick="WIKIDOT.page.utils.scrollToReference('footnote-5')">5</a></sup> that does not seem to age, but changes colors in response to the season of the area it's in. It is <span style="text-decoration: line-through;">indestructible.</span> only damaged by fire.<br>
+                <strong>Date of Recovery:</strong> 5-25-2019<br>
+                <strong>Location of Recovery:</strong> Warwick, Rhode Island<br>
+                <strong>Current Status:</strong> <span style="text-decoration: line-through;">In storage.</span> Destroyed by fire during durability test. Ashes showed no anomalous properties.</p>
+                <p><strong>Item Description:</strong> A beard-tax coin dating to the reign of Tsar Peter “The Great”. When held by an without significant facial hair, regardless of sex, the subject will sprout a full beard trimmed in a manner consistent with the old Russian Orthodox faith. When released by an individual with significant facial hair, the hair will immediately be shaven cleanly.<br>
+                <strong>Date of Recovery:</strong> ██-██-████<br>
+                <strong>Location of Recovery:</strong> St. Petersburg, Russian Federation<br>
+                <strong>Current Status:</strong> In the possession of Researcher Borodin.</p>
+                <p><strong>Item Description:</strong> A floor lamp, which when indirectly observed, appears to have a severed human head in place of the lamp shade.<br>
+                <strong>Date of Recovery:</strong> 3-12-2020<br>
+                <strong>Location of Recovery:</strong> An Ikea in Göteborg, Sweden<br>
+                <strong>Current Status:</strong> In storage.</p>
+                <p><strong>Item Description:</strong> A yellow street sign with the word "PLAYGROUND" on it. Parts of the sign is degraded due to weather and rust. Any human that views the sign for more than 5 seconds grows an irrational yet uncontrollable fear of any sort of playground equipment for exactly one day.<br>
+                <strong>Date of Recovery:</strong> 2-12-2020<br>
+                <strong>Location of Recovery:</strong> Lynn, Massachusetts<br>
+                <strong>Current Status:</strong> In storage.</p>
+                <p><strong>Item Description:</strong> A crowbar that, when held by any adult male, makes those around them to see them as the 3-dimensional model for the main character of the Half-Life Series, Gordon Freeman.<br>
+                <strong>Date of Recovery:</strong> 5-15-2007<br>
+                <strong>Location of Recovery:</strong> A Home Depot home supplies store in Portsmouth, New Hampshire.<br>
+                <strong>Current Status:</strong> In possession of Dr. Lindrom.</p>
+                <p><strong>Item Description:</strong> A stone which, when held, the song "The Final Hurrah" in the album <em>Kasvot Växt: í rokk (Live)</em> by Phish can be heard faintly emanating from its top.<br>
+                <strong>Date of Recovery:</strong> 11-3-2018<br>
+                <strong>Location of Recovery:</strong> Las Vegas, Nevada<br>
+                <strong>Current Status:</strong> In storage.</p>
+                <p><strong>Item Description:</strong> A plush white teddy bear holding a plush pink heart with the phrase "Be my valentine?" written in fancy black text. The heart anomalously produces a heartbeat as it pumps similar to a healthy human heart.<br>
+                <strong>Date of Recovery:</strong> 02-14-2020<br>
+                <strong>Location of Recovery:</strong> A Walmart in Albany, New York<br>
+                <strong>Current Status:</strong> <span style="text-decoration: line-through;">In storage.</span> Given to Dr. Willer as a gift from Dr. Karver.</p>
+                <p><strong>Item Description:</strong> Life-sized bronze statue of singer Freddy Mercury that periodically vomits small amounts of various pastas. Pasta emerges fully prepared.<br>
+                <strong>Date of Recovery:</strong> 7-12-1989<br>
+                <strong>Location of Recovery:</strong> In a storage unit In Madrid, Spain.<br>
+                <strong>Current Status:</strong> Site 19 materials laboratory.</p>
+                <p><strong>Item Description:</strong> A golden locket in the shape of a heart that causes the wearer to vomit flowers of random varieties.<br>
+                <strong>Date of Recovery:</strong> ██-██-████<br>
+                <strong>Location of Recovery:</strong> SCP-████'s containment cell.<br>
+                <strong>Current Status:</strong> In possession of Researcher Flora, who has been unable to remove the locket upon placing it on for testing.</p>
+                <p><strong>Item Description:</strong> A purple hair-tie that when worn by anyone regardless of gender, will cause their hair to grow seven extra (7) feet in length. Recovered from the home was the package which also contained five other hair-ties. All other hair-ties have been tested and proved to be non-anomalous.<br>
+                <strong>Date of Recovery:</strong> ██-██-20██<br>
+                <strong>Location of Recovery:</strong> The house of the ██████ family in Des Moines, Iowa.<br>
+                <strong>Current Status:</strong> <span style="text-decoration: line-through;">In possession of Researcher █████.</span> In a storage locker at Site-██.<br>
+                <em>Note: Package read "Doctor Wondertainment's Rapaunzel Style Hair Kit! Will YOU find the special ponytail?"- Doctor Leena</em><br>
+                <em>Note: Yes Wondertainment. We did find it!-Doctor Dots</em></p>
+                <p><strong>Item Description:</strong> A black common household <em>Felis catus</em> that causes all who view it to describe as 'weird and ominous' and hold the firm belief that it can talk, but just refuses to talk to them and ignore them instead, despite that it has been found to be incapable of human speech.<br>
+                <strong>Date of Recovery:</strong> 04-11-2019<br>
+                <strong>Location of Recovery:</strong> ████ Animal Shelter in ██████, Mississippi.<br>
+                <strong>Current Status:</strong> Kept as a pet by Researcher Berry.<br>
+                <em>Note: I love him, okay? He's Hemingway! I will get him to speak one day.-Researcher Berry</em></p>
+                <p><strong>Item Description:</strong> A head of a deceased human. Object shows no signs of decomposing. When another sapient organism places its hand behind one of the head's ears and thinks of an object, the object will be in the subject's hand when it is no longer behind the head's ear.<br>
+                <strong>Date of Recovery:</strong> 02-16-2020<br>
+                <strong>Location of Recovery:</strong> Buddhist Temple in ████████, Thailand<br>
+                <strong>Current Status:</strong> <span style="text-decoration: line-through;">Currently undergoing testing at Site-██.</span> In storage after D-Class Personnel attempted to escape by producing a weapon from the head, and was subsequently neutralized.<br>
+                <em>Note: Really? What did you think was going to happen? -Professor Montes</em></p>
+                <p><strong>Item Description:</strong> A calendar that transforms wines it comes into contact with into water and transforms other alcohols it comes into contact with into wine. Written on the date of July 10 is "<em>Hmm today I will turn wine into water now on the weekends…</em> [sic]"<br>
+                <strong>Date of Recovery:</strong> 07-12-2021<br>
+                <strong>Location of Recovery:</strong> The residence of PoI-307█<br>
+                <strong>Current Status:</strong> In storage.</p>
+                <p><strong>Item Description:</strong> A Pepsi-brand freestyle machine, typically used to dispense a variety of Pepsi-brand soft drinks. However, the only drink dispensed is Mountain Dew Zero Sugar, and is constantly, endlessly flowing, even if power to the object is cut. The supply of Mountain Dew Zero Sugar is believed to be infinite. The only method of stopping the flow is dismantling the dispensing mechanism.<br>
+                <strong>Date of Recovery:</strong> 01-02-2020<br>
+                <strong>Location of Recovery:</strong> Pepsi Headquarters, Harrison, New York<br>
+                <strong>Current Status:</strong> Disassembled. Parts can be found in storage room C/33-a at Site-14. Access requires permission from the Site Director, following the "Sticky Incident," notorious at Site-14.</p>
+                <p><strong>Item Description:</strong> A horn of a male bighorn sheep (<em>Ovis canadensis</em>) that is capable of being played like a clarinet when air is blown into the pointed end. Regardless of someone's true ability to play the clarinet, the music played on the horn shows a decent amount of skill.<br>
+                <strong>Date of Recovery:</strong> 06-15-2015<br>
+                <strong>Location of Recovery:</strong> Bar in ██████, Egypt<br>
+                <strong>Current Status:</strong> <span style="text-decoration: line-through;">In storage.</span> In possession of Dr. ██████.</p>
+                <p><strong>Item Description:</strong> A tail feather of a male Indian Peafoul (<em>Pavo cristatus</em>) that regenerates any barbs removed. Regenerated barbs grow back from the rachis in a matter of a few seconds in a manner similar to a timelapse of a plant growing. The removed barbs harmlessly crumble to dust, which anomalously disappears when blown on by any sort of air-based force.<br>
+                <strong>Date of Recovery:</strong> 02-02-2020<br>
+                <strong>Location of Recovery:</strong> Museum in ███████, France<br>
+                <strong>Current Status:</strong> In storage.</p>
+                <p><strong>Item Description:</strong> An indestructible sandbag with a yellow cartoon face drawn on one side. When punched, the bag anomalously produces a laugh and says "Stop, that tickles!" in an undefined voice. regardless of the angle or strength of the punch, the sandbag always bobs exactly 35 degrees backwards from the direction the face is at.<br>
+                <strong>Date of Recovery:</strong> 12-13-2019<br>
+                <strong>Location of Recovery:</strong> Workout World in ██████, ████████<br>
+                <strong>Current Status:</strong> Used for basic training at Site-19.</p>
+                <p><strong>Item Description:</strong> A plastic treasure chest that opens and produces soap bubbles at random intervals. It will produce oxygen bubbles when placed in a perfectly prepared fish tank for zebra danio (Danio rerio). Otherwise, it will not open when placed underwater.<br>
+                <strong>Date of Recovery:</strong> 06-26-2009<br>
+                <strong>Location of Recovery:</strong> PetSmart in ██████, Massachusetts<br>
+                <strong>Current Status:</strong> <span style="text-decoration: line-through;">In storage.</span> Used by Dr. ██████, who is currently keeping zebra danios.</p>
+                <p><strong>Item Description:</strong> A box of BeanBoozled brand jelly beans that immediately refills when all of the beans have been eaten. When the box resets, it is either full of jelly beans of normal flavors or jelly beans of unusual flavors.<br>
+                <strong>Date of Recovery:</strong> 08-03-2016<br>
+                <strong>Location of Recovery:</strong> 7-11 brand convenience store in San Diego, California<br>
+                <strong>Current Status:</strong> In break room at Site-25. Currently full of gross tasting beans (we think).</p>
+                <p><strong>Item Description:</strong> A glass vial containing an unidentified species of centipede with no eyes and sharp claws on each leg. The body is perfectly preserved.<br>
+                <strong>Date of Recovery:</strong> 11-01-1999<br>
+                <strong>Location of Recovery:</strong> Behind a dumpster in New York City, New York.<br>
+                <strong>Current Status:</strong> In Dr. █████'s office.</p>
+                <p><strong>Item Description:</strong> An oil painting of a dog that changes between a basset hound, a Pembroke Welsh corgi, a golden retriever, an English bulldog, and a Siberian husky over a weekly basis.<br>
+                <strong>Date of Recovery:</strong> 01-16-2020<br>
+                <strong>Location of Recovery:</strong> Art gallery in Los Angeles, California<br>
+                <strong>Current Status:</strong> In Site-73's break room.</p>
+                <p><strong>Item Description:</strong> A cloud formation permanently located at 40.7482° N, 77.1051° W in the shape of a matchlock revolver. At random intervals, the cloud formation reorients its barrel in the direction of a nearby aircraft or cloud formation and shoots a single high-speed gust of wind at it. Twelve recorded civilian deaths and 7 recorded civilian injuries have been linked to this cloud formation.<br>
+                <strong>Date of Recovery:</strong> 02-12-2012<br>
+                <strong>Location of Recovery:</strong> Franklin Township, PA, United States of America<br>
+                <strong>Current Status:</strong> Pending neutralization due to its unpredictable, dangerous nature, lack of discernible sentience, and Veil-threatening factors.</p>
+                <p><strong>Item Description:</strong> A golden barrel cactus (<em>Echinocactus grusonii</em>) that has varying lengths of steel spikes replacing its spines. A single large pink flower sits atop the plant.<br>
+                <strong>Date of Recovery:</strong> 06-10-2010<br>
+                <strong>Location of Recovery:</strong> Mojave Desert, California<br>
+                <strong>Current Status:</strong> In Greenhouse Storage at Site-45.</p>
+                <p><strong>Item Description:</strong> A golden dollar coin that, when flipped, always flips exactly one and a half feet in the air, flipping exactly five times before reaching the ground.<br>
+                <strong>Date of Recovery:</strong> 11-28-2019<br>
+                <strong>Location of Recovery:</strong> ███████, Maine<br>
+                <strong>Current Status:</strong> <span style="text-decoration: line-through;">In possession of Dr. █████.</span> In storage.</p>
+                <p><strong>Item Description:</strong> A plush doll of the Pokemon Ditto that changes to a plush doll of the Pokemon Vanillite with the face of Ditto. This change occurs every day at exactly midnight, lasting until daybreak. When it changes a flash of anomalous light surrounds it for about ten seconds.<br>
+                <strong>Date of Recovery:</strong> 09-09-2016<br>
+                <strong>Location of Recovery:</strong> Gamestop brand video game store in ███████, Idaho<br>
+                <strong>Current Status:</strong> In possession of Dr. ██████.</p>
+                <p><strong>Item Description:</strong> A white plastic spoon that calls anything that holds it fat and ugly. The holder feels anomalously sad after holding the object for more than five seconds. This affect works for anything that can hold it, including simians and even non-mammalian organisms.<br>
+                <strong>Date of Recovery:</strong> 02-01-2020<br>
+                <strong>Location of Recovery:</strong> Cafeteria at Site-73<br>
+                <strong>Current Status:</strong> <span style="text-decoration: line-through;">Used for testing at Site-██.</span> In storage after being broken in two pieces by monkey. Both parts of the spoon retain anomalous properties.</p>
+                <p><strong>Item Description:</strong> A keyboard from an unknown make and model of computer that inspires those that press the spacebar, enter key, backspace, or page up key to get up (if they are sitting or laying) and hop five times in a row. <span style="text-decoration: line-through;">All other keys are nonanomalous.</span> The only other anomalous key is the "O" key which makes those that press it scratch their nose.<br>
+                <strong>Date of Recovery:</strong> 02-15-2020<br>
+                <strong>Location of Recovery:</strong> █████, Rhode Island<br>
+                <strong>Current Status:</strong> In storage.</p>
+                <p><strong>Item Description:</strong> A Playstation 4 controller that, when held by one's hands, will adhere to the controller until treated; consult Document AI-XA for confirmed treatment methods.<br>
+                <strong>Date of Recovery:</strong> 24/02/2019<br>
+                <strong>Location of Recovery:</strong> London, England<br>
+                <strong>Current Status:</strong> Anomalous Object Storage, Site-19.</p>
+                <p><strong>Item Description:</strong> A pitchfork, when held, will cause the wielder to yell “1986 was a mistake!” The wielder can stop at any time.<br>
+                <strong>Date of Recovery:</strong> 23-02-2020<br>
+                <strong>Location of Recovery:</strong> Alpine, CA.<br>
+                <strong>Current Status:</strong> In storage.</p>
+                <p><strong>Item Description:</strong> A beach ball that floats midair for 24-48 hours upon being thrown.<br>
+                <strong>Date of Recovery:</strong> 01-01-2020<br>
+                <strong>Location of Recovery:</strong> Mission Bay, CA.<br>
+                <strong>Current Status:</strong> Deflated, in storage.</p>
+                <p><strong>Item Description:</strong> A Sega Project DIVA Arcade F 2nd PM brand <em>Hatsune Miku</em> figurine that causes all persons in range to memorize the lyrics and tune of a randomized <em>Hatsune Miku</em> song, even if the person has never heard that song before.<br>
+                <strong>Date of Recovery:</strong> 20/06/2018<br>
+                <strong>Location of Recovery:</strong> <em>Animx Con</em> held in Greenville Convention center Greenville, South Carolina.<br>
+                <strong>Current Status:</strong> In the possession of Researcher ████.</p>
+                <p><strong>Item Description:</strong> A <em>Holt McDougal</em> US history textbook that causes anyone who holds it to hold the false belief that Ronald Regan is still the president of the United States.<br>
+                <strong>Date of Recovery:</strong> 19/07/1982<br>
+                <strong>Location of Recovery:</strong> Vineyard Highschool in Destin, Florida.<br>
+                <strong>Current Status:</strong> In storage.</p>
+                <p><strong>Item Description:</strong> A 12 inch <em>Anime Palace</em> brand <em>Strawberry Bread Cat</em> plush toy that will cause all food in the building it is in to have a slight to overwhelming taste of strawberry.<br>
+                <strong>Date of Recovery:</strong> 07/07/2019<br>
+                <strong>Location of Recovery:</strong> A home in Seattle, Washington.<br>
+                <strong>Current Status:</strong> At the home of Researcher Berry.<br>
+                <em>Note: This thing was going to drive us nuts. We trust her, she can have it. -Dr Calamari (who hates strawberries)</em></p>
+                <p><strong>Item Description:</strong> A plastic toothbrush that changes from pink to gray in between every brush stroke. Change is instantaneous regardless of if it is being viewed or not.<br>
+                <strong>Date of Recovery:</strong> 11-10-2013<br>
+                <strong>Location of Recovery:</strong> Dentists office in ██████, Wisconsin<br>
+                <strong>Current Status:</strong> In storage.</p>
+                <p><strong>Item Description:</strong> A wood mouse (<em>Apodemus sylvaticus</em>) with a prehensile tail. It uses this tail to hold onto small items like grains or bugs. It also uses this tail to climb on the branches of shrubs and flowers. Mouse is completely infertile and sexless.<br>
+                <strong>Date of Recovery:</strong> 02-19-2000<br>
+                <strong>Location of Recovery:</strong> Found with lab mice in Lab-16 at Site-██<br>
+                <strong>Current Status:</strong> <span style="text-decoration: line-through;">In anomalous animal containment at Site-██.</span> Mouse died on 08-18-2003 of natural causes. Body preserved at Lab-16 at Site-██.</p>
+                <p><strong>Item Description:</strong> A rubber clown nose that makes any sneeze within a mile around it sound like a clown honk. Anyone within ten feet of it can hear a circus version of <em>Entry of the Gladiators</em> from right behind their left ear.<br>
+                <strong>Date of Recovery:</strong> 10-15-2018<br>
+                <strong>Location of Recovery:</strong> Party City brand party supplies store in ███████, New Hampshire<br>
+                <strong>Current Status:</strong> In storage.</p>
+                <p><strong>Item Description:</strong> A plastic poppy flower that is seen by anyone as a living, immortal version of their perfect flower and color of said flower. If the person viewing the item has no preference in flower types, they will see it simply as a red plastic poppy flower.<br>
+                <strong>Date of Recovery:</strong> 03-14-2020<br>
+                <strong>Location of Recovery:</strong> Flower store cart in █████████, California<br>
+                <strong>Current Status:</strong> In on-site break room at Site-34.</p>
+                <p><strong>Item Description:</strong> A pair of plastic chattering teeth that moves when not wound up. It moves at about 0.7 meters per minute. If it is wound up 1-3 cranks, it will slow down to 0.4 meters per minute. If cranks 4 or more cranks, it will stop for exactly 5.5 seconds before immediately springing back to life.<br>
+                <strong>Date of Recovery:</strong> 11-12-2013<br>
+                <strong>Location of Recovery:</strong> Joke shop in ███████, Arkansas<br>
+                <strong>Current Status:</strong> Kept in a oval-shaped track in Dr. Bloom's Office.</p>
+                <p><strong>Item Description:</strong> A light purple 14-cm-long piece of chalk that produces a 80 decibel screech whenever written on a chalkboard. The tip of the chalk is the exact source of the sound. It never wears down from writing.<br>
+                <strong>Date of Recovery:</strong> 01-25-1998<br>
+                <strong>Location of Recovery:</strong> ███ ██████ High School in ███████, Georgia<br>
+                <strong>Current Status:</strong> In storage.</p>
+                <p><strong>Item Description:</strong> A 15-inch plush toy of <a href="http://scp-wiki.wikidot.com/scp-529">SCP-529</a> with a tag identifying it as such. Besides being able to stand perfectly on its own, item holds no anomalous properties. Contained for reasons of security breach.<br>
+                <strong>Date of Recovery:</strong> 08-20-2014<br>
+                <strong>Location of Recovery:</strong> <em>Friends of Angels</em> toy store in Dallas, Texas.<br>
+                <strong>Current Status:</strong> In possesion of Doctor Dots.</p>
+                <p><strong>Item Description:</strong> An AcuRite 75099M 10-inch LED Digital Clock which only displays the words "GET A WATCH". Attempts to program it otherwise have failed; item is unable to be powered off, even by removing the batteries.<br>
+                <strong>Date of Recovery:</strong> 09/05/2014<br>
+                <strong>Location of Recovery:</strong> A dormitory in Chesapeake College, ███████, Oregon.<br>
+                <strong>Current Status:</strong> Dr. Diamond's office.</p>
+                <p><strong>Item Description:</strong> A pack of pink Post-It notes which, when viewed, will remind the subject of what they had (previously) forgotten.<br>
+                <strong>Date of Recovery:</strong> 05-05-20<span class="dblock">98</span><br>
+                <strong>Location of Recovery:</strong> Sector-<span class="dblock">A</span> of <a href="http://www.scp-wiki.net/secure-facility-dossier-site-98">Site-98</a><br>
+                <strong>Current Status:</strong> In variable facilities.<br>
+                <em>Notes: How in the hell do we forget to contain SCP-<span class="dblock">18398</span>?! Let’s get back to work! - Agent Nori.</em></p>
+                <p><strong>Item Description:</strong> American bullfrog capable of human vocalization, which has not been observed not doing so except when eating or sleeping. The vocalizations were originally believed to be meaningless nonsense, but study has revealed them to be words in a wide variety of dead languages from across the globe (over 50 unique languages at the time of writing). The frog is otherwise non-anomalous.<br>
+                <strong>Date of Recovery:</strong> 3-5-2020<br>
+                <strong>Location of Recovery:</strong> Pet shop in █████, MA, United States.<br>
+                <strong>Current Status:</strong> In standard animal containment.<br>
+                <em>Notes:</em> Any personnel with knowledge of ancient or dead languages is invited to listen to the frog, provided they do so on their own time.</p>
+                <p><strong>Item Description:</strong> A No. 2 graphite pencil that causes searing pain when brought in contact with male genitalia.<br>
+                <strong>Date of Recovery:</strong> 1-3-2014<br>
+                <strong>Location of Recovery:</strong> Nightclub in ██████, Rhode Island.<br>
+                <strong>Current Status:</strong> In storage.</p>
+                <p><strong>Item Description:</strong> A light-sensory night light in the shape of a star that only turns on when unplugged and placed in pitch black darkness. Anyone that holds the item will feel inclined to plug it in.<br>
+                <strong>Date of Recovery:</strong> 05-14-2018<br>
+                <strong>Location of Recovery:</strong> Home Depot in █████████, New Hampshire<br>
+                <strong>Current Status:</strong> Plugged into an outlet at Site-73.</p>
+                <p><strong>Item Description:</strong> A wooden board, 1 foot by 2 feet by 1 inch thick, with an approximately finger-sized hole. When a finger is fully inserted into the hole, the hole will invariably shrink such that the finger will become inextricable without considerable effort, no matter the actual size of the finger.<br>
+                <strong>Date of Recovery:</strong> ██-██-████<br>
+                <strong>Location of Recovery:</strong> ████████, █████<br>
+                <strong>Status:</strong> Stored in a standard containment locker in Non-Essential Anomaly Storage, Site-19</p>
+                <p><strong>Item Description:</strong> A medium sized dark blue backpack manufactured by Longbehn &amp; Co., Inc. When opened it reveals a pitch black, seemingly bottomless, interior. Any material that enters the object is never seen again. Where the material ends up is currently unknown and any camera or drone that enters the object results in a loss of communication.<br>
+                <strong>Date of Recovery:</strong> 03/08/2004<br>
+                <strong>Location of Recovery:</strong> █████ High school, Arkansas, USA<br>
+                <strong>Current Status:</strong> in storage.</p>
+                <p><strong>Item Description:</strong> A worn cover of the 2001 album <em>Discovery</em> by French group Daft Punk that when placed on a non active record table will play the full album without the vinyl. No vinyl disk was found during recovery.<br>
+                <strong>Date of Recovery:</strong> 2/2/2020<br>
+                <strong>Location:</strong> █████████, France<br>
+                <strong>Current Status:</strong> In possession of Dr. Loe at Site-73 after approved purchase.<br>
+                <em>Note: It's harmless, let him have it, I heard he's a fan - Site Director Baskin</em></p>
+                <p><strong>Item Description:</strong> A C██████ brand crayon with a color labeled "purple mountain majesty" that, when held by any human over the age of five, will make them begin singing <em>America the Beautiful</em> in English, regardless of if they know English or the song. An orchestral music score will begin emanating from the crayon until the song has reached completion.<br>
+                <strong>Date of Recovery:</strong> 03-13-2020<br>
+                <strong>Location of Recovery:</strong> Mail truck delivering item to suburban home. No other crayons were ordered.<br>
+                <strong>Current Status:</strong> In storage.</p>
+                <p><strong>Item Description:</strong> The twenty-sixth, forty-seventh, and seventy-sixth pages of Dougal Dixon's <em>After Man: A Zoology of the Future</em> which, when an attempt is made to grasp them, rapidly displace themselves onto nearby surfaces while trailing tan smoke.<br>
+                <strong>Date of Recovery:</strong> 06-11-1999<br>
+                <strong>Location of Recovery:</strong> A table in the second-floor break room of Site-██. How the objects appeared there is unknown, though their time of arrival is timed between 2:00 and 3:00, between which hours security footage only displays the illustrations printed on said pages.<br>
+                <strong>Current Status:</strong> Forty-seventh page in storage. Whereabouts of the remaining pages unknown, though one is suspected to be lost in the ventilation system.</p>
+                <p><strong>Item Description:</strong> A pack of ice cubes that melts at -2˚C or lower, and that doesn't melt when exposed at 1˚C or higher.<br>
+                <strong>Date of Recovery:</strong> 18-03-2020<br>
+                <strong>Location of Recovery:</strong> Tószeg, Hungary<br>
+                <strong>Current Status:</strong> In storage.</p>
+                <p><strong>Item Description:</strong> A piece of paper that automatically erases all text on it after 3 hours.<br>
+                <strong>Date of Recovery:</strong> 18-03-2020<br>
+                <strong>Location of Recovery:</strong> ████, Virginia<br>
+                <strong>Current Status:</strong> In storage.</p>
+                <p><strong>Item Description:</strong> A USB-C power cord typically used for the charging of smartphones or similar devices. When plugged into the USB port of a device and a wall outlet, the device will spontaneously burst into flames. This event appears to cause no physical damage to the USB cord.<br>
+                <strong>Date of Recovery:</strong> 3/20/2020<br>
+                <strong>Location of Recovery:</strong> Walgreens Corner-Store in Concord, CA.<br>
+                <strong>Current Status:</strong> Kept in standard anomalous object locker at Site-██</p>
+                <div class="footnotes-footer">
+                <div class="title">Footnotes</div>
+                <div class="footnote-footer" id="footnote-1"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-1')">1</a>. A memetic anomaly which replaces all information of itself with an image of a human foot placed on top of a standard notepad when not described in the context of a footnote.</div>
+                <div class="footnote-footer" id="footnote-2"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-2')">2</a>. 03-02-2009.</div>
+                <div class="footnote-footer" id="footnote-3"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-3')">3</a>. Dr. Dankworth claims to have made a pun on the words "footnote" when the anomaly first was recognized, prompting it to possibly exist from this event.</div>
+                <div class="footnote-footer" id="footnote-4"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-4')">4</a>. Anomaly is never mentioned unless used in the context of a footnote.</div>
+                <div class="footnote-footer" id="footnote-5"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-5')">5</a>. Genus that includes all species of oak trees.</div>
+                </div>
+                
+                                    </div>
+        </div>
+{% endblock %}
