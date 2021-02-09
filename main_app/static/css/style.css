@@ -16,6 +16,12 @@
     font-size: 2vh;
     margin-top: -.5vh; 
 }
+img {
+    max-width: 50vw;
+}
+.home {
+    overflow-y: hidden;
+}
 body {
     background-color: #191919;
     font-family: 'Playfair Display', serif;
@@ -38,13 +44,14 @@ body {
     border-right: 1px white solid;
 }
 .leftHomeColumn {
-    width: 25vw;
+    width: 35vw;
     float: left;
     height: 75vh;
     background-color: #202020;
     margin-left: -1vw;
     margin-right: 1vw;
     border-right: 1px white solid;
+    height: 100vh;
 }
 .taleTitleBorder {
     margin-top: 1vw;
@@ -55,9 +62,6 @@ body {
 #taleListBorder {
     width: 20vw;
 }
-.taleTitle {
-    margin-left: -3vw;
-}
 .leftHomeColumn h2 {
     font-size: 4vw;
     margin-top: -1vw;
@@ -67,14 +71,22 @@ body {
 }
 .leftHomeColumn a {
     text-decoration: none;
-
+}
+.leftHomeColumn li {
+    list-style-type: none;
+    margin-top: .5vw;
 }
 .editTaleChoice {
     margin-left: 1vw;
     margin-top: -2vw; 
     font-size: 1.5vw;
+    text-align: center;
 }
-
+.homeTaleList {
+    overflow: hidden;
+    height: 60vh;
+    overflow-y: scroll;
+}
 .leftHomeColumn h3 {
     font-size: 2vw;
     margin-bottom: -.4vw;
@@ -98,12 +110,33 @@ body {
     height: 100vh;
     margin-left: 17vw;
 }
+.rightHomeColumn {
+    width: 65vw;
+    height: 100vh;
+}
+.rightHomeColumn li{
+
+}
 .wiki-content-table {
     border-collapse: collapse;
     border-spacing: 0;
     margin: 0.5em auto;
     background-color: #8f8f8f;
 }
+
+::-webkit-scrollbar {
+    width: .25vw;
+  }
+  ::-webkit-scrollbar-track {
+    background: #c8c8c8;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgb(70, 70, 70);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(47, 47, 47);
+  }
 #page-content {
     font-size : 1.75vh;
 }

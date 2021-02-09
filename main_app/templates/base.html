@@ -10,6 +10,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     {% include 'django_quill/media.html' %}
+    {% block styles %}
+    {% endblock %}
     <title>SCP Database</title>
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
 </head>
@@ -23,7 +25,7 @@
         <div class="phoneNavBar">
         <li><p>SIGN UP | LOGIN</p></li>
         <li><p>ABOUT</p></li>
-        <li><p>HOME</p></li>
+        <li><p><a href="/">HOME</a></li>
         </div>
     </ul>
     <br>

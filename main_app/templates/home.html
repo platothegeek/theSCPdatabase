@@ -1,24 +1,27 @@
 {% extends 'base.html' %}
+{% block styles %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/homestyle.css' %}">
+{% endblock%}
 {% block content %}      
-<div class="row">
+<div class="row home">
     <div class="leftHomeColumn">
            <h2>Tales</h2><hr class="taleTitleBorder">
            <h3> - Editor's Choice - </h3>
            <a class="editTaleChoice"href="tale/1">Lorem Ipsum by Mcqueen</a> <hr class="taleTitleBorder" id="taleListBorder">
+           <h3 class="taleTitle"> - All Tales - </h3>
            <ul class="homeTaleList">
-               <h3 class="taleTitle"> - All Tales - </h3>
                {% for Tales in tales_list %}
-               <li> <a href="tale/{{ Tales.id }}">{{ Tales.title }} by {{ Tales.author.username }} </a></li>
+               <li> <a href="tale/{{ Tales.id }}"><div style="text-decoration: underline; font-size: 1vw;">{{ Tales.title }} </div> <div style="font-size: .75vw;">by {{ Tales.author.username }} </div></a></li>
                {% endfor %}
            </ul>
     </div>
     <div class="rightHomeColumn">        
         <ul>
-            <li><a href="">Series 1</a></li>
-            <li><a href="">Series 2</a></li>
-            <li><a href="">Series 3</a></li>
-            <li><a href="">Series 4</a></li>
-            <li><a href="">Series 5</a></li>
+            <li><a href="">SCPs</a></li>
+            <li><a href="">Canons</a></li>
+            <li><a href="">Anomolous Items, Events, and Locations</a></li>
+            <li><a href="">Miscellaneous</a></li>
         </ul>
     </div>
 </div>
