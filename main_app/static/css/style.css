@@ -19,9 +19,6 @@
 img {
     max-width: 50vw;
 }
-.home {
-    overflow-y: hidden;
-}
 body {
     background-color: #191919;
     font-family: 'Playfair Display', serif;
@@ -243,6 +240,13 @@ a {
     color: #ffffff;
     font-size: 1.5vh;
 }
+.homeTaleTitle {
+    text-decoration: underline; 
+    font-size: 1vw;
+}
+.homeTaleAuthor {
+    font-size: 0.75vw;
+}
 @media only screen and (max-width: 600px) {
     .leftScpColumn li a {
         font-size: 2vh;
@@ -252,6 +256,7 @@ a {
         margin-left: -4vw;
     }
     .phoneNavBar {
+        margin-top: 2vh;
         margin-left: 15vw; 
         margin-right: 18vw;
     }
@@ -267,6 +272,54 @@ a {
     }
     .submitWarning{
         font-size: 1.2vh;
+    }
+    .row {
+        content: "";
+        display: inline;
+        clear: both;
+    }
+    .leftHomeColumn  {
+        width: 100vw;
+        margin-left: -2vw;
+        display: block;
+        border-bottom: 1px white solid;
+    }
+    .rightHomeColumn {
+        width: 100vw;
+        display: block;
+        margin-left: 0vw;
+    }
+    .firstHomeChoice {
+        margin-bottom: 100vh;
+    }
+    .navBar {
+        margin-left: 1vw;
+        margin-top: 2vh;
+    }
+    .leftHomeColumn h3 {
+        font-size: 5vw;
+    }
+    .leftHomeColumn h2 {
+        font-size: 10vw;
+        font-family: 'EB Garamond', serif;
+    }
+    .leftHomeColumn a{
+        font-size: 4vw;
+    }
+    .rightHomeColumn a {
+        font-size: 10vh;
+    }
+    .longSection a{
+        font-size: 7vh;
+    }
+    .taleTitleBorder {
+        width: 50vw;
+    }
+    .homeTaleTitle {
+        font-size: 3vw;
+    }
+    .homeTaleAuthor {
+        font-size: 2.5vw;
     }
 }
 .categBorder {

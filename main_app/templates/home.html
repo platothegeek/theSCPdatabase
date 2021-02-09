@@ -13,19 +13,19 @@
            <h3 class="taleTitle"> - All Tales - </h3>
            <ul class="homeTaleList">
                {% for Tales in tales_list %}
-               <li> <a href="tale/{{ Tales.id }}"><div style="text-decoration: underline; font-size: 1vw;">{{ Tales.title }} </div> <div style="font-size: .75vw;">by {{ Tales.author.username }} </div></a></li>
+               <li> <a href="tale/{{ Tales.id }}"><div class="homeTaleTitle">{{ Tales.title }} </div> <div  class="homeTaleAuthor">by {{ Tales.author.username }} </div></a></li>
                {% endfor %}
            </ul>
     </div>
     <div class="rightHomeColumn">
         <ul>
-            <li><a href="">SCPs</a></li>
+            <li class="firstHomeChoice"><a href="">SCPs</a></li>
             <hr class="categBorder">
             <li><a href="">Canons</a></li>
             <hr class="categBorder">
-            <li><a href="">Minor Anomolies</a></li>
+            <li class="longSection"><a href="">Minor Anomolies</a></li>
             <hr class="categBorder">
-            <li><a href="">Sites and Staff</a></li>
+            <li class="longSection"><a href="">Sites and Staff</a></li>
         </ul>
     </div>
 </div>
