@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block styles %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/homestyle.css' %}">
+<script src="{% static 'js/articleIndex.js' %}"></script>
+{% endblock%}
+{% block content %}
+<hr class="categBorderTop">
+<div class="row home">
+    <div class="leftHomeColumn">
+           <h3 class="taleTitle"> - All SCPs - </h3>
+           <ul class="homeTaleList">
+               {% for Scp in scp_list %}
+               {% if Scp.number == 002 %}
+               <li class="seriesOneMarker"> <a href="tale/{{ Scp.id }}"><div class="homeTaleTitle">SCP - {{ Scp.number }} </div> <div  class="homeTaleAuthor">{{ Scp.title }} </div></a></li>
+               {% elif Scp.number == 1000 %}
+               <li class="seriesTwoMarker"> <a href="tale/{{ Scp.id }}"><div class="homeTaleTitle">SCP - {{ Scp.number }} </div> <div  class="homeTaleAuthor">{{ Scp.title }} </div></a></li>
+               {% elif Scp.number == 2000 %}
+               <li class="seriesThreeMarker"> <a href="tale/{{ Scp.id }}"><div class="homeTaleTitle">SCP - {{ Scp.number }} </div> <div  class="homeTaleAuthor">{{ Scp.title }} </div></a></li>
+               {% elif Scp.number == 3000 %}
+               <li class="seriesFourMarker"> <a href="tale/{{ Scp.id }}"><div class="homeTaleTitle">SCP - {{ Scp.number }} </div> <div  class="homeTaleAuthor">{{ Scp.title }} </div></a></li>
+               {% else %}
+               <li> <a href="tale/{{ Scp.id }}"><div class="homeTaleTitle">SCP - {{ Scp.number }} </div> <div  class="homeTaleAuthor">{{ Scp.title }} </div></a></li>
+               {% endif %}
+               {% endfor %}
+           </ul>
+    </div>
+    <div class="rightHomeColumn scpColumn">
+        <ul>
+            <li class="firstHomeChoice"><button class="makeA" onclick="goToSeries1()">Series 1</button></li>
+            <hr class="categBorder">
+            <li><button class="makeA" onclick="goToSeries2()">Series 2</button></li>
+            <hr class="categBorder">
+            <li><button class="makeA" onclick="goToSeries3()">Series 3</button></li>
+            <hr class="categBorder">
+            <li><button class="makeA" onclick="goToSeries4()">Series 4</button></li>
+        </ul>
+    </div>
+</div>
+{% endblock %}

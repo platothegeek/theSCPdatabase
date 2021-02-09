@@ -242,10 +242,20 @@ a {
 }
 .homeTaleTitle {
     text-decoration: underline; 
-    font-size: 1vw;
+    font-size: 1.5vh;
 }
 .homeTaleAuthor {
-    font-size: 0.75vw;
+    font-size: 1.25vh;
+}
+.longSection a{
+    font-size: 8vw;
+}
+.makeA {
+    font-size: 10vh;
+    border: none;
+    background-color: #191919;
+    color: white;
+    font-family: 'EB Garamond', serif;
 }
 @media only screen and (max-width: 600px) {
     .leftScpColumn li a {
@@ -320,6 +330,17 @@ a {
     }
     .homeTaleAuthor {
         font-size: 2.5vw;
+    }
+    .makeA {
+        font-size: 10vh;
+        border: none;
+        background-color: #191919;
+        color: white;
+        font-family: 'EB Garamond', serif;
+        transform: none;
+    }
+    .scpColumn {
+        display: none;
     }
 }
 .categBorder {

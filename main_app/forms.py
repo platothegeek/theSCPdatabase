@@ -11,7 +11,7 @@ class CanonModelChoiceField(ModelChoiceField):
 class QuillFieldForm(forms.Form) :
     content = QuillFormField()
 class RegisterForm(UserCreationForm):
-    summary = forms.CharField(max_length=250)
+    summary = forms.CharField(max_length=250, widget=forms.Textarea)
     class Meta:
         model = Profile
         fields = ("username", "summary", "email")
@@ -35,7 +35,7 @@ class Scp_Form(ModelForm):
 class Edit_Scp_Form(ModelForm):
     title = forms.CharField(max_length=50, required=False)
     number = forms.IntegerField(required=False)
-    body = forms.CharField(max_length=500000, widget=forms.Textarea)
+    body = QuillFieldForm()
     canon = CanonModelChoiceField(queryset=Canon.objects.all())
     class Meta:
         model = Scp
@@ -50,7 +50,7 @@ class Tale_Form(ModelForm):
 class Edit_Tale_Form(ModelForm):
     title = forms.CharField(max_length=50, required=False)
     canon = CanonModelChoiceField(queryset=Canon.objects.all())
-    body = forms.CharField(max_length=500000, required=False, widget=forms.Textarea)
+    body = QuillFieldForm()
     class Meta:
         model = Tales
         fields =['title','canon','body']
