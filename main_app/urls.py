@@ -8,6 +8,7 @@ urlpatterns = [
     path('scp/', views.scp_index, name='scp_index'),
     path('tale/<int:tale_id>/', views.tale_show, name='tale_show'),
     path('tale/new/', views.tale_new, name='tale_new'),
+    path('staff/self', views.staff_self, name='tale_new'),
     path('staff/new/', views.staff_new, name='staff_new'),
     path('minor/', views.minor_index, name='minor_index'),
     path('minor/events/', views.minor_events, name='minor_events'),

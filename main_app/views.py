@@ -27,6 +27,20 @@ def minor_items1(request):
     return render(request, 'minor/items1.html')
 def minor_items2(request):
     return render(request, 'minor/items2.html')
+def staff_self(request):
+    current_user = request.user
+    if request.user.is_authenticated:
+        myscp_list = Scp.objects.filter(author = current_user)
+        mytale_list = Tales.objects.filter(author = current_user)
+        print(mytale_list)
+        context = {
+            'user': current_user,
+            'scp_list': myscp_list,
+            'tale_list': mytale_list,
+        }
+        return render(request, 'staff/show.html', context)
+    else:
+        return redirect('staff/new')
 def staff_new(request):
     error_message=''
     if request.method == "POST":

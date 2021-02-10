@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block styles %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/homestyle.css' %}"> 
+{% endblock%}
+{% block content %}
+<hr class="categBorderTop">
+<div class="row home">
+
+    <div class="leftHomeColumn leftProfileColumn">
+           <h3 class="taleTitle">Username: {{ user.username }} </h3>
+           <h3 class="taleTitle">Email: {{ user.email }} </h3>
+           <h3 class="taleTitle">Join Date: {{ user.timestamp }} </h3>
+           <h3 class="taleTitle">Summary - </h3>
+           <p>{{ user.summary }}</p>
+           <hr class="categBorder">
+    </div>
+    <div class="leftHomeColumn rightProfileColumn">
+        <h3 class="taleTitle"> - Your Pages - </h3>
+        <ul class="homeTaleList">
+            {% for Scp in scp_list %}
+            <li> <a href="/scp/{{ Scp.id }}"><div class="homeTaleTitle">SCP - {{ Scp.number }} </div> <div  class="homeTaleAuthor">{{ Scp.title }} </div></a></li>
+            {% endfor %}
+            {% for Tales in tale_list %}
+            <li> <a href="/tale/{{ Tales.id }}"><div class="homeTaleTitle">{{ Tales.title }} </div></a></li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="leftHomeColumn leftProfileColumn moveUp">
+        
+        <h3 class="taleTitle firstOpt">My Pages </h3>
+        <hr class="categBorder">
+        <h3 class="taleTitle">Saved SCPs </h3>
+        <hr class="categBorder">
+        <h3 class="taleTitle"> Saved Tales </h3>
+        <hr class="categBorder">
+    </div>
+</div>
+{% endblock %}

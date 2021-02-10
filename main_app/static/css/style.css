@@ -126,7 +126,19 @@ body {
     right: 0;
     position: absolute;
     z-index: -1;   
-  }
+}
+form::after {
+    content: "";
+    background-image: url("../images/scp_logo.png");
+    background-repeat: no-repeat;
+    opacity: 0.25;
+    top: 0;
+    left: 0vw;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+}
 .rightHomeColumn li a {
     text-decoration: none;
 }
@@ -192,7 +204,7 @@ a {
     font-family: 'Roboto Mono', monospace;
     text-align: center;
     font-size: 2vw;
-    color: #8d0000;
+    color: #9b0000;
 }
 
 .submitWarning{
@@ -293,6 +305,34 @@ a {
 }
 .rightHomeColumn li a:hover {
     color: rgb(155, 0, 0);
+}
+.minor li a{
+    font-size: 5vw;
+}
+.smallerIndex {
+    width: 15vw;
+}
+.rightProfileColumn{ 
+    width: 64vw;
+}
+.leftProfileColumn {
+    height: 50vh;
+}
+.moveUp {
+    transform: translate(0, -50vh);
+}
+.moveUp h3{
+    text-align: right;
+    transform: translate(-2vw, 0);
+    transition: transform .5s;
+    transition: color .5s, transform .5s;
+}
+.moveUp h3:hover {
+    color: rgb(155, 0, 0);
+    transform: translate(-3vw, 0);
+}
+.firstOpt {
+    margin-top: -10vh;
 }
 @media only screen and (max-width: 600px) {
     .leftScpColumn li a {
