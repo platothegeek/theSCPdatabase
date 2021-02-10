@@ -24,9 +24,13 @@
             <p style="margin-top: -3vh; font-size: 2vh;">SECURE. CONTAIN. PROTECT.</p>
         </li>
         <div class="phoneNavBar">
-        <li><p><a href="/staff/new">SIGN UP</a> | LOGIN</p></li>
-        <li><p>ABOUT</p></li>
-        <li><p><a href="/">HOME</a></li>
+        {% if request.user.is_authenticated %}
+            <li><p><a href="/staff/self">PROFILE</a> | <a href="{% url 'logout' %}?next=/">LOG OUT</a></p></li>
+        {% else %}
+            <li><p><a href="/staff/new">SIGN UP</a> | <a href="{% url 'login' %}">LOGIN</a></p></li>
+        {% endif%}
+            <li><p>ABOUT</p></li>
+            <li><p><a href="/">HOME</a></li>
         </div>
     </ul>
     <br>

@@ -2,7 +2,7 @@
 {% block styles %}
 {% load static %}
 <link rel="stylesheet" href="{% static 'css/homestyle.css' %}"> 
-{% endblock%}
+{% endblock %}
 {% block content %}
 <hr class="categBorderTop">
 <div class="row home">
@@ -11,11 +11,14 @@
            <h3 class="taleTitle">Username: {{ user.username }} </h3>
            <h3 class="taleTitle">Email: {{ user.email }} </h3>
            <h3 class="taleTitle">Join Date: {{ user.timestamp }} </h3>
-           <h3 class="taleTitle">Summary - </h3>
+           <h3 class="taleTitle">- Summary - </h3>
            <p>{{ user.summary }}</p>
-           <hr class="categBorder">
     </div>
-    <div class="leftHomeColumn rightProfileColumn">
+    <div class="leftHomeColumn leftProfileColumn moveUp">
+        <button class="makeA taleTitle right">My Pages</button><button class="makeA taleTitle right">Saved SCPs </button><button class="makeA taleTitle right"> Saved Tales </button>
+    </div>
+    <hr class="categBorder">
+    <div class="leftHomeColumn rightProfileColumn moveUpRight">
         <h3 class="taleTitle"> - Your Pages - </h3>
         <ul class="homeTaleList">
             {% for Scp in scp_list %}
@@ -26,14 +29,6 @@
             {% endfor %}
         </ul>
     </div>
-    <div class="leftHomeColumn leftProfileColumn moveUp">
-        
-        <h3 class="taleTitle firstOpt">My Pages </h3>
-        <hr class="categBorder">
-        <h3 class="taleTitle">Saved SCPs </h3>
-        <hr class="categBorder">
-        <h3 class="taleTitle"> Saved Tales </h3>
-        <hr class="categBorder">
-    </div>
+
 </div>
 {% endblock %}

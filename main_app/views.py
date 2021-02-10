@@ -41,6 +41,8 @@ def staff_self(request):
         return render(request, 'staff/show.html', context)
     else:
         return redirect('staff/new')
+def profile_redirect(request):
+    return redirect('/staff/self')
 def staff_new(request):
     error_message=''
     if request.method == "POST":

@@ -314,12 +314,17 @@ a {
 }
 .rightProfileColumn{ 
     width: 64vw;
+    float: right;
 }
 .leftProfileColumn {
     height: 50vh;
+    float: left;
 }
 .moveUp {
-    transform: translate(0, -50vh);
+    transform: translate(-35.05vw,50vh);
+    float: left;
+    margin-left: -1vw;
+    margin-right: 1vw;
 }
 .moveUp h3{
     text-align: right;
@@ -334,7 +339,24 @@ a {
 .firstOpt {
     margin-top: -10vh;
 }
+.moveUpRight {
+    transform: translate(0, -50vh);
+}
+.right {
+    float: right;
+}
 @media only screen and (max-width: 600px) {
+    .leftHomeColumn {
+        border-bottom: none;
+    }
+    .moveUpRight {
+        transform: translate(3vw, -5vh);
+    }
+    .moveUp {
+        transform: translate(0, 0vh);
+        margin-bottom: -45vh;
+        margin-top: -20vh;
+    }
     .leftScpColumn li a {
         font-size: 2vh;
         margin-left: -5vw;
@@ -369,7 +391,6 @@ a {
         width: 100vw;
         margin-left: -2vw;
         display: block;
-        border-bottom: 1px white solid;
     }
     .rightHomeColumn {
         width: 100vw;
@@ -434,10 +455,18 @@ a {
     .minor li a{
         font-size: 10vw;
     }
+    .right {
+        font-size: 5vw;
+        float: left;
+        width: 33vw;
+    }
 }
 .categBorder {
     border: none;
     border-bottom: .25px solid white;
     width: 75vw;
     margin-left: -10vw;
+}
+.short {
+    width: 40vw;
 }

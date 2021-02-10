@@ -16,4 +16,5 @@ urlpatterns = [
     path('minor/items/', views.minor_items, name='minor_items'),
     path('minor/items/1/', views.minor_items1, name='minor_items1'),
     path('minor/items/2/', views.minor_items2, name='minor_items2'),
+    path('accounts/profile/', views.profile_redirect, name='profile_redirect'),
 ]
