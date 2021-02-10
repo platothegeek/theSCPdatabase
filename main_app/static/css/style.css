@@ -384,6 +384,24 @@ a {
 .longAbout {
     height: 1500vh;
 }
+.newScpButton {
+    text-align: center;
+}
+#AWCYcontent {
+    display: block;
+}
+#TCIcontent {
+    display: none;
+}
+#MCDcontent {
+    display: none;
+}
+#FCDcontent {
+    display: none;
+}
+#GRUPcontent {
+    display: none;
+}
 @media only screen and (max-width: 600px) {
     .leftHomeColumn {
         border-bottom: none;

@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+
+	
+    {{ form.non_field_errors }}
+    <h1 class="submitTitle"><br>Edit an SCP</h1>
+    <h2 class="submitHead" >- WARNING -</h2>
+    <p class="submitWarning">THE SCP FOUNDATION DATABASE IS CLASSIFIED<br>ANY UNAUTHORIZED ACCESS OR ALTERATION IS STRICTLY PROHIBITED <br> PERPETRATORS WILL BE TRACKED, LOCATED, AND DETAINED</p>
+	<form action="{% url 'scp_new' %}" method="POST" >
+		{% csrf_token %} 
+	<table border="1" class="submitTable">
+	{% for field in form.visible_fields %}
+		<tr>
+			<th>{{ field.label_tag }}</th>
+			<td>
+				{{field.errors}}
+				{{ field }}
+			</td>
+		</tr>
+		{% endfor %}
+	</table>
+	<input type="submit" class="btn-login" value="Submit Post!" id="signUpButton"/>
+	{% if error_message %}
+		<p class="red-text" style="text-align: center;">{{error_message}} {{ form.errors }}</p>
+	{% endif %}
+</form>
+{% endblock%}

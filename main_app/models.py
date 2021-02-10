@@ -14,6 +14,7 @@ class Canon(models.Model):
     name = models.CharField(max_length=500)
     summary = models.CharField(max_length=50000)
 class Scp(models.Model):
+    id = models.AutoField(primary_key=True)
     title = models.CharField(max_length=50)
     number = models.IntegerField(unique=True)
     body = QuillField()
@@ -21,6 +22,7 @@ class Scp(models.Model):
     timestamp = models.DateTimeField(default=django.utils.timezone.now)
     canon = models.ForeignKey(Canon, on_delete=models.CASCADE, related_name="scps", default=1)
 class Tales(models.Model):
+    id = models.AutoField(primary_key=True)
     title = models.CharField(max_length=50)
     author = models.ForeignKey(Profile, on_delete=models.CASCADE, related_name="tales", default=1)
     body = QuillField()

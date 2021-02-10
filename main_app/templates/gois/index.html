@@ -1,0 +1,377 @@
+{% extends 'base.html' %}
+{% block styles %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/scpstyle.css' %}">
+{% endblock%}
+{% block content %}
+<div class="row">
+    <hr class="categBorder">
+        <div class="leftScpColumn" style="width: 25vw; height: 100vh;">
+                <ul>
+                        <li><button class="makeA smallerAboutPage" id="AWCYBtn">Are We Cool Yet?</button></li>
+                        <li><button class="makeA smallerAboutPage" id="TCIBtn">The Chaos Insurgency</button></li>
+                        <li><button class="makeA smallerAboutPage" id="MCDBtn">Marshall, Carter, and Dark</button></li>
+                        <li><button class="makeA smallerAboutPage" id="FCDBtn">Fuller's Circus</button></li>
+                        <li><button class="makeA smallerAboutPage" id="GRUPBtn">G.R.U Division "P"</button></li>
+                </ul>
+        </div>
+        <div class="rightScpColumn thinAbout" style="background-color: #191919; float: right; transform: translate(0, -100vh); width: 70vw;">
+            <div id="AWCYcontent"> 
+                Are We Cool Yet? is an artistic movement existing on the fringes of the international avant-garde, with roots in the early surrealist art movements of the late 19th and early 20th century and the growing scientific understanding and study of the anomalous that began to develop during that time. (For one man's account of how the movement came into its own, refer to the contest entry tale "Birth of the Cool".) The movement has no centralized leadership, no headquarters, very few traditions or conventions, and no official membership rolls or requirements - the only thing one need do to call oneself a member is to make art that employs, exploits, or revolves around anomalous objects, beings, or phenomena.
+                <br><br>
+                The organization of an AWCY? cell varies wildly from place to place. Many groups are organized into small salons led by a creative mastermind or a professional critic, while others are collectives with no clear leader, and some members prefer to work entirely on their own. In the opinions of some, it is not even necessary to know that the movement exists in order to be a part of it. The tendency of some such groups to produce highly visible public artworks that cause death, injury, or lasting psychological harm has led some to decry the entire movement as a bunch of "art terrorists", a label some of its members wear with pride, some repudiate entirely, and some wear ironically.
+                <br><br>
+                The largest and most visible gathering of AWCY? artists in any place or time is "Sommes-Nous Devenus Magnifiques?", a grand exhibition held every ten years since 1874, at which those "in the know" can gather to view and scrutinize a selection of some of the finest works in anomalous art produced over the previous decade. To have a work accepted is considered (by those who care about such things) to be one of the greatest achievements an anartist can attain in a career, and members of cells all around the world petition to have their works displayed.
+            </div>
+            <div id="TCIcontent"> 
+                In 1924, the SCP Foundation formed a covert special task force, known only to the O5 Council, codenamed the "Insurgency." The leadership of the Insurgency was comprised of members of MTF Alpha-1, the Red Right Hand, famed for their loyalty to the O5 Council and the total secrecy of their origins, identities, and operations. The Insurgency leadership was supported by research, security, and retrieval personnel, all taken from Foundation ranks.
+                <br><br>
+                To the majority of the Foundation and the anomalous world, the Insurgency was a splinter group that went A.W.O.L. with several researchers and anomalous objects. In reality, the O5 Council had created the Insurgency to complete missions with ethically questionable methods and politically unsavory results—while keeping the Foundation's public reputation clean. For approximately twenty-four years, the Insurgency operated under the guise of Foundation defectors, using anomalous objects to secretly further the goals of the O5 Council.
+                <br><br>
+                In 1948, as part of a seemingly routine staged operation, the Insurgency removed several SCP objects from Foundation containment and transported dozens of defecting Foundation researchers to various safe locations. That same day, multiple other unplanned raids of Foundation facilities occurred. The Insurgency seized SCP objects with great research and military potential and inflicted severe casualties to Foundation personnel. The Foundation's biggest lie had become a reality. Their covert black ops team had defected, and the Foundation faced a new threat from an organization now calling itself by a new name: the Chaos Insurgency.
+                <br><br>
+                The O5 Council was stunned. The defection or even the slightest hint of disloyalty from Red Right Hand personnel had been unprecedented. The motives behind the Insurgency's betrayal remain unknown to the Foundation. All attempts to find, apprehend, or assassinate the defecting Insurgency operatives failed. This information is classified within the Foundation, which maintains that the Insurgency defected in 1924 and that the actual defections in 1948 were simply raids made by the already-existing splinter organization.
+                <br><br>
+                The modern-day Chaos Insurgency bears some similarities to the organization that founded it. The Chaos Insurgency's Delta Command, shrouded in mystery, issues orders to the lower ranks. Gamma-class researchers and military commanders have oversight over the execution of the Delta Command's orders, while Beta-class personnel, while not given the same level of command as Gamma-class, carry out the Insurgency's work in the field. Alpha-class personnel, often recruited from individuals with little to no knowledge of the anomalous, accept offers of employment often because the alternative is to carry on a miserable existence outside the anomalous world. They are the grunt workers: numerous and expendable.
+                <br><br>
+                The Insurgency is split into two divisions: military and R&D. Cells within both divisions work independently, unaware of the exact actions and goals of other cells. New recruits receive instructions from their superiors and are expected to follow them unquestioningly, not knowing that every action they take is part of a larger plan orchestrated by the Delta Command. They are told that they are carrying out a great rebellion against the anarchy of the status quo—a world where "consensus reality" itself is an illusion, history's great lie, perpetrated by the Foundation. They are told that they will use the anomalous to build a utopian future, where humanity is master of everything, not just a mirage.
+                <br><br>
+                But really, who knows what the Chaos Insurgency actually wants?
+            </div>
+            <div id="MCDcontent"> 
+                Why do rich people care about making money?
+                <br><br>
+                The poor, certainly, need to care about doing so. When one's resources are only enough to scrape by, money is all that matters. It is important for the middle class as well. Looking after their spouses, their children; there is a culture of dependence that weights them down.
+                <br><br>
+                The rich want to make money because they can always become richer. There is always another echelon of wealth to rise above, some degree of opulence that is beyond their grasp. They drive to even further heights, seeking to slake their thirst for coin. They care about making money simply because they can. To do so, the rich exploit people far below them on the social ladder, the poorest of the poor. To the oil magnate, to the harsh dictator, to the kings and queens and lords and ladies, the common people are specks of dirt.
+                <br><br>
+                To Marshall, Carter and Dark, the rich are unto ants.
+                <br><br>
+                People, regardless of social standing, are all the same. The poor may spend their savings on worthless yet treasured trinkets, sold by the middle class. The salaryman may splurge on a pretty ring for his wife, the profits of which go into the pockets of a wealthy mining boss. In the same way, the gullible rich will burn millions of dollars on a single impossible object. Everyone is willing to waste their precious, precious money on something out of the ordinary.
+                <br><br>
+                But value is artificial. The poor spend their pennies on mass-produced china, convinced that it has some worth to it. The rich convince the middle class that diamonds are rare and valuable, despite the stones being retrieved in Africa by the billion. Marshall, Carter and Dark convince the rich that the impossible is invaluable, while any anartist on a street can twist a die into a hypercube.
+                <br><br>
+                The methodology of such a scheme is quite simple, but the critical step is to gain a market monopoly. If you are the only seller in town, you can set the price at any level you desire, so long as you can drum up demand. In this regard, Marshall, Carter and Dark have the advantage: for hundreds of years, they were the only peddlers of anomalous wares in the world. They had the time to gain the capital, and with that capital they can now outprice even the most competitive upstart.
+                <br><br>
+                While organisations such as the Foundation, the GOC, and the Horizon Initiative resent the company's existence, they are unable to deal with such an unassailable economic powerhouse. With a glance, Marshall, Carter and Dark could level a city, bankrupt a country; with a single call, they could plunge the planet into a thermonuclear war. Yet, to the eternal relief of all, they are the least volatile players in the anomalous field. After all, if the veil of secrecy were to break, their trinkets would become worthless; their business would crumple and dissolve.
+                <br><br>
+                While this may cause some to think of Marshall, Carter and Dark as a massive, faceless corporation, their workforce numbers at most in the order of one hundred personnel. Their operations are directed and streamlined, maximising efficiency and minimising cost. Further manpower, if necessary, is outsourced from other organisations. Those in the highest positions of power are perhaps the most mysterious. Wild stories abound on the subject: depending on the source, they may be ghosts or demons, old men sending messages from beyond the grave, faceless monsters from another world, or even shapeshifting lizardmen.
+                <br><br>
+                A major part of their operations is establishing supply lines between various anomalous groups. Marshall, Carter and Dark purchase directly from groups such as Doctor Wondertainment and The Factory, reselling their goods at exorbitant markups. Prometheus Labs gladly supply the group with their latest research, in exchange for samples of exotic and complex anomalies. They often host anart exhibitions, exerting notable control of the artistic marketplace.
+                <br><br>
+                Similarly, they host various social functions for the most rich and powerful people in the world. With hooks throughout Europe, America, Russia and China, there is never trouble finding a market for a given item. They are, of course, willing to sell to any buyer; groups such as the Chaos Insurgency are some of their most valuable clients.
+                <br><br>
+                Perhaps the organisations most opposed to Marshall, Carter and Dark are the Manna Charitable Foundation and the Serpent's Hand. Manna Charitable often attempts to sabotage their operations, due to their restrictions of anomalous goods to the upper class. However, their limited range and resources makes them more irritating than threatening. The Serpent's Hand, meanwhile, are directly and openly antagonistic: caring neither for the veil of secrecy or the company's continuing practice of anomalous human trafficking, and impossible to economically intimidate, they represent the only pervasive threat to the group's operations.
+                <br><br>
+                Without question, Marshall, Carter and Dark are one of the most important pieces on the chessboard of the anomalous world; occasionally putting other players into check, but never into mate. For Marshall, Carter and Dark, the planet is an intricate network they have secured safely beneath their thumb, where winning and losing are meaningless terms. There is no need to move pieces when you can move the board. When you can end the match at any time, there's only one reason to continue.
+                <br><br>
+                It's all about playing the game.
+            </div>
+            <div id="FCDcontent"> 
+                <div style="text-align: center;">
+                <p style="font-weight: bold;">The following is the digital reproduction of a promotional poster advertising Herman Fuller's Circus of the Disquieting. The poster was found on ██-██-████ in █████, █████ and is currently held within Site-17 storage. </p>
+                <p>– Dr. █████ █████, Head of Research, Site-██</p>
+                <h1>Herman Fuller's Circus of the Disqueting</h1>
+                <h2>ROLL UP!</h2>
+                <h2>ROLL UP!</h2>
+                <br><br>
+                <br><br>
+                Welcome, ladies and gentlemen, to the greatest show on earth! Welcome to Herman Fuller's Circus of the Disquieting!
+                <br><br>
+                <br><br>
+                The Circus is, first and foremost, a show, THE show. Those in its employment live to perform, to regale the audiences with their talents. When the circus comes to town, no one quite understands where they came from, or how they managed to put up that tent without anyone seeing it. Officials are baffled by the sudden existence of a bigtop and the associated caravans, trailers and wagons, but strangely enough the paperwork always seems to be in order.
+                <br><br>
+                And of course, once they attend the show, they lose any misgivings they might have. Because, after all, it is the greatest show on earth.
+                <br><br>
+                The circus treats its performers, be they tightrope walkers consisting only of legs, tentacled things that gibber and squeal, or clowns with the tears of a thousand dead stars in their eyes, as valuable assets. The circus is a family, and family stays together.
+                <br><br>
+                So come watch the show, come feel the magic! After all, what do you have to lose?
+                </div>
+            </div>
+            <div id="GRUPcontent"> 
+                <div id="page-content">
+                        
+
+                    <div style="text-align: right;"><div class="page-rate-widget-box"><span class="rate-points">rating:&nbsp;<span class="number prw54353">+93</span></span><span class="rateup btn btn-default"><a title="I like it" href="javascript:;" onclick="WIKIDOT.modules.PageRateWidgetModule.listeners.rate(event, 1)">+</a></span><span class="ratedown btn btn-default"><a title="I don't like it" href="javascript:;" onclick="WIKIDOT.modules.PageRateWidgetModule.listeners.rate(event, -1)">–</a></span><span class="cancel btn btn-default"><a title="Cancel my vote" href="javascript:;" onclick="WIKIDOT.modules.PageRateWidgetModule.listeners.cancelVote(event)">x</a></span></div></div>
+                    
+                    
+                    <div style="border-radius: 10px; border:dashed 1px #444444; background:#F5F5F5; float:top; width:96.5%; padding:10px; color: black; font-weight: bold;">
+                    <p>Welcome, people. Please take an available seat as soon as possible so we can start this presentation. Dr. Jensen, a pleasure. Didn't know you were interested in this. Dr. Thissle. Miss Trynch, good morning. Nice to see you here. Hello there. I think we still have some empty seats, yes. No no, that's fine, come in. Right. Could you close the doors, Ian? Thank you."</p>
+                    <p>Now then, welcome to the Orientation on ГРУ, Отдел 'П', or as we refer to it: GRU Division Psychotronics, GRU Division "P" or GRU-P. I know many of you are only here because you need to attend a certain amount of seminars each year and you're looking for a nice quiet one where you can close your eyes and doze off. I know, because when I first attended this one, that's exactly what I did. So did many of my immediate colleagues actually, so I don't doubt only few of you are actually interested in what I have to say. I will say it nonetheless, because even if you only catch a few words in your sleep-addled moments, I am sure they will be beneficial in your future work for the Foundation.</p>
+                    <p>As you may not know, the seed of GRU-P was planted by a small gathering of suitably open-minded men under Stalin, to investigate the murder of prominent Bolshevik leader Kirov. The history books will tell you Kirov was simply shot and killed, but Stalin knew better. I refer of course to the fact that Kirov was murdered using an construct-invasive reality discrepancy similar to the one found in iterations of SCP-███. Dr. Gerhard, you will know what I'm talking about. Don't think I didn't see your eyes pop open there, Rainier. What they found during the investigation gave Stalin enough to feed his paranoia, and the Abnormal Occurrences Commission was allowed to expand its work.</p>
+                    <p>Anyway, having carried out Stalin's inquest, their attention soon turned to the possible exploitation of anomalous means for the benefit of the motherland. Let's just say that they found enough to exploit. Once the Soviets realized the capitalist nations were far ahead of them in para-natural research, with special consideration given to a vast gulf between them and Nazi Germany, GRU-P became the institution designed to fill this gap.</p>
+                    <p>Now, you might have gleaned some of this from the Foundation's internal documentation on the group What that won't tell you though is the extent of damage GRU-P's activities have done to this reality construct. I'll simply say this: during the second world war, hundreds of thousands of bombs fell on occupied Europe. Many of them didn't explode, and to this day people find unexploded armed ordnance in their backyards. If we translate this to GRU-P, we need to add the fact that this ordnance can have razor sharp teeth, be able to teleport instantly, phase in and out of existence, end the world by a twinkle in its eye. Fact of the matter is we have no idea how many projects the Russians had going at any one time, and we have no way of knowing where it all went. When that wall came down, GRU-P vanished and most of its files, personnel and anomalies went with it.</p>
+                    <p>This isn't to say the threat is gone. While no longer backed by a superpower, we know that many persons associated with the defunct GRU-P continue to collaborate, in many cases preserving and continuing their work from before the fall of the iron curtain. Similar to the collapse of Prometheus Labs, they are not to be considered a relic of the past.</p>
+                    <p>That, ladies and gentlemen is why you should be far more knowledgeable and even more importantly, far, far more concerned about GRU Division "P" than you probably are right now. We have a small selection of projects dealing with their interests, as most of you will know, but we have no real clue how much we're still missing. Those of you who have paid attention can come to me afterwards for more information on what we know is out there. Those of you who either didn't hear or don't care: I hope that you never have the misfortune of finding out just how right I am.</p>
+                    <p>— <em>Excerpt from GRU-P orientation meeting, Site-██</em></p>
+                    </div>
+                    <hr>
+                    <blockquote>
+                    <p>CLEARANCE GRANTED: DATABASE ENTRIES RELEVANT TO GRU DIVISION "P"…</p>
+                    </blockquote>
+                    <h1 id="toc0"><span>On the operation of GRU-P:</span></h1>
+                    <blockquote>
+                    <p><span style="font-size:larger;"><strong>Organizational guidelines of "P" division of the Main Intelligence Directorate</strong></span><br>
+                    <span style="font-size:larger;">(By order of the section head of 9th Directorate of GRU nr. 28 from 19.3.1982)</span><br>
+                    [REDACTED]<br>
+                    <strong>Base aims of "P" division GRU</strong><br>
+                    <strong>Article 4</strong><br>
+                    (1) Division "P" GRU shares overall aims with its superorganization as per order of the Head Commitee of GRU nr. 13/1965 - these include discovering, obtaining or neutralizing foreign technologic developments that could endanger USSR and broadly, the states of the Socialist International, their citizenry, or its overall political, economic, military and scientific aims. The activity of "P" division GRU is aimed at suppressing hostile abnormal activities, within the states of the Socialist International, documenting abnormal phenomena, and researching means of their use in furthering the overall aims of the organization.</p>
+                    <p>(2) Division "P" GRU fulfills chiefly these goals:</p>
+                    <p>(a) Gathering intelligence data in designated countries of interest regarding the aims, means and procedure of governments, groups, organizations or individuals hostile towards USSR or otherwise deemed dangerous, specifically where these possess or exploit abnormal means as defined in order of Fourth Department Abnormal Occurrences Commission chairman nr. 19/1938 "Classification of abnormal activity".</p>
+                    <p>(b) Checking, analyzing and processing information regarding abnormal occurrences within and without USSR territory.<br>
+                    (i) Neutralizing or containing hostile abnormal occurrences within USSR territory.<br>
+                    (ii) Researching abnormal occurrences within USSR territory aiming to improve the efficiency and security of the procedures enacted in order to neutralize or contain them.<br>
+                    (iii) Researching abnormal occurrences within and without USSR territory in order to bring about their exploitation and use to further organizational goals.<br>
+                    (iv) Identifying and obtaining access to abnormal phenomenon with a high estimated economic, military, scientific or political value, especially if in possession of hostile organizations or individuals.<br>
+                    (v) Identifying and recruiting or eliminating individuals with knowledge of abnormal occurrences where such is suitable with regards to overall organizational aims.<br>
+                    <br>
+                    (c) Enacting secret operations and actions in line with overall organizational aims, but specifically aimed at: ensuring the continuation of USSR, its political leadership and citizenry, promoting peace, disrupting or uncovering hostile enemy activity, disrupting or uncovering spontaneous hostile activity, furthering the aims of USSR and the states of the Socialist International in areas political, ideological and economic through abnormal means.</p>
+                    <p>(i) Cooperation with the Institute of Experimental Marxism-Leninism aimed at furthering political developments within the world so as to further the social advancement towards the establishment of a communist society.<br>
+                    (ii) Continued limited cooperation with non-allied foreign organizations, namely "SACK" and "BULAVA" in order to prevent the spread of "HOGWEED" at all costs.</p>
+                    <p>(d) Engaging in the protection of USSR assets, institutions, citizenry, and representatives abroad.<br>
+                    (i) Screening for and preventing memetic or other cognitohazardous contamination of the above, esp. such aiming to subvert key political, economic or ideological goals abroad, or introduce such contagion within USSR territory.</p>
+                    <p>(e) Enacting cooperation with allied organizations outside USSR, chiefly national intelligence organizations' departments concerned with abnormal occurrences of allied states, and psychotronics research organizations of allied states.</p>
+                    <p>………………………………………….[END OF EXCERPT]</p>
+                    </blockquote>
+                    <h1 id="toc1"><span>On language and terminology:</span></h1>
+                    <blockquote>
+                    <p><em>Codewords tied to specific organizations:</em><br>
+                    "SACK" - SCP Foundation. Organizational aims unknown. Highly secretive organization rapidly increasing in scope and operation since the end of the Great Patriotic War.</p>
+                    <p>"BULAVA" - The Horizon Initiative. Organizational aims directed towards furthering theocratic agenda at direct odds with the geopolitical interests of USSR and allied states. Dispones with significant amount of abnormal means generally styled as "holy relics" or otherwise tied to the specific ideological precepts of the group - often at odds with their genuine origin.</p>
+                    <p>"ALARIC" - SS Ahnenerbe. Organizational aims directed towards furthering the politics of the Third Reich and its geopolitical aims through use of abnormal means. Extinct. See document "WOLFSKIN".<br>
+                    <br>
+                    "GOSPLAN" - The Factory. Organizational aims are directed towards manufacture and distribution of supernatural objects to the larger population. Irregularly active, appears to be more focused on reaching the consumer culture of the First World.</p>
+                    <p>"BOREI" - The Fifth Church. Organizational aims appear to dispersed and non-centralized. Ideologically tied to concepts with space travel and the larger universe. Cosmonaut training includes screening for persons associated with these beliefs.</p>
+                    <p>"CALDERA" - Global Occult Coalition. Established as a multinational organization under the shield of the UN. Organizational aims directed towards eliminating abnormal occurrences throughout UN membership countries, with tacit sub-goals of furthering Western geopolitical aims.<br>
+                    <br>
+                    "ENGELS" - Lomonosov-Makarenko Institute for Scientific and Political Education. Organizational aims directed towards furthering the economic, ideological and political development of the USSR through abnormal means applied often in unconventional and highly risky manner. Sporadic activity. Operates from unknown location from within USSR territory; the self-reported location of Bolshoi Chemodansk, Soviet Socialist Republic of Kalpakstan does not exist.</p>
+                    </blockquote>
+                    
+                    
+                    
+                    <table class="heritage">
+                    <tbody><tr>
+                    <td class="title"><span style="color: darkred"><strong>GRU-P" Timeline</strong></span></td>
+                    </tr>
+                    <tr>
+                    <td class="label">
+                    <p>SCP-███</p>
+                    <div class="date">
+                    <p>December 4, 1934</p>
+                    </div>
+                    </td>
+                    <td class="entry">
+                    <div class="description">
+                    <p><em>Genesis</em></p>
+                    </div>
+                    <div class="snippet">
+                    <p>Sergey Kirov assassinated.</p>
+                    <p>Widely believed to be due to a lone gunman, possibly orchestrated by Stalin to initiate his great purge. A long gunman walks right past Soviet security and fires a fatal shot, questions are going to be raised. A great incident to world history, a benign one to the world of the anomalous. However, nothing could be further from the truth.</p>
+                    <p>This was the first thread pulled to reveal the great tapestry of the paranormal to the Soviet Union. Of course, it is also true that this precipitated prescription on a scale not seen since the days of Rome.</p>
+                    <p>Stalin was, after all, a master of wheels within wheels.</p>
+                    </div>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td class="label">
+                    <p><a href="/scp-1011">SCP-1011</a></p>
+                    <div class="date">
+                    <p>███████ ██ 1947</p>
+                    </div>
+                    </td>
+                    <td class="entry">
+                    <div class="description">
+                    <p><em>Establishment</em></p>
+                    </div>
+                    <div class="snippet">
+                    <p>The GRU expand the recently inaugurated Division "P", the Soviet answer to the West's second enlightenment, the discovery that nature could be bent past broken, the jagged edges being quite useful for cutting the throats of your enemies.</p>
+                    </div>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td class="label">
+                    <p><a href="/matryoshka">Matryoshka</a></p>
+                    <div class="date">
+                    <p>Sometime after <a href="/the-woodvale-incident">October 19, 1949</a></p>
+                    </div>
+                    </td>
+                    <td class="entry">
+                    <div class="description">
+                    <p><em>On Power</em></p>
+                    </div>
+                    <div class="snippet">
+                    <p>GRU-P is known to have considered government change within the Soviet Union, the exact parameters, success, and veracity of this report have not been confirmed.</p>
+                    </div>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td class="label">
+                    <p><a href="/scp-3595">SCP-3595</a></p>
+                    <div class="date">
+                    <p>30 Jul 1952</p>
+                    </div>
+                    </td>
+                    <td class="entry">
+                    <div class="description">
+                    <p><em>Behind Walls</em></p>
+                    </div>
+                    <div class="snippet">
+                    <p>GRU-P agents are attempting to document any possible anomalous entities residing within their borders after an incident in Germany caused unexpected anomalous phenomenon to begin manifesting itself.</p>
+                    </div>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td class="label">
+                    <p><a href="/scp-1723">SCP-1723</a></p>
+                    <div class="date">
+                    <p>November 11th, 1958</p>
+                    </div>
+                    </td>
+                    <td class="entry">
+                    <div class="description">
+                    <p><em>Eyes Open</em></p>
+                    </div>
+                    <div class="snippet">
+                    <p>Citizens of the Soviet Union with anomalous properties are aggressively recruited by GRU-P for the purpose of espionage. It is known that many of the most serious breaches in information security were related to this program.</p>
+                    </div>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td class="label">
+                    <p><a href="/fly-agaric">Fly Agaric</a></p>
+                    <div class="date">
+                    <p>March 27, 1966</p>
+                    </div>
+                    </td>
+                    <td class="entry">
+                    <div class="description">
+                    <p><em>Centralization</em></p>
+                    </div>
+                    <div class="snippet">
+                    <p>Anomalous materials continue to be used in furthering Soviet industrial practices, indicating that GRU-P has taken a larger role in furthering Soviet economic practices.</p>
+                    </div>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td class="label">
+                    <p><a href="/scp-1178">SCP-1178</a></p>
+                    <div class="date">
+                    <p>1967-1969</p>
+                    </div>
+                    </td>
+                    <td class="entry">
+                    <div class="description">
+                    <p><em>Circumnavigation</em></p>
+                    </div>
+                    <div class="snippet">
+                    <p>As a nuclear power, graduated from global crisis between the superpowers, GRU-P is known to contain anomalous phenomenon at a much larger scale. Organizations like the GOC, UIU and SCP Foundation can no longer treat them as a second-class player, their secrecy has proved to be hiding strength and not weakness.</p>
+                    </div>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td class="label">
+                    <p><a href="/scp-2577">SCP-2577</a></p>
+                    <div class="date">
+                    <p>██/██/19██</p>
+                    </div>
+                    </td>
+                    <td class="entry">
+                    <div class="description">
+                    <p><em>Standing Tall</em></p>
+                    </div>
+                    <div class="snippet">
+                    <p>GRU-P finances and activity become increasingly difficult to track, as their ability to self-finance through anomalous means becomes a matter of speculation outside the Soviet bloc.</p>
+                    </div>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td class="label">
+                    <p><a href="/scp-4848">SCP-4848</a></p>
+                    <div class="date">
+                    <p>February 2nd, 1985</p>
+                    </div>
+                    </td>
+                    <td class="entry">
+                    <div class="description">
+                    <p><em>Free Speech</em></p>
+                    </div>
+                    <div class="snippet">
+                    <p>Large-scale infiltration of the West by GRU-P has occurred at a scale not predicted by any of the major powers. Consequentially, every operational Foundation site and outpost should be issued with revised guidelines for dealing with GRU-P agents and anomalies.</p>
+                    </div>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td class="label">
+                    <p><a href="/scp-1681">SCP-1681</a></p>
+                    <div class="date">
+                    <p>April 10, 1983</p>
+                    </div>
+                    </td>
+                    <td class="entry">
+                    <div class="description">
+                    <p><em>Obfuscation</em></p>
+                    </div>
+                    <div class="snippet">
+                    <p>Espionage activities in Western nations continues, with attempts to manipulate public opinion becoming more bold as GRU-P appears to grow more self-confident.</p>
+                    </div>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td class="label">
+                    <p><a href="/squid-ispolin">Dissolution of the Soviet Union</a></p>
+                    <div class="date">
+                    <p>December 26, 1991</p>
+                    </div>
+                    </td>
+                    <td class="entry">
+                    <div class="description">
+                    <p><em>History</em></p>
+                    </div>
+                    <div class="snippet">
+                    <p>All known activity related to the institution named GRU Division "P" ceases as the larger GRU organization is abolished by most post-Soviet states. A rose by any other name, however, can still be as sharp.</p>
+                    </div>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td class="label">
+                    <p>XXXXXXXX</p>
+                    <div class="date">
+                    <p>[DATA CORRUPTED]</p>
+                    </div>
+                    </td>
+                    <td class="entry">
+                    <div class="description">
+                    <p>[DATA CORRUPTED]</p>
+                    </div>
+                    <div class="snippet">
+                    <p><em>Please see your administrator for further guidance</em></p>
+                    </div>
+                    </td>
+                    </tr>
+                    </tbody></table>
+                    
+                    
+                    
+                    <h1 id="toc2"><span>On future prospects for national security:</span></h1>
+                    <blockquote>
+                    <p><span style="font-size:larger;">On future prospects for national security.</span><br>
+                    <em>Excerpt of speech of I.V. Stalin in front of the Abnormal Occurrences Commission and officials of the Fourth Department following the report of its findings.</em><br>
+                    <span style="font-size:larger;">18.III.1935</span></p>
+                    <p>Comrades, it was with great sadness, but greater concern that four months ago, we learned of the death of our comrade, friend and example, Sergey Mironovic Kirov. A death which, as we, through the efforts of the commission seated here today, have learned, came of the crooked hands of domestic reaction, embedded deeper than we would have expected.<br>
+                    But more came from the efforts of the commission's diligent work. What did, that it warrants the time of all of us that have met here?</p>
+                    <p>The answer, as it turns out is that the vile act has been committed through means which go beyond our understanding, and I do not object to saying, beyond common sense. After all, if, to a group of chekists, one would suggest that when a criminal has snuck to the office of a key party worker, with a gun, and was not admonished by the present guards neither at entrance nor at the floors, that these guards have been neither negligent nor corrupt and complicit in the sabotage, but instead bewitched by a trinket of the man's carry, one would be met with gales of laughter well justified.</p>
+                    <p>Yet, in this case, as unbelievable as it is, this was shown to be what took place.</p>
+                    <p>Comrade Mitrochov, step forwards and demonstrate!</p>
+                    <p>Thank you, comrade Mitrochov. And here, you stand and think nothing out of order has happened, and that I am playing an elaborate prank. But, comrade Petlyar, do tell me where is your party legitimation. And, comrade Novikov, why did you too, give your pen knife to comrade Mitrochov? And you, comrade Novikov, why are you wearing your wallet as a hat? Because comrade Mitrochov must have had grave reasons to place it there, am I right?</p>
+                    <p>Comrade Mitrochov and his group has diligently worked on trying to understand the workings of the little item, as well as trying to work out where the nest of traitors responsible for comrade Kirov's death lies, and it is on a tall tree indeed. Still, while up there the Trotskyites might indeed feel safe, they shall find themselves three walls short of a cell sooner rather than later. But such is alarming news. Why so?</p>
+                    <p>Because comrades, here we see Trotskyites, mistaken as they are, using knowledge we lack to take the life of a good communist. And where such a thing happened once, it might happen again. Knowledge, as old proverbs say, is a weapon, and knowledge that we do not possess is a weapon held to our necks.<br>
+                    We must therefore strive to seize such a weapon from the hands of our enemies, and to do that, we must find about it first.</p>
+                    <p>As it turns out, comrade Mitrochov here has found where it has its origin, the supposed miracle the scheming traitors gave to the perpetrator, and that he lost on his way out. In a village near Leningrad, where a rumor goes about, that a shot White Guard holding the little pewter cross somehow sneaked right past a platoon of our troops and seized the machine gun behind them, killing a dozen before a grenade took him down. Turns out someone has dug out where he and a number other Whites were buried some months before comrade Kirov's life was taken, on NKVD orders. What is more, our comrades in the Commission have investigated dozens of other such rumors and tell-tales, and at least in two others, have found things that can not be brushed under the carpet either.</p>
+                    <p>Comrades, all of us here are bearers of a scientific, atheistic worldview, and as such would be quick to see folk tales and rumors of the sort as mere superstition stemming from a lack of knowledge and a priest's fairy-tale worldview. Still, time to time such superstition sticks to something that is genuine, and to dismiss that would be the act of not a materialist, but a know-it-all with a worldview so rigid it can hardly be called scientific. After all, our great grandfathers would say it was Lord God who made rain fall and lightning strike, but while a Leninist knows they were wrong, he still could do better than stick his arse towards the sky in a thunderstorm, for it makes them no less real.</p>
+                    <p>No, comrades, the work of the Abnormal Occurrences Commission shall continue - from now on it shall look at things taking place which by all reason should not have, all over the Union, and with full support of the Politbyro and the Fourth department behind it. Most of such will likely prove to be empty rumors and nonsense, but even one needle in a haystack can kill a horse. And when their diligent efforts bring understanding, we shall make use of this understanding to deal many a blow to the enemies of Soviet people, in a manner they would never have dreamed of. I leave you with the saying of our dear comrade, academician Michurin - "We cannot wait for favors from Nature. To take them from it – that is our task."</p>
+                    </blockquote>
+                    
+                                        </div>
+            </div>
+{% endblock %}

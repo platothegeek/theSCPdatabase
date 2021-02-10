@@ -4,9 +4,11 @@ from . import views
 urlpatterns = [
     path('', views.home, name='home'),
     path('about/', views.about, name='about'),
+    path('gois/', views.gois, name='gois'),
     path('scp/<int:scp_number>/', views.scp_show, name='scp_show'),
     path('scp/new/', views.scp_new, name='scp_new'),
     path('scp/', views.scp_index, name='scp_index'),
+    path('scp/edit/<int:scp_id>', views.scp_edit, name='scp_edit'),
     path('tale/<int:tale_id>/', views.tale_show, name='tale_show'),
     path('tale/new/', views.tale_new, name='tale_new'),
     path('staff/self', views.staff_self, name='tale_new'),
