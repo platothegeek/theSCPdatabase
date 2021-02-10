@@ -355,7 +355,7 @@ a {
     transform: translate(-10vw, 0);
 }
 #theFoundation {
-    display: inline;
+    display: block;
 }
 #objectClasses {
     display: none;
@@ -402,7 +402,28 @@ a {
 #GRUPcontent {
     display: none;
 }
+.mobileHorizontal {
+    width: 25vw;
+    height: 100vh;
+}
+.aboutMove {
+    background-color: #191919; 
+    float: right; 
+    transform: translate(0, -100vh); 
+    width: 70vw;
+}
 @media only screen and (max-width: 600px) {
+    .mobileHorizontal {
+        width: 100vw;
+        height: 10vh;
+    }
+    .aboutMove {
+        transform: translate(0, 0vh); 
+    }
+    .mobileHorizontal ul{
+        text-decoration: none;
+        display: inline;
+    }
     .leftHomeColumn {
         border-bottom: none;
     }
@@ -448,6 +469,7 @@ a {
         width: 100vw;
         margin-left: -2vw;
         display: block;
+        height: 50vh;
     }
     .rightHomeColumn {
         width: 100vw;
@@ -455,7 +477,7 @@ a {
         margin-left: 0vw;
     }
     .firstHomeChoice {
-        margin-bottom: 100vh;
+        margin-bottom: 50vh;
     }
     .navBar {
         margin-left: 1vw;
@@ -502,9 +524,9 @@ a {
         background-image: url("../images/scp_logo.png");
         background-repeat: no-repeat;
         opacity: 0.25;
-        top: 100vw;
+        top: 50vh;
         left: 0vw;
-        bottom: 0;
+        bottom: 50vh;
         right: 0vw;
         position: absolute;
         z-index: -1;   
@@ -520,6 +542,32 @@ a {
     .smallerAboutPage {
         font-size: 3vw;
     }
+    .minorIndexList {
+        display: none;
+        background-image: none;
+    }
+   .minorCat {
+    margin-bottom: 0;
+   }
+   .minorLeft {
+       width: 20vw;
+   }
+   #GRUPcontent blockquote{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+   }
+   #GRUPcontent table{
+       width: 100vw;
+       transform: translate(-20vw, 0);
+   }
+   .scpList {
+       height: 80vh;
+   }
+   #id_title {
+       min-width: 70vw;
+   }
 }
 .categBorder {
     border: none;

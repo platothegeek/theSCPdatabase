@@ -47,6 +47,8 @@ def about(request):
     return render(request, 'about.html')
 def gois(request):
     return render(request, 'gois/index.html')
+def internal(request):
+    return render(request, 'internal/index.html')
 def staff_new(request):
     error_message=''
     if request.method == "POST":

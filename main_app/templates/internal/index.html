@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block styles %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/scpstyle.css' %}">
+{% endblock%}
+{% block content %}
+<div class="row">
+    <hr class="categBorder">
+        <div class="leftScpColumn" style="width: 25vw; height: 100vh;">
+                <ul>
+                        <li><button class="makeA smallerAboutPage" id="foundBtn">The Foundation</button></li>
+                        <li><button class="makeA smallerAboutPage" id="objBtn">Object Classes</button></li>
+                        <li><button class="makeA smallerAboutPage" id="secBtn">Security Clearences</button></li>
+                </ul>
+        </div>
+        <div class="rightScpColumn thinAbout" style="background-color: #191919; float: right; transform: translate(0, -100vh); width: 70vw;">        
+            <div id="theFoundation">
+                    
+            </div>
+            <div id="objectClasses">
+
+            </div>
+            <div id="securityClearences"><div id="wiki-tab-0-0">
+            </div>
+{% endblock %}

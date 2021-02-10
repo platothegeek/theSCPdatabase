@@ -1,13 +1,13 @@
 {% extends 'base.html' %}
 {% block styles %}
 {% load static %}
-<link rel="stylesheet" href="{% static 'css/homestyle.css' %}">
+<link rel="stylesheet" href="{% static 'css/minorstyles.css' %}">
 {% endblock%}
 {% block content %}
 <hr class="categBorderTop">
 <div class="row home">
     <div class="row home">
-        <div class="leftHomeColumn">
+        <div class="leftHomeColumn minorIndexList">
                <h3 class="taleTitle"> - SCPs - </h3>
                <ul class="homeTaleList">
                    {% for Scp in scp_list %}
@@ -27,7 +27,7 @@
         </div>
     <div class="rightHomeColumn minor">
         <ul>
-            <li class="firstHomeChoice"><a href="items/">Anomolous Items</a></li>
+            <li class="firstHomeChoice minorCat"><a href="items/">Anomolous Items</a></li>
             <hr class="categBorder">
             <li><a href="events/">Extranormal Events</a></li>
             <hr class="categBorder">
