@@ -43,6 +43,8 @@ def staff_self(request):
         return redirect('staff/new')
 def profile_redirect(request):
     return redirect('/staff/self')
+def about(request):
+    return render(request, 'about.html')
 def staff_new(request):
     error_message=''
     if request.method == "POST":

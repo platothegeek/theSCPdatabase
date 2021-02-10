@@ -3,6 +3,7 @@ from . import views
 
 urlpatterns = [
     path('', views.home, name='home'),
+    path('about/', views.about, name='about'),
     path('scp/<int:scp_number>/', views.scp_show, name='scp_show'),
     path('scp/new/', views.scp_new, name='scp_new'),
     path('scp/', views.scp_index, name='scp_index'),

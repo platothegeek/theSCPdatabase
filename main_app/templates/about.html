@@ -1,0 +1,149 @@
+{% extends 'base.html' %}
+{% block styles %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/scpstyle.css' %}">
+{% endblock%}
+{% block content %}
+<div class="row">
+    <hr class="categBorder">
+        <div class="leftScpColumn" style="width: 25vw; height: 100vh;">
+                <ul>
+                        <li><button class="makeA smallerAboutPage" id="foundBtn">The Foundation</button></li>
+                        <li><button class="makeA smallerAboutPage" id="objBtn">Object Classes</button></li>
+                        <li><button class="makeA smallerAboutPage" id="secBtn">Security Clearences</button></li>
+                </ul>
+        </div>
+        <div class="rightScpColumn thinAbout" style="background-color: #191919; float: right; transform: translate(0, -100vh); width: 70vw;">        
+            <div id="theFoundation">
+                    <div class="content-panel standalone" style="font-family: Courier New, Courier, monospace; width: 575px; padding: 10px 30px; margin: 20px auto; text-shadow: 1px 1px 1px rgba(0,0,0,.25)">
+                    <p><span style="font-size:130%;"><strong>Mankind in its present state has been around for a quarter of a million years, yet only the last 4,000 have been of any significance.</strong></span></p>
+                    <p><span style="font-size:130%;">So, what did we do for nearly 250,000 years? We huddled in caves and around small fires, fearful of the things that we didn't understand. It was more than explaining why the sun came up, it was the mystery of enormous birds with heads of men and rocks that came to life. So we called them 'gods' and 'demons', begged them to spare us, and prayed for salvation.</span></p>
+                    <p><span style="font-size:130%;">In time, their numbers dwindled and ours rose. The world began to make more sense when there were fewer things to fear, yet the unexplained can never truly go away, as if the universe demands the absurd and impossible.</span></p>
+                    <p><span style="font-size:130%;"><strong>Mankind must not go back to hiding in fear.</strong> No one else will protect us, and we must stand up for ourselves.</span></p>
+                    <span style="font-size:130%;">While the rest of mankind dwells in the light, we must stand in the darkness to fight it, contain it, and shield it from the eyes of the public, so that others may live in a sane and normal world.<br>
+                    <img src="http://scp-wiki.wdfiles.com/local--files/about-the-scp-foundation/scp-logo-signature.png" style="width: 63px; margin: 12px 15px 0 42px; float: left;" alt="scp-logo-signature.png" class="image"><br>
+                    <strong>We secure. We contain. We protect.</strong></span>
+                    <p><span style="font-size:130%;"><strong>— The Administrator</strong></span></p>
+                    </div>
+                    <hr>
+                    <h1 id="toc0"><span>Mission Statement</span></h1>
+                    <p>Operating clandestine and worldwide, the Foundation operates beyond jurisdiction, empowered and entrusted by every major national government with the task of containing anomalous objects, entities, and phenomena. These anomalies pose a significant threat to global security by threatening either physical or psychological harm.</p>
+                    <p>The Foundation operates to maintain normalcy, so that the worldwide civilian population can live and go on with their daily lives without fear, mistrust, or doubt in their personal beliefs, and to maintain human independence from extraterrestrial, extradimensional, and other extranormal influence.</p>
+                    <p>Our mission is three-fold:</p>
+                    <h2 id="toc1"><span>Secure</span></h2>
+                    <p>The Foundation secures anomalies with the goal of preventing them from falling into the hands of civilian or rival agencies, through extensive observation and surveillance and by acting to intercept such anomalies at the earliest opportunity.</p>
+                    <h2 id="toc2"><span>Contain</span></h2>
+                    <p>The Foundation contains anomalies with the goal of preventing their influence or effects from spreading, by either relocating, concealing, or dismantling such anomalies or by suppressing or preventing public dissemination of knowledge thereof.</p>
+                    <h2 id="toc3"><span>Protect</span></h2>
+                    <p>The Foundation protects humanity from the effects of such anomalies as well as the anomalies themselves until such time that they are either fully understood or new theories of science can be devised based on their properties and behavior. The Foundation may also neutralize or destroy anomalies as an option of last resort, if they are determined to be too dangerous to be contained.</p>
+                    <h1 id="toc4"><span>Foundation Operations</span></h1>
+                    <p>Foundation covert and clandestine operations are undertaken across the globe in pursuit of our primary missions.</p>
+                    <h2 id="toc5"><span>Special Containment Procedures</span></h2>
+                    <p>The Foundation maintains an extensive database of information regarding anomalies requiring Special Containment Procedures, commonly referred to as "SCPs". The primary Foundation database contains summaries of such anomalies and emergency procedures for maintaining or re-establishing safe containment in the case of a containment breach or other event.</p>
+                    <p>Anomalies may take many forms, be it an object, an entity, a location, or a free-standing phenomenon. These anomalies are categorized into one of several <a href="/object-classes">Object Classes</a> and are either contained at one of the Foundation's myriad <a href="/secure-facilities-locations">Secure Facilities</a> or contained on-site if relocation is deemed unfeasible.</p>
+                    <h2 id="toc6"><span>Operational Security</span></h2>
+                    <p>The Foundation operates with the utmost secrecy. All Foundation personnel must observe the <a href="/security-clearance-levels">Security Clearance Levels</a> as well as need-to-know and compartmentalization of information. Personnel found in violation of Foundation security protocols will be identified, detained, and subject to disciplinary action.</p>
+                    <h2 id="toc7"><span>Rival Agencies and Groups of Interest</span></h2>
+                    <p>The Foundation is not the only organization with knowledge of and capability to interact with or utilize anomalies. While some of these <a href="/groups-of-interest">Groups of Interest</a> have similar goals and may cooperate with us on issues of global security, many more are opportunistic and profit-oriented, seeking to adapt or use anomalies to their own ends. Foundation personnel are instructed to treat individuals from such groups with suspicion at all times, and collaboration with such groups without the explicit prior consent of Foundation leadership will be cause for termination or other disciplinary action.</p>
+            </div>
+            <div id="objectClasses"><div id="page-content">
+                 <p>All anomalous objects, entities, and phenomena requiring Special Containment Procedures are assigned an Object Class. An Object Class is a part of the <a href="/how-to-write-an-scp">standard SCP template</a> and serves as a rough indicator for how difficult an object is to contain. In universe, Object Classes are for the purposes of identifying containment needs, research priority, budgeting, and other considerations. An SCP's Object Class is determined by a number of factors, but the most important factors are the difficulty and the purpose of its containment.</p>
+                <h1 id="toc0"><span>Primary Classes</span></h1>
+                <p>These are the most common Object Classes used in SCP articles, and make up the bulk of the objects.</p>
+                <h2 id="toc1"><span>Safe</span></h2>
+                <p>Safe-class SCPs are anomalies that are easily and safely contained. This is often due to the fact that the Foundation has researched the SCP well enough that containment does not require significant resources or that the anomalies require a specific and conscious activation or trigger. Classifying an SCP as Safe, however, does not mean that handling or activating it does not pose a threat.</p>
+                <p>For a complete list of Safe-class articles on the site, click <a href="http://scp-wiki.wikidot.com/system:page-tags/tag/safe">here</a>.</p>
+                <h2 id="toc2"><span>Euclid</span></h2>
+                <p>Euclid-class SCPs are anomalies that require more resources to contain completely or where containment isn't always reliable. Usually this is because the SCP is insufficiently understood or inherently unpredictable. Euclid is the Object Class with the greatest scope, and it's usually a safe bet that an SCP will be this class if it doesn't easily fall into any of the other standard Object Classes.</p>
+                <p>As a note, any SCP that's <a href="/system:page-tags/tag/autonomous">autonomous</a>, <a href="/system:page-tags/tag/sentient">sentient</a> and/or <a href="/system:page-tags/tag/sapient">sapient</a> is generally classified as Euclid, due to the inherent unpredictability of an object that can act or think on its own.</p>
+                <p>For a complete list of Euclid-class articles on the site, click <a href="http://scp-wiki.wikidot.com/system:page-tags/tag/euclid">here</a>.</p>
+                <h2 id="toc3"><span>Keter</span></h2>
+                <p>Keter-class SCPs are anomalies that are exceedingly difficult to contain consistently or reliably, with containment procedures often being extensive and complex. The Foundation often can't contain these SCPs well due to not having a solid understanding of the anomaly, or lacking the technology to properly contain or counter it. A Keter SCP does not mean the SCP is dangerous, just that it is simply very difficult or costly to contain.</p>
+                <p>For a complete list of Keter-class articles on the site, click <a href="http://scp-wiki.wikidot.com/system:page-tags/tag/keter">here</a>.</p>
+                <h2 id="toc4"><span>Thaumiel</span></h2>
+                <p>Thaumiel-class SCPs are anomalies that the Foundation specifically uses to contain other SCPs. Even the mere existence of Thaumiel-class objects is classified at the highest levels of the Foundation and their locations, functions, and current status are known to few Foundation personnel outside of the O5 Council.</p>
+                <p>For a complete list of Thaumiel-class articles on the site, click <a href="http://scp-wiki.wikidot.com/system:page-tags/tag/thaumiel">here</a>.</p>
+                <h2 id="toc5"><span>Neutralized</span></h2>
+                <p>Neutralized SCPs are anomalies that are no longer anomalous, either through having been intentionally or accidentally destroyed, or disabled.</p>
+                <p>For a complete list of Neutralized-class articles on the site, click <a href="http://scp-wiki.wikidot.com/system:page-tags/tag/neutralized">here</a>.</p>
+                <h1 id="toc6"><span>Non-Standard Object Classes</span></h1>
+                <p>The following Object Classes are sub-classes that supplement the object's primary (or former) classification.</p>
+                <h2 id="toc7"><span>Explained</span></h2>
+                <p><a href="/scp-ex">Explained</a> SCPs are commonly articles about anomalies that are completely and fully understood to the point where their effects are now explainable by mainstream science or phenomena that have been debunked or falsely mistaken as an anomaly.</p>
+                <p>For a complete list of Explained-class articles on the site, click <a href="http://scp-wiki.wikidot.com/system:page-tags/tag/explained">here</a>.</p>
+                <h2 id="toc8"><span>Esoteric/Narrative Classes</span></h2>
+                <p>Esoteric Object Classes, also occasionally referred to as Narrative classes, are Object classes that do not fall into any of the above sections. They are generally only used once and are created to further the narrative in a particular SCP. It is highly recommended that SCPs use one of the standard Object Classes listed here. While some authors choose to introduce exceptions to these rules, they are only very rarely done and need to justify their existence and placement. Many site members will downvote for non-standard Object Classes if used without merit.</p>
+                <p>For a comprehensive list of Esoteric Object Classes and the articles that use them, click <a href="/esoteric-classes-complete-list">here</a>.</p>
+                <h2 id="toc9"><span>Decommissioned</span></h2>
+                <p>Decommissioned SCPs are an Object Class that was used by senior staff in the past to not only delete unwanted articles but place them in a sort of "Wall of Shame" to serve as examples of what not to do. This Object Class is <em>not</em> used anymore.</p>
+                <p>Decommissioning articles is not done anymore, partly because such heavy-handed edits by SCP staff are no longer allowed and partly because decommissioning ended up backfiring. See the <a href="/history-of-the-universe-hub">History of the Universe Hub</a> for more historical information about Decommissioned SCPs and their usage in the past.</p>
+                <h1 id="toc10"><span>Object Class FAQ</span></h1>
+                <p><strong><span style="font-size:120%;">What is the Locked Box Test?</span></strong><br>
+                The Locked Box Test is an informal guideline used to determine an object's most appropriate Object Class. It goes like this:</p>
+                <ul>
+                <li>If you lock it in a box, leave it alone, and nothing bad will happen, then it's probably <strong>Safe</strong>.</li>
+                <li>If you lock it in a box, leave it alone, and you're not entirely sure what will happen, then it's probably <strong>Euclid</strong>.</li>
+                <li>If you lock it in a box, leave it alone, and it easily escapes, then it's probably <strong>Keter</strong>.</li>
+                <li>If it <em>is</em> the box, then it's probably <strong>Thaumiel</strong>.</li>
+                </ul>
+                <p>Note that as a special consideration, something that is autonomous, alive, and/or sapient is almost always <em>at least</em> Euclid-class. That is, if you lock a living thing in a box and forget about it, it will eventually suffocate or starve to death, and that's not a good outcome. Something that is intelligent could also end up being smart enough to outwit its containment procedures and/or stop cooperating with the Foundation's attempts to contain it, making it more dangerous than it otherwise might be.</p>
+                <p><strong><span style="font-size:120%;">What if I find an SCP that is the wrong Object Class?</span></strong></p>
+                <p>The Object Classes are intentionally left vague as to not limit the author's creative freedom; a rigid, defined system of classes might hinder an author's ability to write the way they would want to, and as such multiple proposals to create better-defined systems in the past have been turned down by SCP Wiki staff.</p>
+                <p>If you find an SCP article that you feel might be inappropriately classified, feel free to raise discussion on the topic and see what other community members think. If the explanation is not to your satisfaction, then feel free to express your opinion on the matter and vote accordingly on the page.</p>
+                <p><strong><span style="font-size:120%;">If an SCP is very dangerous should its Object Class be higher?</span></strong></p>
+                <p>No, danger does not really affect an SCP's Object Class. As has been reiterated several times above this, an item's Object Class is more based on the difficulty of containment rather than the danger it otherwise poses. For example, a button that can destroy the entire universe when it's pressed would be safe, whereas a cat who randomly switches places with another cat anywhere on earth would be considered Keter.</p>
+                
+                </div></div>
+            <div id="securityClearences"><div id="wiki-tab-0-0">
+
+                <h1 id="toc0"><span>Overview</span></h1>
+                <p>Foundation security clearances granted to personnel represent the highest level or type of information to which they can be granted access. However, having any given clearance level does not automatically grant access to all information at that level: personnel are only granted access to information on a "need-to-know" basis and at the discretion of the designated disclosure officer overseeing their respective departments.</p>
+                <h2 id="toc1"><span>Level 0 (For Official Use Only)</span></h2>
+                <p>Level 0 security clearances are given to non-essential personnel with no need to access information regarding anomalous objects or entities in Foundation containment. Level 0 access is typically held by personnel in non-secured clerical, logistics, or janitorial positions at facilities with no access to operational data.</p>
+                <h2 id="toc2"><span>Level 1 (Confidential)</span></h2>
+                <p>Level 1 security clearances are given to personnel working in proximity to but with no direct, indirect, or informational access to anomalous objects or entities in containment. Level 1 security clearances are typically granted to personnel working in clerical, logistics, or janitorial positions at facilities with containment capability or otherwise must handle sensitive information.</p>
+                <h2 id="toc3"><span>Level 2 (Restricted)</span></h2>
+                <p>Level 2 security clearances are given to security and research personnel that require direct access to information regarding anomalous objects and entities in containment. Most research staff, field agents, and containment specialists hold a Level 2 security clearance.</p>
+                <h2 id="toc4"><span>Level 3 (Secret)</span></h2>
+                <p>Level 3 security clearances are given to senior security and research personnel that require in-depth data regarding the source, recovery circumstances, and long-term planning for anomalous objects and entities in containment. Most senior research staff, project managers, security officers, response team members, and Mobile Task Force operatives hold a Level 3 security clearance.</p>
+                <h2 id="toc5"><span>Level 4 (Top Secret)</span></h2>
+                <p>Level 4 security clearances are given to senior administration that require access to site-wide and/or regional intelligence as well as long-term strategic data regarding Foundation operations and research projects. Level 4 security clearances are typically only held by Site Directors, Security Directors, or Mobile Task Force Commanders.</p>
+                <h2 id="toc6"><span>Level 5 (Thaumiel)</span></h2>
+                <p>Level 5 security clearances are given to the highest-ranking administrative personnel within the Foundation and grant effectively unlimited access to all strategic and otherwise sensitive data. Level 5 security clearances are typically only granted to O5 Council members and selected staff.</p>
+                <h1 id="toc7"><span>Personnel Classifications</span></h1>
+                <p>Classifications are assigned to personnel based on their proximity to potentially dangerous anomalous objects, entities, or phenomena.</p>
+                <h2 id="toc8"><span>Class A</span></h2>
+                <p>Class A personnel are those deemed essential to Foundation strategic operations, and are not allowed direct access to anomalies under any circumstances. When circumstances require Class A personnel to be in direct proximity to such anomalies (such as in the case of facilities housing containment units), Class A personnel are not allowed access to the areas of the facility containing such anomalies and are to be kept in secured areas at all times. In the case of an emergency, Class A personnel are to be immediately evacuated to a designated and secure off-site location. O5 Council members are always Class A personnel.</p>
+                <h2 id="toc9"><span>Class B</span></h2>
+                <p>Class B personnel are those deemed essential to local Foundation operations, and may only be granted access to objects, entities, and anomalies that have passed quarantine and have been cleared of any potential mind-affecting effects or memetic agents. In the event of a containment breach or hostile action against a Foundation facility, Class B personnel are to be evacuated to a designated, secure off-site location as soon as possible.</p>
+                <h2 id="toc10"><span>Class C</span></h2>
+                <p>Class C personnel are personnel with direct access to most anomalies not deemed strictly hostile or dangerous. Class C personnel that have had direct contact with potentially mind-affecting or memetic properties may be subject to mandatory quarantine and psychiatric evaluation as deemed necessary by security personnel. In the event of a containment breach or hostile action against a Foundation facility, non-combatant Class C personnel are to either report to secure lock-down areas or evacuated at the discretion of on-site security personnel in the case of a site-wide breach or other catastrophic event.</p>
+                <h2 id="toc11"><span>Class D</span></h2>
+                <p>Class D personnel are expendable personnel used to handle extremely hazardous anomalies and are not allowed to come into contact with Class A or Class B personnel. Class D personnel are typically drawn worldwide from the ranks of prison inmates convicted of violent crimes, especially those on death row. In times of duress, Protocol 12 may be enacted, which allows recruitment from other sources — such as political prisoners, refugee populations, and other civilian sources — that can be transferred into Foundation custody under plausibly deniable circumstances. Class D personnel are to be given regular mandatory psychiatric evaluations and are to be administered an amnestic of at least Class B strength or terminated at the end of the month at the discretion of on-site security or medical staff. In the event of a catastrophic site event, Class D personnel are to be terminated immediately except as deemed necessary by on-site security personnel.</p>
+                <h2 id="toc12"><span>Class E</span></h2>
+                <p>Class E is a provisional classification applied to field agents and containment personnel that have been exposed to potentially dangerous effects during the course of securing and establishing initial containment over a newly-designated anomalous object, entity, or phenomenon. Class E personnel are to be quarantined as soon as possible, monitored, and screened for potentially harmful changes in behavior, personality, or physiology, and may only return to duty after being fully debriefed and cleared by psychiatric and medical staff.</p>
+                <h1 id="toc13"><span>Staff Titles</span></h1>
+                <p>These are general occupational titles that are typically used in the Foundation.</p>
+                <h2 id="toc14"><span>Site Staff</span></h2>
+                <h3 id="toc15"><span>Containment Specialist</span></h3>
+                <p>Containment specialists have two main roles at Foundation facilities. Firstly, containment teams are called upon to respond to confirmed cases of anomalous activity to secure and establish initial containment over anomalous objects, entities, or phenomena and transport them to the nearest Foundation containment site.</p>
+                <p>In addition, Foundation containment engineers and technicians are called upon to devise, refine, and maintain containment units and schemes for objects, entities, and phenomena in Foundation facilities.</p>
+                <h3 id="toc16"><span>Researcher</span></h3>
+                <p>Researchers are the scientific branch of the Foundation, drawn from the ranks of the smartest and best-trained research scientists from around the world. With specialists in every field imaginable, from chemistry and botany to more esoteric or specialized fields such as theoretical physics and xenobiology, the goal of the Foundation's research projects is to gain a better understanding of unexplained anomalies and how they operate.</p>
+                <h3 id="toc17"><span>Security Officer</span></h3>
+                <p>On-site security officers — often referred to simply as guards — at Foundation facilities are tasked with maintaining physical and information security for Foundation projects, operations, and personnel. Primarily drawn and recruited from military, law enforcement, and correctional facility personnel, security officers are trained in the use of all types of weapons as well as a variety of contingency plans covering both containment breach incidents as well as hostile action. These personnel are also responsible for <em>information</em> security, such as making sure that sensitive documents are not misplaced and that a facility's computer systems are safe from outside intrusion. They are also often the first line of defense against hostile outside forces for Foundation facilities.</p>
+                <h3 id="toc18"><span>Tactical Response Officer</span></h3>
+                <p>Response teams — or tactical teams — are highly trained and heavily armed combat teams tasked with escorting containment teams when dangerous anomalous entities or hostile <a href="/groups-of-interest">Groups of Interest</a> are involved and defending Foundation facilities against hostile action. Response teams are effectively military units stationed at major Foundation facilities that are ready to deploy at a moment's notice.</p>
+                <h2 id="toc19"><span>Field Personnel</span></h2>
+                <h3 id="toc20"><span>Field Agent</span></h3>
+                <p>Field agents are the eyes and ears of the Foundation, personnel trained to look for and investigate signs of anomalous activity, often undercover with local or regional law enforcement or embedded in local services such as emergency medical services and regulatory organizations. As undercover units, field agents are typically not equipped to deal with confirmed cases of anomalous activity; once such an incident has been confirmed and isolated, field agents will typically call for assistance from the nearest field containment team with the means to safely secure and contain such anomalies.</p>
+                <h3 id="toc21"><span>Mobile Task Force Operative</span></h3>
+                <p><a href="/task-forces">Mobile Task Forces</a> are specialist units comprised of veteran field personnel drawn from all over the Foundation. These task forces are mobilized to deal with threats of a specific nature and can include anything from field researchers specializing in a particular type of anomaly to heavily armed combat units tasked to secure certain types of hostile anomalous entity. See the <a href="/task-forces">Task Forces</a> document for more detailed information.</p>
+                <h2 id="toc22"><span>Administration</span></h2>
+                <h3 id="toc23"><span>Site Director</span></h3>
+                <p>Site directors for major Foundation facilities are the highest-ranking personnel at that location and are responsible for the continued, safe operation of the site and all of its contained anomalies and projects. All major departmental directors report directly to the Site Director, who in turn reports to the O5 Council.</p>
+                <h3 id="toc24"><span>O5 Council Member</span></h3>
+                <p>The O5 Council refers to the committee consisting of the highest-ranking directors of the Foundation. With complete access to all information regarding anomalies in containment, the O5 Council oversees all Foundation operations worldwide and directs its long-term strategic plans. Due to the sensitivity of their positions, O5 Council members must not come into direct contact with any anomalous object, entity, or phenomenon. Furthermore, the identities of all O5 Council members is classified; all council members are referred to only by their numeric designation (O5-1 through O5-13).</p>
+                </div>
+            </div>
+{% endblock %}

@@ -3,6 +3,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script src="{% static 'js/jquery-3.5.1.js' %}"></script>
+    <script src="{% static 'js/about.js' %}"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
@@ -29,7 +31,7 @@
         {% else %}
             <li><p><a href="/staff/new">SIGN UP</a> | <a href="{% url 'login' %}">LOGIN</a></p></li>
         {% endif%}
-            <li><p>ABOUT</p></li>
+            <li><p><a href="/about">ABOUT</a></p></li>
             <li><p><a href="/">HOME</a></li>
         </div>
     </ul>

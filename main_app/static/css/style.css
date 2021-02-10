@@ -345,6 +345,45 @@ a {
 .right {
     float: right;
 }
+.smallerAboutPage {
+    font-size: 2vw;
+    border-bottom: 1px white solid;
+    float: right;
+}
+.aboutBorder {
+    width: 35vw;
+    transform: translate(-10vw, 0);
+}
+#theFoundation {
+    display: inline;
+}
+#objectClasses {
+    display: none;
+}
+#securityClearences {
+    display: none;
+}
+#whatIsAScp {
+    display: none;
+}
+#theFoundation a{
+    text-decoration: none;
+}
+#objectClasses a{
+    text-decoration: none;
+}
+#securityClearences a {
+    text-decoration: none;
+}
+#whatIsAScp a{
+    text-decoration: none;
+}
+.thinAbout {
+    width: 75vw;
+}
+.longAbout {
+    height: 1500vh;
+}
 @media only screen and (max-width: 600px) {
     .leftHomeColumn {
         border-bottom: none;
@@ -459,6 +498,9 @@ a {
         font-size: 5vw;
         float: left;
         width: 33vw;
+    }
+    .smallerAboutPage {
+        font-size: 3vw;
     }
 }
 .categBorder {
