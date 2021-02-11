@@ -48,7 +48,7 @@ def scp_save(request, scp_id):
     user = request.user
     print(user)
     my_scp = scp[0]
-    my_scp.saved_by += request.user
+    my_scp.saved_by = request.user
     my_scp.save()
     print(my_scp.saved_by)
     return redirect('/staff/self')
@@ -81,11 +81,12 @@ def staff_new(request):
     return render(request, 'staff/new.html', context)
 def scp_show(request, scp_number):
     scp = Scp.objects.get(id=scp_number)
+    scp_list = Scp.objects.all().order_by('number')
     if request.user == scp.author:
         return redirect('/scp/edit/{}/'.format(scp_number))
     else:
         print(scp.body)
-        context = { 'scp' : scp }
+        context = { 'scp' : scp, 'scp_list' : scp_list }
         print(context)
         return render(request, 'articles/show.html', context)
 def tale_show(request, tale_id):
