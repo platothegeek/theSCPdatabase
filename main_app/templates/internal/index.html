@@ -19,9 +19,7 @@
                     {% for Profile in user_list %}
                     <li><div class="homeTaleTitle"><p>{{ Profile.username }}</p></div>
                         <ul>
-                            {% for Scp in 1_list%}
-                            <li> SCP -{{ Scp.number }} {{ SCP.title }}</li>
-                            {% endfor %}
+                            {{ Profile.scps }}
                         </ul>
                     </li>
                     {% endfor %}

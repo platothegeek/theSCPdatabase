@@ -45,13 +45,12 @@ def staff_self(request):
         return redirect('/staff/new')
 def scp_save(request, scp_id):
     scp = Scp.objects.filter(id= scp_id)
-    print(scp[0])
     user = request.user
     print(user)
-    scp.saved_by = user
-    print(scp.saved_by)
     my_scp = scp[0]
+    my_scp.saved_by += request.user
     my_scp.save()
+    print(my_scp.saved_by)
     return redirect('/staff/self')
 def profile_redirect(request):
     return redirect('/staff/self')
@@ -61,10 +60,6 @@ def gois(request):
     return render(request, 'gois/index.html')
 def internal(request):
     user_list = Profile.objects.all().order_by('timestamp') 
-    for x in user_list:
-        print(x)
-        list_name = str(x.id) + "_list"
-        vars()[list_name] = Scp.objects.filter(author=x)
     context = { 'user_list' : user_list}
     print(user_list)
     print(context)
