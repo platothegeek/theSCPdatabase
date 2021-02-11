@@ -8,18 +8,644 @@
     <hr class="categBorder">
         <div class="leftScpColumn" style="width: 25vw; height: 100vh;">
                 <ul>
-                        <li><button class="makeA smallerAboutPage" id="foundBtn">The Foundation</button></li>
-                        <li><button class="makeA smallerAboutPage" id="objBtn">Object Classes</button></li>
-                        <li><button class="makeA smallerAboutPage" id="secBtn">Security Clearences</button></li>
+                        <li><button class="makeA smallerAboutPage" id="foundBtn">Database Users</button></li>
+                        <li><button class="makeA smallerAboutPage" id="objBtn">Secure Facilities</button></li>
+                        <li><button class="makeA smallerAboutPage" id="secBtn">The 05 Council</button></li>
                 </ul>
         </div>
         <div class="rightScpColumn thinAbout" style="background-color: #191919; float: right; transform: translate(0, -100vh); width: 70vw;">        
             <div id="theFoundation">
-                    
+                <ul class="homeTaleList"> 
+                    {% for Profile in user_list %}
+                    <li><div class="homeTaleTitle"><p>{{ Profile.username }}</p></div>
+                        <ul>
+                            {% for Scp in 1_list%}
+                            <li> SCP -{{ Scp.number }} {{ SCP.title }}</li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+                    {% endfor %}
+                </ul>
             </div>
             <div id="objectClasses">
+                <div id="wiki-tab-0-0" style="display: block;">
 
+                    <h1 id="toc0"><span>Facility Designations</span></h1>
+                    <p>The Foundation maintains and operates a large number of facilities worldwide, from small outposts with only a handful of staff to major Sites with thousands of personnel.</p>
+                    <h2 id="toc1"><span>Site</span></h2>
+                    <p>Foundation facilities designated as Sites are <em>covert</em> facilities, meaning that while existence of the facility is known to the public, such facilities are often disguised under government or corporate fronts. Sites are often built in locations in relatively close proximity to civilian populations, where facilities would require such cover.</p>
+                    <h2 id="toc2"><span>Area</span></h2>
+                    <p>Foundation facilities designated as Areas are <em>clandestine</em> facilities, meaning that civilians are not aware of their existence at all. Such facilities are often built far away from civilian populations and may contain highly dangerous anomalies; the vast majority of Areas have extreme fail-safe measures such as on-site nuclear warheads.</p>
+                    <h1 id="toc3"><span>Facility Sections</span></h1>
+                    <h2 id="toc4"><span>Sector</span></h2>
+                    <p>Sectors are sections of Sites or Areas that are designated for specific purposes, such as containment, research, or storage. The exact usage of Sectors vary from facility to facility and is dependent on the facility's primary purpose and size.</p>
+                    <h2 id="toc5"><span>Unit</span></h2>
+                    <p>Units are self-contained sections of Sites or Areas such as those containing Biological or Dimensional anomalies and are designed to self-seal in case of a breach or other catastrophic event. All personnel entering or exiting a Unit must typically undergo a full decontamination procedure.</p>
+                    <h1 id="toc6"><span>Prefixes</span></h1>
+                    <p>These prefixes are often used to denote specializations of facilities or facility sections and are generally only used in internal communication.</p>
+                    <h2 id="toc7"><span>Armed</span></h2>
+                    <p>Armed denotes a facility or facility section with abnormally high physical security concerns, either due to containment of violent hostile entities or threat of outside attack. Such facilities typically have a large amount of military-grade weaponry and vehicles as well as a disproportionately large number of permanent security staff; in the case of a full facility, this typically entails a detachment of at least battalion or regiment strength.</p>
+                    <h2 id="toc8"><span>Biological (Bio)</span></h2>
+                    <p>Biological containment facilities or facility sections deal with infectious or otherwise biohazardous anomalies and are both isolated and self-contained to prevent the possible escape of such anomalies.</p>
+                    <h2 id="toc9"><span>Containment</span></h2>
+                    <p>Containment facilities or facility sections are primarily equipped and intended for the containment of anomalous objects, entities, or phenomena.</p>
+                    <h2 id="toc10"><span>Dimensional (Dim)</span></h2>
+                    <p>Dimensional containment facilities or facility sections deal with extradimensional apertures or anomalies exhibiting inconsistent or warped spacetime.</p>
+                    <h2 id="toc11"><span>Humanoid</span></h2>
+                    <p>Humanoid containment facilities or facility sections primarily deal with sentient, sapient human or near-human entities capable of understanding and complying with instructions. These are essentially analogous to a prison facility for anomalous entities.</p>
+                    <h2 id="toc12"><span>Protected</span></h2>
+                    <p>Protected facilities and facility sections are "safe zones" kept free of anomalous influence. No anomalies are allowed within these facilities at any time.</p>
+                    <h2 id="toc13"><span>Provisional</span></h2>
+                    <p>Provisional facilities are those that are established or built around an immobile anomaly. Provisional facilities typically contain only a single anomaly.</p>
+                    <h2 id="toc14"><span>Reliquary</span></h2>
+                    <p>Reliquary facilities or facility sections are designed for handling artifacts and objects of religious or historical significance.</p>
+                    <h2 id="toc15"><span>Research</span></h2>
+                    <p>Research facilities or facility sections are designed for either the handling and study of anomalies or anomalous materials or research and development of new containment schemes and methods.</p>
+                    <h2 id="toc16"><span>Storage</span></h2>
+                    <p>Storage facilities or facility sections are intended for long-term storage of non-anomalous or inert anomalous objects with no risk of autonomous interaction.</p>
+                    <h1 id="toc17"><span>Miscellaneous</span></h1>
+                    <p>These are Foundation facilities or locations that do not fall under the standard organizational structure.</p>
+                    <h2 id="toc18"><span>Observation Posts</span></h2>
+                    <p>Observation Posts are tiny facilities established in a multitude of locations worldwide. Often limited to small standalone buildings or single units within larger buildings, Observation Posts are typically used to monitor regional communications for flagged content, as well as monitor nearby Foundation facilities. Many Observation Posts are also used as secure communications hubs or safe-houses by undercover Foundation agents.</p>
+                    <h1 id="toc19"><span>Facilities List (Abridged)</span></h1>
+                    <p>The following is a partial list of notable Foundation facilities. Please note that this list is incomplete; many Foundation facilities are not listed here due to operational security requirements or because their purpose and/or location are classified. Many facility designations have also been recycled over time as the original facilities are decommissioned or otherwise no longer in use.</p>
+                    <h2 id="toc20"><span>Sites</span></h2>
+                    <span class="siteIcon" style="background: linear-gradient(to bottom right, #999,#030);"><img src="http://scp-wiki.wdfiles.com/local--files/component:site/facility-texture.png" alt="facility-texture.png" class="image"><span class="number">01</span></span> <span style="font-size:110%;"><strong>Site-01</strong> (Protected Site-01, Overwatch HQ)</span>
+                    <p>Site-01 is a safe zone that acts as a data backup for all major Foundation facilities worldwide as well as a secure meeting facility for O5 Council members and other high-ranking Foundation personnel. As with all Protected Sites, no anomalies of any kind are allowed in proximity of Site-01. The location of Site-01 is strictly classified.</p>
+                    <span class="siteIcon" style="background: linear-gradient(to bottom right, #999,#630);"><img src="http://scp-wiki.wdfiles.com/local--files/component:site/facility-texture.png" alt="facility-texture.png" class="image"><span class="number">06</span></span> <span style="font-size:110%;"><strong>Site-06-3</strong> (Humanoid Containment Site-06-3)</span>
+                    <p>Site-06-3 is a containment facility that is currently located in the Lorraine region of France. Formerly located in the United States (Site-06) and Germany (Site-06-2), this facility was moved to its current location following the decommission and demolition of the aforementioned previous facilities. Site-06-3 employs a multi-national staff and houses numerous low-risk human and humanoid entities, most notably several former Foundation personnel. Objects contained at this facility include: <a href="/scp-069">SCP-069</a>, <a href="/scp-706">SCP-706</a>, <a href="/scp-1669">SCP-1669</a>, <a href="/scp-1702">SCP-1702</a></p>
+                    <span class="siteIcon" style="background: linear-gradient(to bottom right, #999,#630);"><img src="http://scp-wiki.wdfiles.com/local--files/component:site/facility-texture.png" alt="facility-texture.png" class="image"><span class="number">11</span></span> <span style="font-size:110%;"><strong><a href="http://www.scp-wiki.net/secure-facility-dossier-site-11">Site-11</a></strong></span>
+                    <p>Site-11 is a large-scale Foundation facility located in the mid-western United States consisting of an entire self-sustaining community including residential housing, commercial businesses, and industrial/manufacturing facilities as well as an extensive underground containment and research complex. The Foundation maintains strict tracking of all personnel and civilians within Site-11 and as such, the facility is often used as a safe location for personnel requiring additional security and protection. Objects contained at this facility include: <a href="/scp-986">SCP-986</a>, <a href="/scp-4332">SCP-4332</a></p>
+                    <span class="siteIcon" style="background: linear-gradient(to bottom right, #999,#630);"><img src="http://scp-wiki.wdfiles.com/local--files/component:site/facility-texture.png" alt="facility-texture.png" class="image"><span class="number">15</span></span> <span style="font-size:110%;"><strong>Site-15</strong></span>
+                    <p>Site-15 is a Foundation facility located on the United States west coast that specializes in the containment and study of electric, electronic, and computer-based anomalies. The primary storage and containment wings of Site-15 are electromagnetically isolated to prevent any interaction between anomalous electronics and the outside world. Objects contained at this facility include: <a href="/scp-079">SCP-079</a>, <a href="/scp-719">SCP-719</a>, <a href="/scp-896">SCP-896</a></p>
+                    <span class="siteIcon" style="background: linear-gradient(to bottom right, #999,#630);"><img src="http://scp-wiki.wdfiles.com/local--files/component:site/facility-texture.png" alt="facility-texture.png" class="image"><span class="number">17</span></span> <span style="font-size:110%;"><strong>Site-17</strong></span>
+                    <p>Site-17 is a major Foundation facility primarily focused on the containment and study of low-risk humanoid entities. As per this focus, Site-17's permanent site staff includes a large number of medical and psychiatric professionals. Objects contained at this facility include: <a href="/scp-073">SCP-073</a>, <a href="/scp-105">SCP-105</a>, <a href="/scp-343">SCP-343</a></p>
+                    <span class="siteIcon" style="background: linear-gradient(to bottom right, #999,#630);"><img src="http://scp-wiki.wdfiles.com/local--files/component:site/facility-texture.png" alt="facility-texture.png" class="image"><span class="number">19</span></span> <span style="font-size:110%;"><strong>Site-19</strong></span>
+                    <p>Site-19 is the largest Foundation facility currently in operation, housing hundreds of Safe- and Euclid-class anomalies. Objects contained at this facility include: <a href="/scp-055">SCP-055</a>, <a href="/scp-131">SCP-131</a>, <a href="/scp-173">SCP-173</a>, <a href="/scp-387">SCP-387</a>, <a href="/scp-668">SCP-668</a>, <a href="/scp-931">SCP-931</a></p>
+                    <span class="siteIcon" style="background: linear-gradient(to bottom right, #999,#630);"><img src="http://scp-wiki.wdfiles.com/local--files/component:site/facility-texture.png" alt="facility-texture.png" class="image"><span class="number">23</span></span> <span style="font-size:110%;"><strong>Site-23</strong></span>
+                    <p>Site-23 houses a number of metamorphic or transfiguring biological objects and entities. Objects contained at this facility include: <a href="/scp-038">SCP-038</a>, <a href="/scp-113">SCP-113</a></p>
+                    <span class="siteIcon" style="background: linear-gradient(to bottom right, #999,#630);"><img src="http://scp-wiki.wdfiles.com/local--files/component:site/facility-texture.png" alt="facility-texture.png" class="image"><span class="number">28</span></span> <span style="font-size:110%;"><strong>Site-28</strong> (Provisional Containment Site-28)</span>
+                    <p>Site-28 is located in the SoHo neighborhood of New York City, New York, United States, and was initially established to contain <a href="/scp-602">SCP-602</a>. Since then, this facility has been expanded into a full-fledged Foundation containment facility specializing in anomalous artwork and artifacts. Objects contained at this facility also include: <a href="/scp-1229">SCP-1229</a>, <a href="/scp-1388">SCP-1388</a></p>
+                    <span class="siteIcon" style="background: linear-gradient(to bottom right, #999,#630);"><img src="http://scp-wiki.wdfiles.com/local--files/component:site/facility-texture.png" alt="facility-texture.png" class="image"><span class="number">36</span></span> <span style="font-size:110%;"><strong>Site-36</strong></span>
+                    <p>Formerly Provisional Site-36, this facility is located in India and serves as both a regional containment site as well as a support facility for field personnel operating in the area. Objects contained at this facility include: <a href="/scp-089">SCP-089</a>, <a href="/scp-1135">SCP-1135</a></p>
+                    <span class="siteIcon" style="background: linear-gradient(to bottom right, #999,#630);"><img src="http://scp-wiki.wdfiles.com/local--files/component:site/facility-texture.png" alt="facility-texture.png" class="image"><span class="number">38</span></span> <span style="font-size:110%;"><strong>Site-38</strong></span>
+                    <p>Site-38 is a containment site in rural Tennessee, United States, primarily focused on the study of <a href="/groups-of-interest">Group of Interest 388-Alpha, "Alexylva University"</a>. Objects contained at this facility include: <a href="/scp-961">SCP-961</a>, <a href="/scp-1080">SCP-1080</a>, <a href="/scp-1893">SCP-1893</a>, <a href="/scp-1082">SCP-1082</a></p>
+                    <span class="siteIcon" style="background: linear-gradient(to bottom right, #999,#630);"><img src="http://scp-wiki.wdfiles.com/local--files/component:site/facility-texture.png" alt="facility-texture.png" class="image"><span class="number">43</span></span> <span style="font-size:110%;"><strong><a href="http://www.scpwiki.com/secure-facility-dossier-site-43">Site-43</a></strong> (Research and Containment Site-43)</span>
+                    <p>Site-43 is situated on the southeastern shore of Lake Huron, one kilometre below sea level in Ipperwash Provincial Park, Ontario, Canada. It comprises containment wings for low- to medium-risk anomalies, research divisions arranged in a pseudoacademic structure, and abatement refineries for esoteric substances. Objects contained at this facility include: <a href="http://www.scpwiki.com/scp-5056">SCP-5056</a>, <a href="http://www.scpwiki.com/scp-5109">SCP-5109</a>, <a href="http://www.scpwiki.com/scp-5243">SCP-5243</a>, <a href="/scp-5382">SCP-5382</a>, <a href="/scp-5494">SCP-5494</a> and <a href="/scp-5520">SCP-5520</a>.</p>
+                    <span class="siteIcon" style="background: linear-gradient(to bottom right, #999,#630);"><img src="http://scp-wiki.wdfiles.com/local--files/component:site/facility-texture.png" alt="facility-texture.png" class="image"><span class="number">45</span></span> <span style="font-size:110%;"><strong><a href="http://www.scp-wiki.net/secure-facility-dossier-research-site-45">Site-45</a></strong> (Research Site-45)</span>
+                    <p>Site-45 is a clandestine armed research facility located off the coast of Western Australia under the Indian Ocean. Here, research and temporary containment of anomalous objects are conducted under guard and away from a civilian populace. Site-45 also serves as a staging point for MTF operations within the Pacific and Indian Oceans. Objects located at the facility include: <a href="/scp-321">SCP-321</a>, <a href="/scp-2401">SCP-2401</a>, <a href="/scp-466">SCP-466</a>, <a href="/scp-127">SCP-127</a>, <a href="/scp-2424">SCP-2424</a>, and <a href="/scp-1577">SCP-1577</a></p>
+                    <span class="siteIcon" style="background: linear-gradient(to bottom right, #999,#630);"><img src="http://scp-wiki.wdfiles.com/local--files/component:site/facility-texture.png" alt="facility-texture.png" class="image"><span class="number">54</span></span> <span style="font-size:110%;"><strong>Site-54</strong> (Integrated Containment Site-54)</span>
+                    <p>Site-54 is a containment facility located in, around, and beneath the city of Leipzig, Germany. Specialising in the containment of those anomalies deemed 'partially uncontainable', the Site's staff are heavily armed, highly trained, and permanently on edge. Featuring an extensive rapid-response vehicle hangar (with transport both normal and anomalous) and wide array of holding cells, Site-54 is generally considered to be the Foundation site both best-prepared for the worst to happen, and the location at which said worst is most likely to occur. Objects currently under the facility's jurisdiction include: <a href="/scp-265">SCP-265</a>, <a href="/scp-1911">SCP-1911</a>, <a href="/scp-2668">SCP-2668</a>, <a href="/scp-2790">SCP-2790</a>, <a href="/scp-2856">SCP-2856</a>, <a href="/scp-3663">SCP-3663</a>, and <a href="/scp-4856">SCP-4856</a>.</p>
+                    <span class="siteIcon" style="background: linear-gradient(to bottom right, #999,#630);"><img src="http://scp-wiki.wdfiles.com/local--files/component:site/facility-texture.png" alt="facility-texture.png" class="image"><span class="number">56</span></span> <span style="font-size:110%;"><strong>Site-56</strong></span>
+                    <p>Established in the Black Rock Desert of Nevada, May 1972, Site-56 was intended to serve as the base of operations for the enactment of the <a href="/scp-378">Kraken Protocol</a> within the American Southwest. Over time, Site-56 took on increasing responsibilities, eventually transitioning into a full-fledged containment and administration site; however, recent Overwatch audits suggest its expansion has surpassed its budgetary and logistical limitations, and personnel frequently cite its "labyrinthine" structure as a detriment to day-to-day operations. Objects contained on-site include <a href="/scp-4495">SCP-4495</a> and <a href="/scp-5444">SCP-5444</a>, with select offsite anomalies such as <a href="/scp-5994">SCP-5994</a> falling under its jurisdiction as well.</p>
+                    <span class="siteIcon" style="background: linear-gradient(to bottom right, #999,#606);"><img src="http://scp-wiki.wdfiles.com/local--files/component:site/facility-texture.png" alt="facility-texture.png" class="image"><span class="number">62</span></span> <span style="font-size:110%;"><strong>Site-62</strong> (Dimensional Site-62)</span>
+                    <p>Formerly Provisional Site-62, this facility was initially built around <a href="/scp-004">SCP-004</a>. The facility was eventually expanded to house other objects including <a href="/scp-579">SCP-579</a>.</p>
+                    <span class="siteIcon" style="background: linear-gradient(to bottom right, #999,#333);"><img src="http://scp-wiki.wdfiles.com/local--files/component:site/facility-texture.png" alt="facility-texture.png" class="image"><span class="number">64</span></span> <span style="font-size:110%;"><strong><a href="http://www.scp-wiki.net/secure-facility-dossier-site-64">Site-64</a></strong> (Storage Site-64)</span>
+                    <p>Located approximately 0.5&nbsp;km below Forest Park, northwest of Portland, Oregon, Site-64 is primarily a low to medium security storage facility, and is mainly used to house minor anomalous items, and Safe/Euclid class objects confiscated from the anomalous art community and anomalous electronics industry based in Portland and Vancouver. Objects located at this facility include: <a href="/scp-2106">SCP-2106</a>, <a href="/scp-2306">SCP-2306</a>, <a href="/scp-2608">SCP-2608</a>, <a href="/scp-2806">SCP-2806</a>, and <a href="/scp-2960">SCP-2960</a>.</p>
+                    <span class="siteIcon" style="background: linear-gradient(to bottom right, #999,#630);"><img src="http://scp-wiki.wdfiles.com/local--files/component:site/facility-texture.png" alt="facility-texture.png" class="image"><span class="number">66</span></span> <span style="font-size:110%;"><strong>Site-66</strong> (Biological Containment Site-66, Bio-Site-66)</span>
+                    <p>Originally built as Provisional Site-66 around <a href="/scp-1479">SCP-1479</a>, this facility was eventually expanded to contain and research biological and organic anomalies. Objects contained at this facility include: <a href="/scp-478">SCP-478</a>, <a href="/scp-569">SCP-569</a>, <a href="/scp-646">SCP-646</a>, <a href="/scp-806">SCP-806</a>, <a href="/scp-886">SCP-886</a></p>
+                    <span class="siteIcon" style="background: linear-gradient(to bottom right, #999,#630);"><img src="http://scp-wiki.wdfiles.com/local--files/component:site/facility-texture.png" alt="facility-texture.png" class="image"><span class="number">73</span></span> <span style="font-size:110%;"><strong>Site-73</strong></span>
+                    <p>Site-73 is a facility converted from an office building in Texas, designed for the containment and study of inert, Safe-class, or otherwise benign anomalous objects. Objects contained at this facility include: <a href="/scp-1454">SCP-1454</a>, <a href="/scp-1156">SCP-1156</a>, <a href="/scp-1176">SCP-1176</a>, <a href="/scp-1520">SCP-1520</a></p>
+                    <span class="siteIcon" style="background: linear-gradient(to bottom right, #999,#006);"><img src="http://scp-wiki.wdfiles.com/local--files/component:site/facility-texture.png" alt="facility-texture.png" class="image"><span class="number">76</span></span> <span style="font-size:110%;"><strong>Site-76</strong> (Research, Reliquary, and Containment Site-76)</span>
+                    <p>Site-76 is a major containment site located in the United States and housing a large number of anomalous objects presumed to be man-made. Objects contained at this facility include: <a href="/scp-140">SCP-140</a>, <a href="/scp-1883">SCP-1883</a></p>
+                    <span class="siteIcon" style="background: linear-gradient(to bottom right, #999,#333);"><img src="http://scp-wiki.wdfiles.com/local--files/component:site/facility-texture.png" alt="facility-texture.png" class="image"><span class="number">77</span></span> <span style="font-size:110%;"><strong><a href="http://www.scp-wiki.net/secure-facility-dossier-site-77">Site-77</a></strong> (Storage Site-77)</span>
+                    <p>One of the Foundation's largest storage facilities, Site-77 was initially built in 1924 in southern Italy and served as an Italian facility until the second World War, when it was damaged by Allied bombing and subsequently destroyed by a containment breach. Site-77 was taken over by the Foundation and rebuilt in 1944. Objects currently contained at this facility include: <a href="/scp-703">SCP-703</a>, <a href="/scp-1837">SCP-1837</a>, <a href="/scp-2322">SCP-2322</a></p>
+                    <span class="siteIcon" style="background: linear-gradient(to bottom right, #999,#630);"><img src="http://scp-wiki.wdfiles.com/local--files/component:site/facility-texture.png" alt="facility-texture.png" class="image"><span class="number">81</span></span> <span style="font-size:110%;"><strong><a href="http://www.scp-wiki.net/secure-facility-dossier-site-81">Site-81</a></strong> (Research and Containment Site-81)</span>
+                    <p>Located beneath Lake Monroe in Bloomington, Indiana, Site-81 is the primary hub for anomalous activity in the United States Midwest. Initially founded as an expeditionary site to monitor SCP-2812, Site-81 has since grown to become one of the largest sites in the region. Located within is the Foundation's Classifications Department, as well as a massive Mobile Task Force deployment outpost. Objects contained at this site include: <a href="/scp-715">SCP-715</a>, <a href="/scp-2080">SCP-2080</a>, <a href="/scp-2151">SCP-2151</a>, <a href="/scp-2270">SCP-2270</a>, <a href="/scp-2445">SCP-2445</a>, <a href="/scp-2496">SCP-2496</a>, <a href="/scp-2540">SCP-2540</a>, <a href="/scp-2564">SCP-2564</a>, <a href="/scp-2996">SCP-2996</a>.</p>
+                    <span class="siteIcon" style="background: linear-gradient(to bottom right, #999,#630);"><img src="http://scp-wiki.wdfiles.com/local--files/component:site/facility-texture.png" alt="facility-texture.png" class="image"><span class="number">87</span></span> <span style="font-size:110%;"><strong>Site-87</strong> (Research Site-87)</span>
+                    <p>Site-87 is a research site, established in September 1976 to oversee containment of a minor anomaly in the town of Sloth's Pit, Wisconsin, USA (pop. 17,291 as of 2020). In that same month, researchers discovered that Sloth's Pit was a highly active Nexus, an inhabited zone that has a high concentration of anomalous phenomena. Site-87's civilian front is S &amp; C Plastics, and it possesses its own Task Force— Sigma-10, "The Sloth's Arm", dedicated to containment of anomalies within city limits. Citizens of Sloth's Pit are considered E-Class Personnel, and have knowledge of the Foundation insofar as 'a research organization is monitoring the town'. The primary goal of Site-87 is to research and catalog anomalies in Sloth's Pit, such as <a href="/scp-4040">SCP-4040</a>; however, it is also the headquarters of the Department of Multi-Universal Affairs, Nexological Studies, and serves as regional command for the Midwestern United States. A catalog of incidents that have taken place at Site-87 and within the Sloth's Pit Nexus zone can be found <a href="http://www.scp-wiki.wikidot.com/the-s-c-plastics-hub">here</a>.</p>
+                    <span class="siteIcon" style="background: linear-gradient(to bottom right, #999,#630);"><img src="http://scp-wiki.wdfiles.com/local--files/component:site/facility-texture.png" alt="facility-texture.png" class="image"><span class="number">88</span></span> <span style="font-size:110%;"><strong><a href="http://www.scp-wiki.net/secure-facility-dossier-site-88">Site-88</a></strong> (Humanoid Containment Site-88)</span>
+                    <p>Humanoid Containment Site-88 is located in central Baldwin County, Alabama. The site houses many humanoid SCP objects, along with several high value anomalous items. While research is not a primary focus of the site, the site has the capacity for, and has seen many research projects related to its occupants. Objects contained at this site include: <a href="/scp-245">SCP-245</a>, <a href="/scp-1774">SCP-1774</a>, <a href="/scp-1868">SCP-1868</a>, <a href="/scp-2065">SCP-2065</a>, <a href="/scp-2067">SCP-2067</a>, <a href="/scp-2251">SCP-2251</a>, <a href="/scp-2725">SCP-2725</a>, <a href="/scp-2343">SCP-2343</a>, <a href="/scp-2632">SCP-2632</a>, <a href="/scp-2714">SCP-2714</a>, <a href="/scp-2968">SCP-2968</a>, <a href="/scp-2987">SCP-2987</a></p>
+                    <span class="siteIcon" style="background: linear-gradient(to bottom right, #999,#630);"><img src="http://scp-wiki.wdfiles.com/local--files/component:site/facility-texture.png" alt="facility-texture.png" class="image"><span class="number">91</span></span> <span style="font-size:110%;"><strong><a href="http://scp-wiki.wikidot.com/hecatoncheires-cycle-hub">Site-91</a></strong> (Xenobiological Research and Containment Site-91)</span>
+                    <p>Established as Provisional Site-91 in 1986 shortly after the discovery of SCP-4612, the site was fully commissioned by Overwatch command the following year. Site-91 was originally adapted from its previous use to contain SCP-4612 (which was found in the substructure below the manor), but was expanded to a full containment facility, research lab and library. The site is located upon the grounds of a manor commonly known as Eckhart House; located in Yorkshire, England. The site's research focus is the containment and analysis of xenobiological specimens, with a secondary focus of the development of thaumaturgical countermeasures and containment of thaumaturgical artifacts. Serves as the primary station for MTF-Beta-777 (“Hecate’s Spear”) due to their familiarity and expertise in thaumaturgical analysis. Objects contained at this facility include: <a href="/scp-3743">SCP-3743</a>, <a href="/scp-4612">SCP-4612</a>, <a href="/scp-4712">SCP-4712</a>, <a href="/scp-5079">SCP-5079</a>, <a href="/scp-5512">SCP-5512</a>, and <a href="/scp-5612">SCP-5612</a>.</p>
+                    <span class="siteIcon" style="background: linear-gradient(to bottom right, #999,#630);"><img src="http://scp-wiki.wdfiles.com/local--files/component:site/facility-texture.png" alt="facility-texture.png" class="image"><span class="number">95</span></span> <span style="font-size:110%;"><strong>Site-95</strong> (Biological Research and Containment Site-95, Bio-Site-95)</span>
+                    <p>Site-95 is a small but well equipped site used to contain and research biological and organic anomalies. Objects contained at this facility include: <a href="/scp-1077">SCP-1077</a>, <a href="/scp-1160">SCP-1160</a>, and <a href="/scp-3117">SCP-3117</a></p>
+                    <span class="siteIcon" style="background: linear-gradient(to bottom right, #999,#606);"><img src="http://scp-wiki.wdfiles.com/local--files/component:site/facility-texture.png" alt="facility-texture.png" class="image"><span class="number">98</span></span> <span style="font-size:110%;"><strong><a href="http://www.scp-wiki.net/secure-facility-dossier-site-98">Site-98</a></strong> (Dimensional Research Site-98)</span>
+                    <p>Site-98 serves as the forefront of Foundation technology. Stationed in the city of Philadelphia, Site-98 is responsible for the bleeding-edge technological developments and innovations that help the Foundation contain, analyze, and research the various anomalous threats that endanger the world. Site-98 is often considered as the most technologically-advanced research facility in the Foundation. Objects currently documented in this site include: <a href="/scp-179">SCP-179</a>, <a href="/scp-1152">SCP-1152</a>, <a href="/scp-1287">SCP-1287</a>, <a href="/scp-2009">SCP-2009</a>, <a href="/scp-2115">SCP-2115</a>, <a href="/scp-2703">SCP-2703</a>, <a href="/scp-2716">SCP-2716</a>, <a href="/scp-4156">SCP-4156</a>, <a href="/scp-4192">SCP-4192</a>, <a href="/scp-4366">SCP-4366</a>, <a href="/scp-4797">SCP-4797</a>, and <a href="/scp-4880">SCP-4880</a>.</p>
+                    <span class="siteIcon" style="background: linear-gradient(to bottom right, #999,#630);"><img src="http://scp-wiki.wdfiles.com/local--files/component:site/facility-texture.png" alt="facility-texture.png" class="image"><span class="number">103</span></span> <span style="font-size:110%;"><strong>Site-103</strong> (Biological Containment Site-103)</span>
+                    <p>Site-103 has extensive facilities for the containment and research of plant and plant-based anomalies. Objects contained at this facility include: <a href="/scp-757">SCP-757</a>, <a href="/scp-822">SCP-822</a>, <a href="/scp-1001">SCP-1001</a></p>
+                    <span class="siteIcon" style="background: linear-gradient(to bottom right, #999,#006);"><img src="http://scp-wiki.wdfiles.com/local--files/component:site/facility-texture.png" alt="facility-texture.png" class="image"><span class="number">104</span></span> <span style="font-size:110%;"><strong>Site-104</strong> (Biological Research Site-104)</span>
+                    <p>Formerly Provisional Site-104, this facility is operated under the guise of a wildlife preserve and is designed for study of and experimentation on biological anomalies with wide-ranging effects. Objects contained at this facility include: <a href="/scp-628">SCP-628</a>, <a href="/scp-936">SCP-936</a>, <a href="/scp-1104">SCP-1104</a></p>
+                    <span class="siteIcon" style="background: linear-gradient(to bottom right, #999,#006);"><img src="http://scp-wiki.wdfiles.com/local--files/component:site/facility-texture.png" alt="facility-texture.png" class="image"><span class="number">111</span></span> <span style="font-size:110%;"><strong>Site-111</strong> (Industrial Research Site-111)</span>
+                    <p>Site-111 is located underground beneath Captain's Mountain in southern Queensland, Australia. Its primary focus is anomalous materials and technology. The location of Site-111 is intended to strengthen the Foundation's presence in eastern Australia, where anomalies have been discovered and contained before. Although the Site does have the ability to house contained anomalies, there are none yet housed there.</p>
+                    <h2 id="toc21"><span>Areas</span></h2>
+                    <span class="areaIcon" style="background: linear-gradient(to bottom right, #333,#606);"><img src="http://scp-wiki.wdfiles.com/local--files/component:site/facility-texture.png" alt="facility-texture.png" class="image"><span class="number">02</span></span> <span style="font-size:110%;"><strong>Area-02</strong> (Armed Reliquary and Containment Area-02)</span>
+                    <p>Area-02 is a remote facility whose primary purpose is to contain highly dangerous, hostile, or otherwise hazardous anomalies, including multiple Keter-class objects. In addition to a battalion-strength security detachment, Area-02 is also equipped with multiple nuclear fail-safes as a final option in the case of a catastrophic breach or loss of containment. Objects contained at this facility include: <a href="/scp-122">SCP-122</a>, <a href="/scp-743">SCP-743</a></p>
+                    <span class="areaIcon" style="background: linear-gradient(to bottom right, #333,#606);"><img src="http://scp-wiki.wdfiles.com/local--files/component:site/facility-texture.png" alt="facility-texture.png" class="image"><span class="number">12</span></span> <span style="font-size:110%;"><strong>Area-12</strong> (Biological Research Area-12)</span>
+                    <p>Area-12 is a containment and research facility located on remote federal land in the Midwestern United States. Area-12 contains both live specimens of anomalous biological entities as well as samples of biohazardous or otherwise dangerous biological anomalies for study. Objects contained at this facility include: <a href="/scp-143">SCP-143</a>, <a href="/scp-153">SCP-153</a>, <a href="/scp-214">SCP-214</a>, <a href="/scp-811">SCP-811</a>, <a href="/scp-939">SCP-939</a></p>
+                    <p><a name="area-14-anchor"></a></p>
+                    <span class="areaIcon" style="background: linear-gradient(to bottom right, #333,#630);"><img src="http://scp-wiki.wdfiles.com/local--files/component:site/facility-texture.png" alt="facility-texture.png" class="image"><span class="number">14</span></span> <span style="font-size:110%;"><strong>Area-14</strong> (Armed Biological Containment Area-14)</span>
+                    <p>Area-14 is a dedicated containment facility located in the Ruby Mountains of Nevada, United States. Area-14 is primarily used for large-scale, dangerous, and/or hostile anomalous entities and as such is staffed with a regiment-strength security detachment as well as heavy weapons, armored vehicles, and air support. Objects contained at this facility include: <a href="/scp-058">SCP-058</a>, <a href="/scp-082">SCP-082</a>, <a href="/scp-165">SCP-165</a>, <a href="/scp-326">SCP-326</a>, <a href="/scp-939">SCP-939</a>, <a href="/scp-940">SCP-940</a>, <a href="/scp-1801">SCP-1801</a>, <a href="/scp-2068">SCP-2068</a></p>
+                    <span class="areaIcon" style="background: linear-gradient(to bottom right, #333,#630);"><img src="http://scp-wiki.wdfiles.com/local--files/component:site/facility-texture.png" alt="facility-texture.png" class="image"><span class="number">27</span></span> <span style="font-size:110%;"><strong><a href="http://www.scpwiki.com/secure-facility-dossier-reliquary-area-27">Area-27</a></strong> (Reliquary Area-27)</span>
+                    <p>Area-27 is an underground facility operating beneath the Saint Notre-Dame Cathedral Basilica in Ontario, Canada. Area-27's main purpose is to serve as both headquarters for the Department of Tactical Theology and as emergency quartering in the case of a large-scale K-Class Scenario. The site is also capable of containing primarily religiously-orientated anomalies and the development of theological weaponry. Objects located at this facility include: <a href="/scp-5502">SCP-5502</a>, <a href="/scp-5993">SCP-5993</a></p>
+                    <span class="areaIcon" style="background: linear-gradient(to bottom right, #333,#630);"><img src="http://scp-wiki.wdfiles.com/local--files/component:site/facility-texture.png" alt="facility-texture.png" class="image"><span class="number">32</span></span> <span style="font-size:110%;"><strong><a href="http://www.scp-wiki.net/secure-facility-dossier-lunar-area-32">Area-32</a></strong> (Lunar Area-32)</span>
+                    <p>Comprised of several floors beneath the surface of Mare Imbrium, Lunar Area-32 is a facility used to contain immobile anomalies present on the lunar surface, or anomalies that are significantly less hazardous to contain beyond Earth’s atmosphere. Objects located at this facility include: <a href="/scp-2493">SCP-2493</a>, <a href="/scp-2686">SCP-2686</a>, and <a href="/scp-2821">SCP-2821</a>.</p>
+                    <span class="areaIcon" style="background: linear-gradient(to bottom right, #333,#630);"><img src="http://scp-wiki.wdfiles.com/local--files/component:site/facility-texture.png" alt="facility-texture.png" class="image"><span class="number">179</span></span> <span style="font-size:110%;"><strong>Area-179</strong></span>
+                    <p>Formerly Provisional Containment Area-179, this facility is located in Pennsylvania, United States. Objects contained at this facility include: <a href="/scp-1050">SCP-1050</a>, <a href="/scp-1179">SCP-1179</a></p>
+                    </div>
             </div>
-            <div id="securityClearences"><div id="wiki-tab-0-0">
-            </div>
+            <id id="securityClearences">
+                <span style="font-size:130%;">Needless to say, you're not supposed to be viewing these files. I say: take a chance. You've come this far.</span>
+                <span style="font-size:130%;">Some of the following information is true. Some of it's false, even ridiculous. Sometimes I know for sure, sometimes I don't. Sometimes I'll lie. It doesn't matter. Whatever I've told you here, someone, somewhere believes it. And belief has power.</span>
+                <span style="font-size:130%;">Realize also that the O5 Council might not even exist.</span>
+                <p>-████████████████</p>
+                <div id="wiki-tab-0-0" style="display: block;">
+                    <p>The O5 Council. O5 Command. The Overseers. Overwatch.</p>
+                    <p>These are the people who have ultimate control over the Foundation.</p>
+                    <p>Each O5 member knows almost everything there is to know about the Foundation and its activities. Between them all, they know every single secret that the Foundation holds.</p>
+                    <p>Most Foundation personnel spend their entire careers without seeing them. Members below Clearance Level 2 don't even know they exist. Most people outside the Foundation have never heard of them, or don't think they are real.</p>
+                    <p>Most everyone is afraid of them. An O5 walks into a room, and everyone pisses their pants. That's what happens when you hold supreme power over one of the scariest organizations in world history.</p>
+                    <p><strong>This dossier will show you contradictory reports on each of the O5 Council members.</strong></p>
+                    <p>My research has been comprehensive, but the very nature of my enemy makes it impossible to know which answer, if any, is true.</p>
+                    <p>Perhaps there are multiple individuals sharing each O5 number. Perhaps dozens. But perhaps there is only one. Perhaps only one of each of the reports are true, or all reports are different facets of one person with stand-ins and disinformation stirred in.</p>
+                    <p>Perhaps none of these are true. The end of this dossier presents well-sourced reports that question the veracity of <em>almost every single assumption made here</em>. You must judge carefully.</p>
+                </div> 
+                <div id="wiki-tab-0-1" style="display: block;">
+                    <blockquote>
+                    <p><strong>A note on O5-1.</strong></p>
+                    <p>Whatever the reason, O5-1 is often reported to be the most powerful O5 Council member, if reports suggest that there even <em>is</em> a most powerful O5 Council member. Given the amount of disinformation spread about the O5 Council, make of this what you will.</p>
+                    </blockquote>
+                    <hr>
+                    <p><strong>O5-1: "The Founder".</strong></p>
+                    <p>Male. European descent. American origin. Verified post-human lifespan; 148+ years of age. Varying appearance.</p>
+                    <p>A holdover of the occult organizations preceding the Foundation, so he likely benefits from more preservation techniques than merely <a href="/scp-006">SCP-006</a>, and he likely possess a large degree of anomalous protection. References have been made to <a href="/ecceperago">"clad in rags and bones"</a>; obvious occult significance.</p>
+                    <p>One possible identity for the original Administrator.</p>
+                    <p>Evidence strongly suggests that he was born Aaron Siegel in the late 1800s (possibly 1866). Certainly, one Aaron Siegel was a physicist studying at Cornell University in 1891, who disappears from the historical record after this year. This timeline doesn't match what we know of O5-1's activity, but given his position and the reality-restructuring events that have occurred, it's entirely possible.</p>
+                    <p>Rumor has it that he's <a href="/annon">Gears'</a> <a href="/loosen-up-a-bit">father</a>. If true, this would make him the Black Queen's grandfather — <span style="color:black; background-color: black">my grandfather</span>.</p>
+                    <p>Two contradictory sightings stand out. Once in company of O5-2, appearing as an extremely old man. Once in what appears to be security footage of an underground bunker, appearing as a young teenager.</p>
+                    <hr>
+                    <p><strong>O5-1: "Eve".</strong></p>
+                    <p>Female. African descent. Ancient Sumerian origin. Verified post-human lifespan; claims to be 10,000-15,000 years old. Varying appearance.</p>
+                    <p>Claims to be "Adam's third wife." Claims to be the mother of modern humanity. Possible mother of <a href="/scp-076">SCP-076</a>-2 and <a href="/scp-073">SCP-073</a>. Claims that she (and Adam) were not the first humans, but merely the leaders of the first agricultural humans (possibly; reported details vary), who brought humanity from the Garden.</p>
+                    <p>Claims that Adam was (or became) a reality bender, but that she herself is not. Rather, she possesses protection from reality restructuring via "anchors" (like a few Foundation personnel, including the current Administrator and Dr. Alto Clef). Reference: <a href="/scp-1000">SCP-1000</a>, <a href="/scp-2932">SCP-2932</a>, and reality restructuring cascades.</p>
+                    <p>O5-1 is a reluctant founding member of the SCP Foundation. As one of those who led humanity from the Garden, she felt responsibility for helping to guide humanity through the uncertain future ahead. Reports suggest she may often disagree with the rest of the O5 Council.</p>
+                    <p>Despite that fact that they seem to share an O5 number, several reports that reference "Eve" also reference "The Founder" as existing together, and reference their acrimonious interactions.</p>
+                    <p>She seems a curious character. If she's real, I'd like to meet her. Maybe befriend her. Maybe kill her.</p>
+                    <hr>
+                    <p><strong>O5-1: "The Dead Man".</strong></p>
+                    <p>Male. Unknown descent. Unknown origin. Rarely, if ever, directly seen.</p>
+                    <p>The oldest surviving founding member of O5 Command, O5-1 is technically dead. He survives only due to anomalous alteration and sheer willpower; his body is a mummified corpse, and he should biologically be brain-dead.</p>
+                    <p>Never appears in public. When public appearances are necessary sends a stand-in. Works exclusively through intermediaries. Has a somewhat frightening reputation; the other O5 Council members seem to be afraid of him.</p>
+                    <hr>
+                    <p><strong>O5-1: "The Man With The Infinity Gun".</strong></p>
+                    <p>Male. European descent. Spanish origin. Not seen since 03/22/1926.</p>
+                    <p>Previously a high-ranking official in a pre-Foundation supernatural study organization, and former head of command research team <a href="/djkaktus-s-proposal">Omega-5, assigned to the "Twins of God"</a> top secret project at San Marco, Mexico. Participated in the construction of "The Children", a cosmic superweapon designed to eliminate the Group of Interest "Kingdom of Abbadon", a community of hostile reality altering entities located in North Africa.</p>
+                    <p>Murdered the first Foundation Administrator and stole the trigger for the weapon before fleeing and disappearing along with a substantial number of high-ranking staff members. May have founded the Chaos Insurgency Group of Interest, though reports of his affiliation with the group are limited and unsubstantiated.</p>
+                    <p>Not currently believed to be alive, though it is possible that he has discovered other means of prolonging his life. If alive, possesses the ability to immediately annihilate anything, anywhere in the universe, at any moment. Exceptionally dangerous.</p>
+                    <hr>
+                    <p><strong>O5-1: "The Visionary".</strong></p>
+                    <p>Male. European descent. British origin. Appears to be about 55. Formerly affiliated with Her Majesty's Foundation for the Secure Containment of the Paranormal. Signatory and initiator of the <a href="/wrong-proposal">Forbidden City Convention</a>.</p>
+                    <p>A principle believer of the Foundation's formation "by God's will". Religious backing or disinformation?</p>
+                    <p>May have strong-armed other precursors into forming the Foundation under threat of annihilation? But why those other organisations specifically? What do they possess?</p>
+                    <hr>
+                </div>
+                <div id="wiki-tab-0-2" style="display: block;">
+                    <blockquote>
+                    <p><strong>A note on O5-2.</strong></p>
+                    <p>O5-2 is usually reported to possess certain… unique anomalous traits. As you will see from the following reports, there is an odd sort of consistency in between the vast contradiction. Consistency is unusual for O5 member reports. Possible sign of a disinformation campaign… or a very strange truth. Perhaps I know which, but I could not tell you.</p>
+                    </blockquote>
+                    <hr>
+                    <p><strong>O5-2: "The Gardener".</strong></p>
+                    <p>Female. European descent. American origin. Appears to be 80+ years old. Actual age unknown. No unusual appearance.</p>
+                    <p>O5-2 is apparently a second version of Foundation Director Dr. Sophia Light, a holdover from an erased timeline (she seems to have had a hand in this erasure). She is very different from the current Sophia Light, Director of Site-41, who is unaware of her alternate's status or identity. Considered extremely dangerous, even compared to the other O5s. Known for making tough, pragmatic decisions.</p>
+                    <p>Promotes research of SCP objects and the anomalous in general. Has consistently stuck to this despite regularly shifting Foundation attitudes towards containment versus research. Pushed for a reasonable degree of anomalous object cross-testing. Implemented higher standards of non-SCP anomalous item categorization by the Foundation. Strong believer in pragmatic research (or theoretical research that leads to pragmatic work), believing this to be most beneficial to the Foundation in the long run. Wishes to deconstruct the anomalous so that the Foundation understands it.</p>
+                    <p>Rarely seen in public. Said to have a grandmotherly attitude.</p>
+                    <p>Maintains several SCP objects considered key to O5 Command, notably <a href="/scp-006">SCP-006</a>.</p>
+                    <hr>
+                    <p><strong>O5-2: "The Nazarene".</strong></p>
+                    <p>Female. Middle Eastern descent. Israeli origin. Varying appearance; often passes for male. Possesses injuries consistent with crucifixion (notably distinct scars at wrists and feet, marks of whipping, etc).</p>
+                    <p>O5-2 is apparently a version of Foundation Doctor Sophia Light, either a holdover from an erased timeline, or, perhaps, the original version of Sophia Light (making the publicly known version a duplicate, or the same person). She appears to be similar to the publicly known Sophia Light in personality and appearance (with the exception of ethnicity), but otherwise differs due to extensively differing life experience. The publicly known Sophia Light is unaware of her alternate's status or identity.</p>
+                    <p>O5-2 possesses various reality-bending capabilities, the extent of which is currently unknown. May have some claim to divine status.</p>
+                    <p><a href="/recovered-data-file">Recovered Data File L246-A1780B23971C20987D091</a></p>
+                    <hr>
+                    <p><strong>O5-2: "The Way".</strong></p>
+                    <p>Male. European descent. American origin. Appears to be 50+ years old. Actual age unknown. No unusual appearance.</p>
+                    <p>O5-2 is apparently a version of Foundation Doctor Sophia Light, either a holdover from an erased timeline, or an immigrant from an alternate timeline. He resembles the current Sophia Light in every way except his gender, age, and first name: "Stefan".</p>
+                    <p>He travels everywhere with a similarly unusual secretary/bodyguard, who he seems to be in a romantic relationship with. She is named Tracy Lament, and appears to be a version of Foundation Agent Troy Lament, and coming from the same origin as O5-2.</p>
+                    <p>Neither Dr. Light nor Agent Lament are aware of their doubles' identity or status.</p>
+                    <p>O5-2 has pushed repeatedly for a particular sweeping change to Foundation policy: that anomalous objects which become fully understood by the Foundation be universally declassified and introduced to the non-anomalous scientific community (even those alien to current standards of normalcy and established scientific principles). So far, he has met with little success in this endeavor, due to strong opposition from other members of the O5 Council.</p>
+                    <hr>
+                    <p><strong>O5-2: "He Who Waits".</strong></p>
+                    <p>Male. European descent. French origin. Appears to be about 60. Formerly affiliated with <em>Estate noir</em>. Signatory of the <a href="/wrong-proposal">Forbidden City Convention</a>. DNA tests indicate that he is apparently an ancestor of Sophia Light.</p>
+                    <p>Proposed an anomaly progression model based on the second law of thermodynamics, which was rejected by the other members of the O5 Council. Since their first known meeting, has usually voted 'Abstain'.</p>
+                    <p>Coined the term 'Keter'. Contrary to the common translation of 'crown', "He Who Waits" coined 'Keter' in the context of 'wait'. Waiting for what?</p>
+                    <p>An excerpt from a document authored by O5-2 is as follows:</p>
+                    <blockquote>
+                    <p>…Until then, there will be <strong>chaos</strong> in the system. Once, I proposed that we guide the world back to its original state but the others <strong>disagreed in favour of establishing tyranny</strong>…</p>
+                    </blockquote>
+                    <p>'disagreed in favour of… tyranny' –&gt; insurgency</p>
+                    <p>Possible Chaos Insurgency member/founder/sympathiser? More research needed.</p>
+                    <hr>
+                </div>
+                <div id="wiki-tab-0-3" style="display: block;">
+                    <p><strong>O5-3: "The Kid".</strong></p>
+                    <p>Male (?). European descent (apparently). Unknown origin. Appears to be 17-19, despite being certainly much older. Always has long blond hair, glasses, patched jean jacket, and a single bone earring. Never seen in person; communicates via computer terminal.</p>
+                    <p>Usually presents as male, sometimes as female, sometimes non-binary/other. Never explains this. An informant suggested to me that it's a computer error; I find it hard to believe it's not on purpose.</p>
+                    <p>Original identity unknown. Various intelligence reports claim that he (?) is actually dead, and only exists in the computer matrices he created. Excessively friendly in personality. Usually. A relatively active O5 member at certain Sites.</p>
+                    <p>Assorted rumors hold that O5-3 is the brother of <a href="/scp-2772">SCP-2772</a> (perhaps likely), and may have helped invent the Internet in the 1960's (unknown).</p>
+                    <hr>
+                    <p><strong>O5-3: "The Philosopher Scientist".</strong></p>
+                    <p>Male. East Asian descent. Japanese origin. Appears to be 60+ years old. Actual age unknown. No unusual appearance.</p>
+                    <p>Joined the O5 Council in in the 1930's, shortly after World War 1. Known for caring about the social ramifications of science; strongly opposed social Darwinism.</p>
+                    <p>Generally a voice of caution; the "conscience" of the O5 Council, even if often overridden by other members, and even if often endorsing Foundation projects he does not fully agree with.</p>
+                    <p>Helped found the Ethics Committee. Possibly still plays a lead role in the organization (if it even exists).</p>
+                    <p>While already an O5 Council member, gained a PhD in clinical psychology. Was the original person responsible for implementing psychological checkups of Foundation personnel.</p>
+                    <hr>
+                    <p><strong>O5-3: "The Beacon".</strong></p>
+                    <p>Male. European descent. American origin. Appears to be 50+ years old. Actual age unknown. Varying appearance.</p>
+                    <p>Made a lifelong study of various methods of controlling large groups of people. A particular fascination with religion and religious cults. Convinced by other O5 members to investigate making large groups of people profitable as well.</p>
+                    <p>O5-3 is particularly shrouded in myth. He is presented as a literal supernatural figure in some reports, and as a perfectly ordinary man in others. Ordinarily, this could be chalked up to religiously related manipulation, but as an O5 member, some claim to divine status cannot be discounted.</p>
+                    <p>Possibly connected to L. Ron Hubbard.</p>
+                    <hr>
+                    <p><strong>O5-3: "The Hermit".</strong></p>
+                    <p>Male. European descent. Russian origin. Appears to be about 80. Has a prominent beard. Formerly affiliated with the Tsars' Seers. Signatory of the <a href="/wrong-proposal">Forbidden City Convention</a>.</p>
+                    <p>Bends to consensus decision easily, even if said consensus decision is not originally his choice.</p>
+                    <p>Only directly interacts with other O5 Council members. Uses written messages to convey orders to subordinates. Known to consistently stay in Overwatch HQ. Potential secret-keeper?</p>
+                    <hr>
+                </div>
+                <div id="wiki-tab-0-4" style="display: block;">
+                    <p><strong>O5-4: "The Ambassador".</strong></p>
+                    <p>Male. Australian (Koori) descent. Canadian origin. Mid-40s. No unusual appearance. Assigned female at birth.</p>
+                    <p>Former Foundation field agent. Many recorded sightings; unlike all other members of O5 Command, commonly interacts with agents or representatives of outside anomalous groups of interest.</p>
+                    <p>He also works with the Administrator in a more traditional ambassador role, privately meeting with heads of state and high-tier organizations such as the Global Occult Coalition/United Nations to negotiate such matters as Foundation access to countries. Has a sizable staff of diplomats working under him.</p>
+                    <p>Pertinently: How does he keep finding me? And why doesn't he share that with the rest of the Foundation? Possibly bound to an esoteric/anomalous rule-set. Requires investigation.</p>
+                    <p>Excerpt from intercepted communication:</p>
+                    <blockquote>
+                    <p>A lot of fieldwork and being in the wrong place at the right time. Got to be a little bit of a diplomat, and ended up getting sent out to talk to various GOIs over the years. Got pretty good at it. Too good, really.<br>
+                    Another of those who ended up being promoted because he's so damned good at his job, but not entirely trusted, because he walks places people shouldn't go, and keeps secrets.<br>
+                    His loyalty isn't in doubt. Just the wisdom of his excursions.</p>
+                    </blockquote>
+                    <hr>
+                    <p><strong>O5-4: "The Martyr".</strong> [DECEASED]</p>
+                    <p>Male. European descent. American origin. Early 40s. No unusual appearance.</p>
+                    <p>Gained his position when forced to execute a prior O5-4 during an attempted hostile takeover of the Foundation. Held the position reluctantly. Later died under highly classified circumstances. Publicly, at least, said to have died a hero's death. I suspect otherwise, but the reports claim he was genuinely grieved, so perhaps true.</p>
+                    <hr>
+                    <p><strong>O5-4: "Frost".</strong> [DECEASED]</p>
+                    <p>Male. European descent. American origin. Early 40s. No unusual appearance.</p>
+                    <p>A relaxed, gentle man, despite his stern reputation. Not shy about appearing in public, or publicizing his projects. Kept up impressive security measures to counter this. Known for traveling with a large, friendly mastiff named (almost comically) "Rover".</p>
+                    <p>Did not reflect the mindset of his compatriots regarding use of anomalous objects. Strongly opposed the weaponization of SCP objects. One of several O5 Council members who strongly opposed cross-testing and in many cases general research on the anomalous as well.</p>
+                    <p>Came into his own after the series of incidents that included SCP-076 causing the destruction of Area-25 and MTF Omega-7, Dr. Kondraki mostly destroying Site-19 by deliberation of breaching 682 in reaction to manipulation by O5 members, a researcher wiping himself and several sites from existence, and a string of serious accidents resulting from cross-testing SCP objects.</p>
+                    <p>Following these incidents, O5-4 and his newfound allies within O5 Command found their position suddenly quite popular indeed. A great number of projects were outright ended, and a new policy came into effect: little research on anomalous objects should be done except that which is necessary for containment. Research was considered too dangerous. SCP objects would be examined mostly in isolation from each other. Cross-testing mostly ceased. This would be unofficial Foundation policy for the better part of the following decade.</p>
+                    <p>O5-4's sway began to fail in more recent times, and then he was abruptly assassinated by operatives of the Chaos Insurgency. (In practice, this could mean almost anything, given the nature of the Insurgency.)</p>
+                    <hr>
+                    <p><strong>O5-4: "The Collector".</strong> [REMOVED]</p>
+                    <p>Male. Descent unknown. Origin unknown. Age unknown. Appearance unknown.</p>
+                    <p>O5-4 was the first to personally succeed in bringing a complete series of <a href="/tales-of-mr-collector">Little Misters</a> into Foundation containment, and <a href="/epilogue">became Mr. Collector</a>.</p>
+                    <hr>
+                    <p><strong>O5-4: "The Gangster".</strong> [DEFECTED]</p>
+                    <p>Male. European descent. American origin. Appearance unknown.</p>
+                    <p>O5-4 played a large role in Foundation manipulation of world governments and economic systems. Additionally, he had extensive ties to organized crime and domestic terrorism, ties which existed before his elevation to the O5 Council. He simply never let them go, and the obvious utility of crime connections during the Foundation's early years allowed him to justify these questionable continuing relationships. Most people who the Foundation 'disappeared' or assassinated during their formative years were targeted under the auspices of O5-4.</p>
+                    <p>Helped design the first iteration of the Chaos Insurgency (as a Foundation black ops project) before defecting with the fully realized Chaos Insurgency during the Foundation Civil War. Although not a mastermind of the "true" Insurgency (better thought of as an alliance between then-O5-7 and then-O5-11), is likely significantly responsible for its success post-schism, for when he left, he took his connections with him.</p>
+                    <p>When O5-4 defected, the Foundation wiped out all his operations and reassigned or terminated his remaining staff. Though this was likely a good choice for them long-term, this partially contributed to certain destabilizations in world economies of the time.</p>
+                    <p>Rumored to have known Al Capone and number of other crime lords personally.</p>
+                    <hr>
+                    <p><strong>O5-4: "The Veteran".</strong></p>
+                    <p>Male. European descent. German origin. Appears to be about 50. Has prominent mustache. Formerly affiliated with the Imperial German Anomalous Matters Examination Agency. Signatory of the <a href="/wrong-proposal">Forbidden City Convention</a>.</p>
+                    <p>Believed to have fought in the Fifth Occult War on behalf of the German Empire, and defeated the Militia United in Righteousness (a.k.a. the Boxers). Professes unusually detailed knowledge of <a href="/scp-140">Daevite</a> and Mekhanist military tactics.</p>
+                    <p>Claims to have met <a href="/scp-2515">Napoleon Bonaparte</a> in person, although he claims that the iteration of Bonaparte whom he met is anomalously enhanced.</p>
+                    <p>Likes to join agents and Mobile Task Force members during field operations. Restless and does not like desktop jobs.</p>
+                    <hr>
+                </div>
+                <div id="wiki-tab-0-5" style="display: block;">
+                    <p><strong>O5-5: "Blackbird".</strong></p>
+                    <p>Male. European/Middle Eastern descent. American origin. Appears to be mid-40s; almost certainly older. Favors tweed suits, usually worn with coat and a hat with a blackbird pin. Wears ties with birds. Unknown significance, if any.</p>
+                    <p>Overly friendly and familiar in demeanor. Tends to be laid-back and jovial given the option. One of the more prominent O5s, relatively often seen in public. Little is known about his specific role, though he has been on the Council a long time.</p>
+                    <p>An artist of some talent; <a href="/the-flytrap">known to sketch five blackbirds as a signature.</a></p>
+                    <hr>
+                    <p><strong>O5-5: "The Ordinary Man".</strong></p>
+                    <p>Male. European descent. American origin. Appears to be mid-40s. Appearance is thoroughly ordinary; prefers to appear average in almost every way. Exception: Almost always seen wearing tanned leather shoes.</p>
+                    <p>Very little knowledge is available about O5-5. Has been known to occasionally travel with <a href="/scp-108">SCP-108</a> for unknown reasons. Given experimentation records on 108, I suspect he may intend to use her (either directly or via research) as some form of last-ditch escape route.</p>
+                    <hr>
+                    <p><strong>O5-5: "The Entrepreneur", or "The Treasurer".</strong></p>
+                    <p>Male. European/Middle Eastern descent. Western European origin. Mid-40s. No unusual appearance.</p>
+                    <p>O5-5 oversees the Foundation's front organizations. He creates funding for almost all Foundation projects. Habitually manipulates economies to the Foundation's benefit. He doesn't accomplish this directly by anomalous means; yes, the Foundation could just make gold, but then injecting large amounts of gold into an economy would tend to destabilize it. O5-5 doesn't just run the front organizations, he makes them profitable. Others hire the workers, O5-5 pays them.</p>
+                    <p>Never seen in public. Many reports identify him as the same person as O5-5 "Blackbird", and others call "Blackbird" a fiction or a false double.</p>
+                    <hr>
+                    <p><strong>O5-5: "Manifest Destiny".</strong></p>
+                    <p>Male. European descent. American origin. Appears to be about 50. Clean-shaven. Formerly affiliated with the American Secure Containment Initiative. Signatory of the <a href="/wrong-proposal">Forbidden City Convention</a>.</p>
+                    <p>A firm believer in human mastery over Nature. Involved in the decimation of <a href="/scp-2750">SCP-2750</a>.</p>
+                    <p>Makes frequent trips to Yellowstone Park. <a href="/scp-2000">Purpose unknown</a>.</p>
+                    <hr>
+                </div>
+                <div id="wiki-tab-0-6" style="display: block;">
+                    <p><strong>O5-6: "Cowboy", or "The American".</strong></p>
+                    <p>Male. European descent. American origin. Mid-40s. Long hair kept in a ponytail. Nearly always dresses in white suits, with a white Stetson "Boss of the Plains" cowboy hat, and carries a white cane with the handle carved in the shape of a wolf's head. Unknown significance, if any.</p>
+                    <p>Former top Foundation field agent; other details of prior identity unknown (probable wipe). Professional yet genial. Reputation for high competency. Plays something of a "jack of all trades" role within the Foundation, but focuses particularly on issues of Foundation security.</p>
+                    <p>One of the O5s seen more often in public. Travels with two male bodyguards referred to as "Thompson" and "Black".</p>
+                    <hr>
+                    <p><strong>O5-6: "The Figurehead", or "The Elder".</strong></p>
+                    <p>Male. African descent. American origin. Verified post-human lifespan; likely 200+ years of age.</p>
+                    <p>One of the founding members of the O5 Council, O5-6 was already old when he joined. He is now said to have aged beyond even the abilities of <a href="/scp-006">SCP-006</a> to rejuvenate him. He still survives, for now, but he rarely if ever takes any action on the O5 Council. His secretary runs things for him, up to and including voting according to his wishes on O5 Council matters.</p>
+                    <hr>
+                    <p><strong>O5-6: "The Puppet".</strong></p>
+                    <p>Male. European descent. American origin. Early 40s. Typically dresses in tasteful suits.</p>
+                    <p>Rarely seen in public, but a very active member of O5 Command internally. What few are aware of is that he is a puppet inserted into the O5 Council by the Global Occult Coalition as a possible future attempt at hostile takeover, or perhaps a failsafe.</p>
+                    <p>It seems possible that some or all of the other O5 Council members are aware of his status as a turncoat, and tolerate the situation for their own reasons. Perhaps they view him as a potential asset, or at least view the knowledge of his situation as a potential asset.</p>
+                    <hr>
+                    <p><strong>O5-6: "The Experimenter".</strong></p>
+                    <p>Male. European descent. Austrian origin. Appears to be about 65. Formerly affiliated with the Imperial Commission on Transgressive Occurrences. Signatory of the <a href="/wrong-proposal">Forbidden City Convention</a>.</p>
+                    <p>Advocates for scientific methodology within the Foundation. Chiefly in charge of R&amp;D. Coined the terms 'Euclid' and 'trans-reality memory retention'.</p>
+                    <p>What exactly is trans-reality memory retention?</p>
+                </div>
+                <div id="wiki-tab-0-7" style="display:block">
+                    <p><strong>O5-7: "Green".</strong></p>
+                    <p>Female. South Asian descent. Unknown origin. Appears to be mid-40s; almost certainly older. Somewhat fat. Nearly always dresses in various shades of green clothing. Unknown significance, if any.</p>
+                    <p>One of the longer-term members of the O5 Council. Described as not especially morally scrupulous with her power, although with her heart in the right place, or at least near the right place. A master tactician, charismatic, and fairly dangerous.</p>
+                    <p>Does not often appear in public, and often works through intermediaries at first; a believer in private meetings over public speeches. Generally friendly in demeanor in personal interactions, right up until she's not.</p>
+                    <p>Possibly an ex-university professor (surprisingly). Has implemented a number of training program in various areas across the Foundation.</p>
+                    <p>Also notable for "adopting" Dr. Alto Clef and approving a number of his experimental (and sometimes unnecessarily dangerous) projects.</p>
+                    <p>Takes an active interest in Foundation personnel; <a href="/the-flytrap">often plays a role in recruiting O5 Council general staff.</a></p>
+                    <hr>
+                    <p><strong>O5-7: "The Unlikely".</strong></p>
+                    <p>Male. European descent. American origin. Appears to be mid-40s; likely older. No unusual appearance.</p>
+                    <p>Reputation for being somewhat dangerous to be around. Has survived a curious number of assassination attempts unscathed (with the assassins dead in the wake of the attempts); unusual that an O5 would both leave themselves vulnerable to so many attempts and also survive so many in such a manner. Possible anomalous protection.</p>
+                    <p>Takes a special interest in SCP objects stolen or acquired by the Chaos Insurgency. Numerous reports indicate that O5-7 is, in fact, the current head of the Chaos Insurgency, despite this directly contradicting many other reports about the Chaos Insurgency's status as a splinter organization. Reports differ on whether the rest of the O5 Council is unaware of this, or knows and partially or fully endorses it.</p>
+                    <hr>
+                    <p><strong>O5-7: "The Professor", or "The Heretic".</strong> [DEFECTED]</p>
+                    <p>Male. European descent. American origin. Appearance unknown.</p>
+                    <p>A professor at a major university and a trained psychologist; held the former position even while a member of the O5 Council, before disappearing from both upon defection. Developed a large number of training programs across the Foundation, many of which are still in use today in some form.</p>
+                    <p>One of the primary instigators of the Foundation Civil War. Defected from the Foundation along with the then-current O5-4, O5-11, and O5-12, as well as a number of Foundation generals and another O5 who was killed during the schism.</p>
+                    <p>A major thought leader in the Insurgency; possibly co-created the first iteration of the Insurgency, which seems to have been originally an organization used for covert Foundation operations under another (relatively nonsensical) name, and likely still exists in this form as well as the latter day article. Embraced the name "Chaos Insurgency" as legitimate during the schism; is likely the reason the Chaos Insurgency is called the Chaos Insurgency. <a href="/welcome-to-the-future">Apparently still active in the Insurgency to this day.</a></p>
+                    <p>Advocated for research into numerous venues the rest of the O5 Council deemed too dangerous to touch, including chaos magics and a reality warping god-engine (both in current use by the Chaos Insurgency today). Advocated for large-scale weaponization and active use of SCP objects. Spent an inordinate amount of time researching the brain structure of anomalous humanoids.</p>
+                    <p>Foresaw the increase in anomalies that was only beginning to be experienced by the Foundation (and general anomalous community) of the time; expressed that to survive, the Foundation would need move from merely preserving normalcy to actively determining normalcy, and determining the future for the human race at large.</p>
+                    <p>Accused of having a 'god complex'; took these accusations as a compliment. Took the position that God was missing or dead, and therefore the Foundation needed to take his place. A line often quoted by his supporters: "Heaven is empty, and all the angels are here."</p>
+                    <hr>
+                    <p><strong>O5-7: "Teeth".</strong></p>
+                    <p>Agendered. East Asian descent. Chinese origin. Verified post-human lifespan. Appears to be mid-40s; almost certainly older. Androgynous appearance (in normal form). Always wears two ivory hair-sticks. Reports claim these were fashioned from human teeth/bone; obvious occult significance.</p>
+                    <p>Unusually for an O5 Council member, it seems unclear whether O5-7 was originally fully human. They possess the ability to shift between a human form, and a variety of difficult-to-describe eldritch beings. They are supposedly involved in the containment of (and maybe collaboration with) certain "extraplanar" entities beyond Lovecraft's weirdest dreams.</p>
+                    <p>This is an unusual set of reports. This O5-7 is supposedly both very human (hard to get more specifically human than all those culturally specific details), and yet supernatural to an extreme degree. The consistency in the reports has disturbing implications about the Foundation's hidden activities, even if this O5-7 is a cover for someone or something else.</p>
+                    <hr>
+                    <p><strong>O5-7: "The Cardinal".</strong></p>
+                    <p>Male. European descent. Catholic. Appears to be about 70. Formerly affiliated with the Royal Office for Christian Artefacts, a splinter organisation from the Vatican Holy Office for Secrets and Prophecies. Signatory of the <a href="/wrong-proposal">Forbidden City Convention</a>.</p>
+                    <p>Opposed Foundation attempts to enforce control over the Middle East during the early 20th century, citing that "it is already taken care of". Possible foreknowledge of <a href="/oria-hub">ORIA</a> or an equivalent organisation?</p>
+                    <hr>
+                    <p><strong>O5-7: "Harold Holt".</strong></p>
+                    <p>Male. Australian. Biologically 58 years old. Former Prime Minister of Australia. Currently contained as <a href="/scp-3477">SCP-3477-3</a>. Joined the O5 Council in 1967 as a ploy to gain access to <a href="/scp-006">SCP-006</a>, in an attempt to achieve immortality. One of the only O5s to be directly recruited from the civil sector.</p>
+                    <p>Attempt was successful until the sudden appearance of several more individuals claiming to be Harold Holt, at which point he was stripped of all authority and given an SCP designation. Was within containment for 46 years, until all Harold Holts staged a containment breach.</p>
+                    <p>Evidence suggests there may be as many seventy seven different versions of Harold Holt, each with their own form of immortality. Reason for this unknown. Possibly a quantum collation of different outcomes, a deliberate attempt at creating many versions to guarantee at least one would survive, or an example of a multiverse collapse.</p>
+                    <hr>
+                </div>
+                <div id="wiki-tab-0-8" style="display:block">
+                    <p><strong>O5-8: "The Newbie", or "The Lesser".</strong></p>
+                    <p>Male. European descent. American origin. Mid-30s. No unusual appearance.</p>
+                    <p>A former Foundation Site Director; a recent elevation to the O5 Council (between 6 and 9 years as of 2014).</p>
+                    <p>One of his first actions as an O5 Council member was to approve of Dr. Kondraki's plan to neutralize the former SCP-083. This plan resulted in the breaching of multiple SCP objects, including Kondraki deliberately breaching <a href="/scp-682">SCP-682</a>, and in the near destruction of Site-19. This incident appears to have lead to the O5-ordered assassination of Kondraki by Dr. Gears.</p>
+                    <p>Though he was not removed from the O5 Council over this, O5-8 never recovered. Still shaken from the fallout of the incident, he continues to rely on support staff to accomplish all of his duties — including the hiring and replacing of support staff.</p>
+                    <p>Thus far, O5-8 has avoided further serious incidents, but rumor has it that the situation with his current crop of staff is unstable and likely to cause further "mistakes".</p>
+                    <p>Possibly assassinated. Has not appeared in public for some time.</p>
+                    <hr>
+                    <p><strong>O5-8: "Magnolia".</strong></p>
+                    <p>Female. European descent. Appears to be mid-50s; likely older. Deliberately not beautiful in appearance.</p>
+                    <p>O5-8 is known for being brutal and harsh, though never arbitrarily; known for making hard decisions. Known to have played a deciding vote in the decision to nuke several significant Foundation Sites during a particularly deadly breach.</p>
+                    <p>Her physical appearance is deliberate. Overseers certainly can alter their appearance if they wish. This seems to be due to an emotional state plagued by guilt. Considered vulnerable to assassination attempts due to rumors that she would welcome them.</p>
+                    <p>Wears a ring of human sinew. Occult significance obvious.</p>
+                    <p>Possibly assassinated. Has not appeared in public for some time.</p>
+                    <hr>
+                    <p><strong>O5-8: "Dogwood".</strong></p>
+                    <p>Male. European descent. American origin. Mid-30s. No unusual appearance.</p>
+                    <p>O5-8 is one of several O5 members to focus on Foundation security. Notable in particular for expanding Mobile Task Force funding and recruitment; responsible for a general proliferation and expansion of MTFs after the destruction of Omega-7 initially resulted in cutbacks.</p>
+                    <p>Said to have a relatively low-key personality, but prone to becoming slowly more aggressive as situations escalate; many underlings report that he is very pleasant to work with at first, but invariably sours relationships as they evolve over the years.</p>
+                    <p>There are also reports that rumor that "Dogwood" is in fact associated with another O5 report, "The Newbie"/"The Lesser", and that in fact "Dogwood" is one of the actual O5-8's competing chiefs of staff, whose star is presently falling due to internal drama. Even more reports claim that "Dogwood" and O5-6 "Cowboy" are the same person, and that the negative attributes assigned to "Dogwood" are the result of disgruntled ex-staff members who couldn't live up to O5-6's standards. It is unclear if this is yet more disinformation.</p>
+                    <p>Possibly assassinated. Has not appeared in public for some time.</p>
+                    <hr>
+                    <p><strong>O5-8: "The Terse".</strong></p>
+                    <p>Male. European descent. Dutch origin. Age unknown. Formerly affiliated with the Special Investigations Board, Dutch East Indies Company. Signatory of the <a href="/wrong-proposal">Forbidden City Convention</a>.</p>
+                    <p>Does not speak much with others. Speech limited only by necessity. Another secret-keeper?</p>
+                    <p>Coined the term 'Group of Interest', and strongly advocates for their dissolution by the Foundation. Appears to be indiscriminant towards various GoIs; no known vendetta against any known GoI.</p>
+                    <p>Consistently vetoes any attempt for the Foundation to adopt a parliamentary leadership reminiscent of the <a href="/goc-hub-page">Global Occult Coalition's Council of 108</a>; advocatory for the O5 Council structure. Prevent dilution of his own authority?</p>
+                    <hr>
+                </div>
+                <div id="wiki-tab-0-9" style="display:block">
+                    <p><strong>O5-9: "The Outsider." / "The Ordinary."</strong></p>
+                    <p>Female. European/Pacific Islander descent. New Zealand origin. Appearance consistent with recorded age of 53. Carries a walking stick with jade inlays; item's purpose unclear, whether occult or practical.</p>
+                    <p>O5-9 is one of the most unusual O5s, for an oddly mundane reason: she appears to have been inducted directly into the O5 Council from the public sector.</p>
+                    <p>The reason for her recruitment is unknown, given her complete lack of previous Foundation experience. Formerly Donna Whetu Taylor, a noted geologist, she was inducted shortly after retracting a major publication and resigning in scandal. Stated reason for the retraction was scientific misconduct including fabrication of data, but the scandal was more likely a Foundation cover-up: the few available fragments of the retracted publication suggest that Taylor had discovered several geological and geophysical anomalies, and was developing a general theory of their function.</p>
+                    <p>Strong advocate for research of anomalous phenomena, including those with SCP designations; possible ally of O5-2 ("The Gardener"). Apparently partially responsible for allowing the recent dramatic expansion of the Foundation's classified technical journals (a project apparently spearheaded by Regional Director Katherine McTiriss, if rumor is correct). Goals appear to include the development of a general explanatory theory for anomalous phenomena.</p>
+                    <p>O5-9's unusual circumstances have led to a large number of contradictory reports. As far as I can tell, she replaced or superceded a prior O5-9 ("Misfortune").</p>
+                    <p>It's said her appointment barely passed, with a Council vote of 7 to 6. At least three votes swung to her side at the last moment. Evidence of tension within Overwatch?</p>
+                    <hr>
+                    <p><strong>O5-9: "Misfortune".</strong></p>
+                    <p>Varying age, appearance, etc. Original unknown. Carries a bone-handled knife; obvious occult significance.</p>
+                    <p>O5-9's personality is based in <a href="/scp-963">SCP-963</a>-2. Original version attempted to replicate SCP-963 — successfully. However, SCP-963-2 only holds the memories, experiences, and personality of O5-9 up until his first death.</p>
+                    <p>When O5-9 is killed — and he has been killed several times — he is "reset". After each death, he has to be informed of events that took place after the time of his first death.</p>
+                    <p>Reputation for being extremely unlucky. Restricted to underwater Foundation facilities. May or may not still hold an O5 Council position, but certainly plays a role regardless.</p>
+                    <p>Possibly replaced by another O5-9, "The Outsider". Reports that claim his removal state that it was not voluntary, and was caused by one or more of the following:</p>
+                    <ul>
+                    <li>a series of repeated 'resets' rendering him useless</li>
+                    <li>corruption or damage to SCP-963-2 causing personality damage</li>
+                    <li>Resistance to any form of change after being reset repeatedly</li>
+                    <li>Inability to change with the times due to being reset repeatedly</li>
+                    <li>Refusal to make use of his vote during an incident in which it was vital post-reset</li>
+                    </ul>
+                    <p>Which is most likely is unclear.</p>
+                    <hr>
+                    <p><strong>O5-9: "The Lovers," or "Willow".</strong></p>
+                    <p>Both: Male. European/African descent. American origin. Appear to be mid-30's; actual ages unknown. No unusual appearance, except that they are relatively similar in appearance (while apparently unrelated).</p>
+                    <p>O5-9 is two people sharing the same position. They appear to be lovers. They change positions regularly, with one playing the role of bodyguard/"assistant" to the other.</p>
+                    <p>O5-9 plays a "support" role within the Foundation. Primarily, O5-9 handles feeding the Foundation. They generally have a hand in procuring mass amounts of food via ordinary methods, and their staff cover it up. But they don't limit themselves to non-anomalous means. Reports also abound of vast anomalous fields growing food to feed Foundation personnel, and entire rivers created in certain remote areas of countries to produce water.</p>
+                    <hr>
+                    <p><strong>O5-9: "Out-of-Place".</strong></p>
+                    <p>Male. European descent. Fluent in English, French, Dutch, and Afrikaner. Appears to be about 50. Formerly affiliated with the Inner Africa Expeditionary Society, an organisation funded by King Leopold of Belgium. Signatory of the <a href="/wrong-proposal">Forbidden City Convention</a>.</p>
+                    <p>Professes irritation towards his employment under King Leopold. Frequently rotates residence between multiple locations within Sub-Saharan Africa, particularly Belgian Congo, British Kenya, and South Africa. Perhaps to deter spies?</p>
+                    <p>Prompted the O5 Council to declassify a previous iteration of <a href="/scp-1851-ex">SCP-1851</a>.</p>
+                    <p>Holds great interest towards the concept of <a href="/grant-request-for-the-manufacture-of-devices-to-regulate">"anchoring reality"</a>. Sets aside a trust fund to <a href="/scp-3001">research</a> on counter-essokinetic stratagems, essentially leading to the discovery of <a href="/and-this-one-explains-humes">Humes</a>. Preparation against essokinetic threat?</p>
+                    <hr>
+                    <p><strong>O5-9: "The Secret Keeper".</strong></p>
+                    <p>Male. Caucasian descent. Switzerland origin. Confirmed to be between the age of 45 to 51. No unusual appearance.</p>
+                    <p>The title of O5-9 is passed down to any personal who holds the title of the Director of the Intelligence Agency. It is unconfirmed how many personnel have held the title of O5-9. Records have indicated that the O5 council has <a href="http://www.scp-wiki.net/indicted">indicted</a> and removed at least one personnel from the title, from gathering too much information on the other council members.</p>
+                    <p>O5-9 is tasked with keeping the Intelligence Agency in line and has been known to actively participate in mission regarding new or unknown GoI, specifically with the <a href="http://www.scp-wiki.net/intelligence-agency-data-archive-subject-mages">‘The Mages Academy’.</a></p>
+                    <hr>
+                </div>
+                <div id="wiki-tab-0-10" style="display:block">
+                    <p><strong>O5-10: "The Archivist".</strong></p>
+                    <p>Female. African/European descent. American origin. Appears to be mid-40s. Tends to wear grey striped suits.</p>
+                    <p>O5-10 plays the role of archivist and record-keeper. She acts as custodian of the records of previous iterations of the planet and associated timelines.</p>
+                    <p>These records show how many times Earth (or the timeline associated with Earth) has been severely damaged and "reset", and how many "resets" the Foundation has allowed, or stopped. Additionally, O5-10's records include the full number of K-Class events that the Foundation has ever been aware of (including some information passed from prior timelines). Most of the O5 Council does not have access to this information, and only O5-10 has access to all of it.</p>
+                    <p>O5-10 inherited her role from a prior O5-10, and therefore has been an O5 Council member for several years. However, she has only recently become publicly active within the Foundation. She has "adopted" a number of newer researchers, and taken special interest in <a href="/scp-1985">SCP-1985</a> and similar SCP items related to major K-Class scenarios.</p>
+                    <hr>
+                    <p><strong>O5-10: "Stone".</strong> [DECEASED]</p>
+                    <p>Male. European descent. Appeared to be mid-50s; likely older. Traditional in appearance.</p>
+                    <p>Formerly played the role now held by "The Archivist". Professorial reputation.</p>
+                    <p>Forcibly removed from the O5 Council between 2004 and 2011 for attempting to permanently activate <a href="/scp-003">SCP-003</a>. Likely executed.</p>
+                    <hr>
+                    <p><strong>O5-10: "The Assassin".</strong></p>
+                    <p>Female. East Asian/European descent. Italian origin. Appears to be mid-30's; actual age 60+. No unusual appearance. Wears a necklace around her throat with a carved marble eyeball pendant; likely occult significance.</p>
+                    <p>Former Foundation assassin. Originally was an exceptionally effective assassin, then taught assassination, then taught others how to teach assassination. Worked her way up head of Foundation's internal clandestine service, then elevated to O5 Command.</p>
+                    <p>Though this is unconfirmed, she may be one of the few O5 Command members to retire; reports agree that her retirement (if it happened) was voluntary. Other circumstances unknown.</p>
+                    <hr>
+                    <p><strong>O5-10: "The Veteran", or "The Mad General".</strong></p>
+                    <p>Male. European descent. Unknown origin (American? European? Russian?). Unknown age; if reports are true, certain post-human lifespan. Varying appearance.</p>
+                    <p>O5-10 is one of the first additions to the O5 Council. His specific identity has been extremely difficult to pin down.</p>
+                    <p>Solidly backed rumors name him as US general or generals, possibly Thomas "Stonewall" Jackson, a Confederate general who fought during the US Civil War.</p>
+                    <p>Yet other reports name several Russian generals who disappeared in the aftermath of World War I (the Second Fatherland War). These reports tend to be more favorable towards the character of the generals themselves.</p>
+                    <p>Perhaps there are multiple people holding this position. Though it mystifies me what would connect Confederate generals from the US Civil War and Russian generals from the first World War, generals with differing ideals and of different eras.</p>
+                    <hr>
+                    <p><strong>O5-10: "The Grand Master".</strong></p>
+                    <p>Male. Uncertain descent and origin (believed to be ethnically mixed). Appears to be 75. Catholic. Formerly affiliated with the Knights of the Military Order of Borja y Aragón. Signatory of the <a href="/wrong-proposal">Forbidden City Convention</a>.</p>
+                    <p>Implied to have minimal direct experience with the anomalous, a common trait among the Borja Knights during the 19th century. Knowledge of the anomalous mainly derived from secondary sources from previous generations of the Borja Knights.</p>
+                    <p>Displays significant apprehension towards the Church of the Broken God. Possible traumatic previous encounter with Broken God followers?</p>
+                    <p>Successfully created a pension scheme for KIA Foundation members and other welfare schemes for Foundation personnel. Drafts eulogies for KIA Foundation members.</p>
+                    <hr>
+                </div>
+                <div id="wiki-tab-0-11" style="display:block">
+                    <p><strong>O5-11: "The Mailman".</strong></p>
+                    <p>Male. European descent. Eastern European origin. 80+. No unusual appearance.</p>
+                    <p>Origin of nickname uncertain; possibly an actual mailman. Nickname is in common use; staff often joke about him "going postal", but admit he is one of the most even-tempered and kind people they've ever met. Grandfatherly in demeanor.</p>
+                    <p>O5-11's most well-known role is to sign off on Termination Orders of Class D personnel, versus approving their transfer to another Site. Whether all Class D are terminated at Sites due to anomalous exposure, or merely transferred to another site, O5-11 makes the final decision.</p>
+                    <p>Confirmed to have held at least one other O5 number, though the number itself is unknown. May be an indication of a standard number changeover process, or perhaps of unknown internal political maneuvering.</p>
+                    <hr>
+                    <p><strong>O5-11: "The Liar", or "Father of Lies".</strong></p>
+                    <p>Unknown descent. Unknown origin. Apparent age varies. Always attractive in appearance; tends to wear expensive clothing as any gender.</p>
+                    <p>Gender appears to vary, either via anomalous means or due to multiple figures in the same position. Usually referred to as 'she', despite the nickname.</p>
+                    <p>O5-11 is the Foundation's chief disinformation officer. She organizes cover ups, invents cover stories, and creates rumors to be spread both within the Foundation and without. This includes many erroneous reports about O5 Command (that is, assuming this report itself is not erroneous, which it may be). Not even her staff know what's true and what isn't; and in many cases, neither does she.</p>
+                    <p>Very often referred to using different O5 numbers, including non-standard numbers such as O5-15. Naturally, there are also reports that O5-11 doesn't exist at all, and is a cover for an even deeper disinformation campaign.</p>
+                    <p>Frankly, I find it rather likely that 11 is <em>not</em> actually the correct number, and it's possible that this "O5-11" is actually a separate figure, like the Administrator. Presently impossible to tell.</p>
+                    <hr>
+                    <p><strong>O5-11: "The Senator".</strong></p>
+                    <p>Male. European descent. American origin. Appears to be 70+; verified post-human lifespan. Varying appearance; usually dresses in respectable, immaculate tailored clothing.</p>
+                    <p>O5-11 is a high-powered politician, who has been installed in the Senate by the O5 Council for direct control over certain political matters.</p>
+                    <p>Notably associated with numerous secret societies. Said to be a high-ranking member of the Shriners, and to be the founder (or a founding member) of Skull and Bones. Reports say he maneuvered a great number of secret societies into place over the centuries, and now sits in Washington tugging on the strings.</p>
+                    <hr>
+                    <p><strong>O5-11: "Jings".</strong></p>
+                    <p>Male. European descent. Western European origin. Mid-40s. No unusual appearance, except that he wears a necklace made of human teeth; obvious occult significance.</p>
+                    <p>Former Foundation field agent. Prior to being elevated to the O5 Council, claimed he would implement a number of changes and improvements to Foundation policy; most of these did not materialize after his elevation. Generally negative reputation; apparently few accomplishments. Not much seen in public since. Possibly assassinated.</p>
+                    <hr>
+                    <p><strong>O5-11: "The Keeper", or "The Warden".</strong> [DEFECTED]</p>
+                    <p>Female. European descent. American origin. Appearance unknown.</p>
+                    <p>Developed many of the Foundation's early containment procedures. Supported extensive research into the anomalous.</p>
+                    <p>Opposed categorizing humanoids as SCPs. To her, an SCP was an object: a book or a ball or a car, not a child. Caused the the initial schism in the Council, which O5-7 would take rhetorical advantage of; when she was outvoted in the Council, she would not take no for an answer, and enacted the split. She saw the Chaos Insurgency as liberators; humanoid SCPs would work <em>with</em> SCP Foundation researchers, not be imprisoned by them.</p>
+                    <p>Wife of then-O5-12. Strong-armed O5-12 into defecting with her (along with O5-4 and O5-7, and another O5 who was killed during the schism). Because of their positions, they were able to take many humanoid SCPs with them, along with a great deal of useful SCP items.</p>
+                    <hr>
+                    <p><strong>O5-11: "The Bureaucrat".</strong></p>
+                    <p>Male. East Asian descent. Japanese origin. Appears to be 80. Formerly affiliated with the Bureau of Onmyō (陰陽寮; <em>onmyō ryō</em>), a.k.a. the Holy Emperor's Council for Unearthly Matters (怪異なる事物についての聖帝評議会; <em>kaii naru jibutsu ni tsuite no seitei hyōgikai</em>). Signatory of the <a href="/wrong-proposal">Forbidden City Convention</a>.</p>
+                    <p>Alleges that Japanese Emperor Kōmei died of anomaly-related causes. Once claimed to have observed multiple undocumented <a href="/scp-2863">SCP-2863</a> instances throughout Kyushu, Shikoku, and western Honshu. Expresses problems with self-esteem. Mostly interacts with O5-3, O5-7, and O5-13.</p>
+                    <hr>
+                </div>
+                <div id="wiki-tab-0-12" style="display:block">
+                    <p><strong>O5-12: "The Accountant".</strong></p>
+                    <p>Male. African descent. African origin. Appears to be mid-40s; almost certainly older. Large-bodied. Always dresses in extremely expensive tailored clothing. Wears dark wrap-around glasses: smoked glass framed in ivory. May or may not be to hide his eyes. Likely occult significance.</p>
+                    <p>O5-12 plays the role of accountant for the Overseer Council. A mathematical genius; ensures all the Foundation's numbers add up. Has access to certain data that no other Foundation member does, for this purpose.</p>
+                    <p>Precise, calm, practical. A strong believer in order. Every part of his daily route, and indeed every action he takes, right down to his drinking habit, is strictly scheduled.</p>
+                    <hr>
+                    <p><strong>O5-12: "Adam".</strong> [RETIRED]</p>
+                    <p>Male. European/Jewish descent. American origin. Somewhere between 130 and 200 years old. Appearance unknown.</p>
+                    <p>Very little information exists on O5-12's role within the Foundation, except that he was an exceptional researcher. Known primarily for fathering a stillborn child in the mid or late 1800s, and transforming her into <a href="/scp-321">SCP-321</a> in an ill-fated attempt to save her. Most information has been expunged from accessible Foundation records. Recovered information suggests a familial relation to Dr. Jack Bright. (Older brother? Father?)</p>
+                    <p><a href="http://www.scp-wiki.net/iquit">"Adam" is one of the few O5 Command members to retire.</a> His retirement, by all accounts, was voluntary, which came as a surprise to me given his history. It appears that he was, in fact, the first ever O5 Command member to retire.</p>
+                    <p>Interestingly, it is unclear whether "Adam" was required to undergo the amnesic administration supposedly mandatory for retiring or removed O5 Command members. His location, unfortunately, is unknown to me.</p>
+                    <hr>
+                    <p><strong>O5-12: "The Contractor".</strong></p>
+                    <p>Male. African/European descent. American origin. Mid-40s. No unusual appearance.</p>
+                    <p>O5-12 was an emergency appointment following a previous assassination (or assassination attempt) during an O5 Council issue that required either an O5-12 or an O5-1, and O5-1 was unavailable.</p>
+                    <p>After this, he couldn't simply be demoted; therefore, he was assigned to side projects. He purchases land to build Foundation facilities on. He works with people who design Foundation facilities to make sure their needs are met; he works with local governments (often to request that military installations be built over actual Foundation sites as a cover); and he hires new Foundation personnel to implement such projects.</p>
+                    <p>Additionally, O5-12 acts as an unofficial head of human services, requiring that Foundation personnel receive regular physical and mental checkups. Despite apparently caring a great deal about the average Foundation member, O5-12 is usually described as an obsessive, distrustful shut-in. His staff is very small, and they do very little.</p>
+                    <hr>
+                    <p><strong>O5-12: "The Trainman", or "The Conductor".</strong> [DEFECTED]</p>
+                    <p>Male. European descent. American origin. Appearance unknown.</p>
+                    <p>Assisted O5-11 in developing many of the Foundation's early containment procedures. Approved of weaponization of SCP objects. Supported extensive research into the anomalous.</p>
+                    <p>One of O5-12's significant roles was overseeing the rotation of SCPs between Foundation facilities. This rotation was publicly aimed at getting new perspectives on SCP objects for research and effective containment purposes. Less public, but no less important, was the secondary purpose of preventing any group of researchers from working with humanoid SCPs for too long.</p>
+                    <p>Initially resisted defecting from the Foundation, but was strong-armed into joining the Insurgency by his wife, O5-11. His position of control over SCP rotation and transportation allowed the Insurgency to make off with a very high number of SCPs (particularly humanoid SCPs) during the schism. Additionally, his popularity with Foundation generals who desired weaponization of SCP objects gave the Insurgency a significant power boost during the Foundation Civil War.</p>
+                    <hr>
+                    <p><strong>O5-12: "The Physician".</strong></p>
+                    <p>Male. East Asian descent. Chinese origin. Appears to be 70. Formerly affiliated with the Abnormality Institute (異學會; <em>yì xué huì</em>), sometimes called 'Chinese Abnormality Institute' (中華異學會; <em>zhōng huá yì xué huì</em>). Signatory of the <a href="/wrong-proposal">Forbidden City Convention</a>.</p>
+                    <p>Believed to have been invited to join the O5 Council only due to his knowledge of a "memory-altering drug" (i.e. amnestics). Collaborated with the Chinese Nationalist Army to eliminate (betray?) the Meng clan; rationale is to monopolise amnestics for the Foundation.</p>
+                    <p>Coined the term 'Safe'. Rudimentary knowledge of English.</p>
+                    <p>Note: Amnestics might have undergone potentially <a href="/scp-3000">radical</a> <a href="/amnestic-orientation-manual">advancements</a> over the years. O5-12's statements regarding amnestics might not be applicable.</p>
+                    <hr>
+                </div>
+                <div id="wiki-tab-0-13" style="display:block">
+                    <blockquote>
+                    <p><strong>A note on O5-13.</strong></p>
+                    <p>A number of reports have indicated that the Foundation did not start with 13 O5 Council members. Most reports indicate that the original O5 Council numbered 12 (though some go higher, including mention of O5 council members being granted numbers and assigned to specific <a href="/scp-001">SCP-001</a> objects). Others indicate it <em>still</em> numbers only 12, with number 13 a work of disinformation.</p>
+                    <p>Other reports indicate an O5-13 was added after the fact due to the number 13 gaining modern occult significance and therefore power. And in practical terms, a tiebreaker vote was required once too often.</p>
+                    <p>Several of these options may be true. These reports reflect this lack of clarity.</p>
+                    </blockquote>
+                    <hr>
+                    <p><strong>O5-13: "The Tiebreaker".</strong></p>
+                    <p>O5-13 does not exist. Everyone outside the O5 Council is told he exists, and memos are created under O5-13's name, but O5-13 exists only as a tiebreaker vote.</p>
+                    <p>O5-13's vote is rotated between each O5 Council member, starting at 1 and passed up a number each time a tiebreaker vote is required and used.</p>
+                    <p>Holding O5-13's vote is required to access a few selected databases. This knowledge may be attached to O5-13's vote (and wiped from the holder's memory when the vote is passed on), or it may simply comprise access to 13's unique databases.</p>
+                    <hr>
+                    <p><strong>O5-13: "Tamlin".</strong></p>
+                    <p>Either male or gender-fluid (reports differ, may be relevant to anomalous traits). Unknown descent (reports differ, may be relevant to anomalous traits). Unknown origin. Age unknown. Tall, red-headed.</p>
+                    <p>Per these reports, the "Tiebreaker" reports are accurate. However, O5-13 does exist, despite his vote not being held by himself. Original identity "Dr. Joseph Tamlin".</p>
+                    <p>Holds only an advisory position by necessity. Is an anomalously altered human existing in a temporally destabilized state; partially "unstuck in time". Acts as a fail-safe for restoring 13's vote to its proper bearer, should it be compromised.</p>
+                    <p>Some reports (not all) indicate drastic shifts in appearance, race, and gender, but the presence of red hair (whether natural or colored) remains consistent. Unknown relevance; possible perception alteration issues or literal shape-shifting.</p>
+                    <p>Occupies a room (or rooms) in "Tamlin House", a hidden location related to <a href="/scp-1590">SCP-1590</a>. Appears to be bound to the location. Does not usually participate directly in O5 Council meetings, but observes most of them (not necessarily synchronously).</p>
+                    <p>"Shows what you know."</p>
+                    <hr>
+                    <p><strong>O5-13: "The Meddler".</strong></p>
+                    <p>Male. European descent. American origin. Mid-30s. No unusual appearance.</p>
+                    <p>Most reports of O5-13 result from the conflicts he starts or becomes involved in, due to inter-office gossip from other O5's personal staff. No one outside the O5 Council appears to be aware of this O5 member's role in the Foundation; the role he generally seems to play in practice is interfering with other O5 members' projects. Known for ranting about how other O5 members (and lower-ranked Foundation personnel) are not running operations correctly.</p>
+                    <p>Not a particularly popular O5 Council member. Surprisingly, reports do not indicate many assassination attempts.</p>
+                    <hr>
+                    <p><strong>O5-13: "AI Complex".</strong></p>
+                    <p>[Personal traits not applicable]</p>
+                    <p>O5-13 is an artificial intelligence construct. This AI construct (using a variety of anomalous technological and non-technological methods) is supposedly able to take all factors relevant to the Foundation's goals and make a recommendation on any major course of action.</p>
+                    <p>Due to certain consequences (whether occult, resourced-based, or simply bureaucratic) of making use of this AI construct, it is only employed when the O5 Council must break a tie on a non-trivial matter.</p>
+                    <p>Further details have been remarkably hard to attain even by esoteric methods. Whether or not this version of O5-13 exists, there are secrets behind this <em>thing</em> that the Foundation wishes especially to be kept.</p>
+                    <hr>
+                    <p><strong>O5-13: "Death".</strong></p>
+                    <p>Gender unknown. Descent unknown. Origin unknown. Age unknown. Appearance unknown.</p>
+                    <p>One of the more outlandish reports on a possible O5-13; claims that Death itself was bound by the O5 Council in the early 19th century. Per these reports, the slot of O5-13 was created for Death in the first place. Euphemistically referred to as "The Other Overseer."</p>
+                    <p>Death is both a member and a prisoner of the O5 Council; it can cast a vote as normal. However, it is imprisoned by the rest of the Council, and by a majority vote of the O5 Council, the Council can control it. Death apparently otherwise carries out its functions as normal.</p>
+                    <p><a href="/scp-006">SCP-006</a> does not exist; the longevity of O5s actually stems from O5-13. By majority vote, they can order O5-13 to stay its hand from any Council member — or indeed anyone in the world, though using this power for non-Council members seems to temporarily weaken Death's chains, and is therefore rarely used.</p>
+                    <p>When used, it is typically on a mass scale — <a href="/scp-2000">SCP-2000</a> and similar anomalous items also do not exist, and are used as cover for every time that Council has voted to utilized O5-13's power to return most of the world's population back to life.</p>
+                    <p>Unknown connection, if any, to <a href="/scp-2935">SCP-2935</a>.</p>
+                    <hr>
+                    <p><strong>O5-13: "The Activist".</strong></p>
+                    <p>Male. South Asian descent. Sikh origin. Appears to be about 50. Formerly affiliated with 0th Anti-Cult Regiment, a colonial regiment in British India. Signatory of the <a href="/wrong-proposal">Forbidden City Convention</a> if "The Persian" is not present.</p>
+                    <p>Major advocate for a meritocratic administration within the Foundation. Known to have formed an informal voting bloc with O5-11 and O5-12 to pursue racial equality within the Foundation.</p>
+                    <p>Also known to have voted with O5-1 for many operational matters. Known O5-1 prior to the Forbidden City Convention. Perhaps a puppet for O5-1 to gain an additional vote in the O5 Council? Perhaps in exchange for said meritocratic administration?</p>
+                    <hr>
+                    <p><strong>O5-13: "The Persian".</strong></p>
+                    <p>Male. Middle Eastern descent. Iranian origin. Appears to be about 70. Shia Muslim. Formerly an independent consultant on anomalous matters for the Ottoman Empire. Signatory of the Forbidden City Convention, if "The Activist" is not present.</p>
+                    <p>Knows O5-7 prior to the Forbidden City Convention. Holds strong suspicion towards O5-1.</p>
+                    <p>In charge of the 'Autonomous Administration of the Greater Middle East', a sub-organisation of the Foundation based in the Middle East. Him and the AAGME do not exist in realities where "The Activist" exists. In fact, I can't seem to find ORIA or its equivalent in realities where "The Persian" takes up O5-13. AAGME and ORIA – counterparts???</p>
+                    <p>Resembles ORIA founding member, Jibril Mani, in realities where "The Activist" is present instead.</p>
+                    <hr>
+                    <p><strong>O5-13: "The Pedestrian"</strong></p>
+                    <p>Male. Latin American descent. Late-50s. No unusual appearance.</p>
+                    <p>O5-13's special connection to the anomalous gives him a perspective no other council member could begin to fathom. While Normalcy Confirmation meetings require eleven members for quorum, no meeting is allowed to proceed without O5-13's attendance.</p>
+                    <p>Additionally, he is the only member of the original O5 council to survive the Caesar incident. <a href="/captain-kirby-s-proposal">Investigation into the nature of the incident and O5-13 is still ongoing.</a></p>
+                    <hr>
+                </div>
+                <div id="wiki-tab-0-14" style="display: block;">
+                    <blockquote>
+                    <p><strong>A note on the Administrator.</strong></p>
+                    <p>The Administrator's role within the SCP Foundation is often nebulous. Consistently said to associate with numerous major heads of government, and to represent Foundation interests to them. Also said to be associated with <a href="/scp-262">SCP-262</a>. These things, at least, seem to be true, at least assuming the Administrator exists.</p>
+                    <p>If reports are to be believed, each Administrator has had some consistent anomalous traits which may be a factor of the position, including partial protection from reality shifts and extremely slow aging.</p>
+                    <p>The Administrator's position in relation to O5 Command is unclear. The Administrator may hold a position similar to an O5 Council member, and may be less powerful or more powerful depending on a particular situation — or a particular time. Because of all this, the Administrator often comes off seeming like a wild card, if a rather calm wild card.</p>
+                    <p>There appear to have been multiple Administrators over the Foundation's lifespan, but no reports have as of yet indicated more than one at a time.</p>
+                    </blockquote>
+                    <hr>
+                    <p><strong><a href="/the-administrator-s-biography">Administrator: "The Official"</a></strong></p>
+                    <p>Male. European descent. American origin. Verified post-human lifespan; reported as appearing between mid-30s and mid-50s. No unusual appearance.</p>
+                    <p>Note: This version of the Administrator has been repeatedly confirmed as a false front, used as a cover for one or more of the Foundation's actual Administrators.</p>
+                    <p>Deliberately over-the-top reputation. Lack of aging made relatively public by way of universally repeated rumor. Said (rather insultingly) to have "a penchant for suits, fine liqours and loose women". An example from a typical report:</p>
+                    <blockquote>
+                    <p>He has been friendly with people of many political stances and is generally well liked if not respected. When he does become angered, even heads of state are quick to appease him and commonly offer sincere apologies.</p>
+                    </blockquote>
+                    <p>Usually said to have a number of over-the-top traits, such as never bringing his hands more than a few inches apart, and ordinarily being slow and sluggish and then displaying amazing feats of strength.</p>
+                    <hr>
+                    <p><strong>Administrator: "Frederick Williams"</strong></p>
+                    <p>Male. European descent. American origin. Mid-30s. No unusual appearance.</p>
+                    <p>According to these reports, created the original <span style="white-space: pre-wrap;">[</span><a href="/the-administrator-s-biography">CORRUPTED</a><span style="white-space: pre-wrap;">]</span></p>
+                    <p><span style="white-space: pre-wrap;">[</span><a href="/fritzwillie-s-author-page">CORRUPTED</a><span style="white-space: pre-wrap;">]</span></p>
+                    <hr>
+                    <p><strong>Administrator: "Agnes Peterson"</strong></p>
+                    <p>Female. European descent. American origin. Verified post-human lifespan. Appears 50+. Old fashioned, wears horn-rim glasses, keeps hair in a bun. Very proper.</p>
+                    <p>One of the original founders of the SCP Foundation. Pulled together the initial members into an organization; produced order from the initial chaos. Jokingly referred to as being very good at herding cats. Brisk in manner. Smart, ambitious, and good at knowing when to either create or ignore rules of order.</p>
+                    <hr>
+                    <p><strong>Administrator: "Kismet"</strong></p>
+                    <p>Female. Middle Eastern descent. American origin. Verified post-human lifespan. Appears 50+. No unusual appearance.</p>
+                    <p>Her role is to track down and select each new and future member of O5 Command. She is a trained mathematician, and uses a form of statistics along with occultic procedures for her selection methods. She has personally selected every single member of O5 Command, in some cases years in advance. She occasionally also opts to choose their number, though which number is sometimes kept secret from all others except her and her staff until the new promotion is ready (presumably via a slot being opened).</p>
+                    <hr>
+                    <p><strong>Administrator: "Spider"</strong></p>
+                    <p>Masculine. Descent/origin unknown. Head appears 30+. Unkempt hair. Wears thick-lensed glasses. Wears <a href="/scp-262">SCP-262</a> (Coat of Many Arms). Nonhuman body.</p>
+                    <p>Apparently a human hybrid, or nonhuman entirely. Remarkable in appearance: A mostly human head, albeit with orange eyes. Body is completely nonhuman and hardly even bipedal, made of a twisted, weathered charcoal-like material, with atrophied natural limbs. A steel mesh covering holds the body inside the Coat of Many arms, and some of the many arms keep it in place. Other arms make up his "arms" and "legs", giving him either a generally humanoid look or a rather spidery look depending on how subtle he's attempting to be.</p>
+                    <p>Apparently associated with the SCP Foundation since its inception, though always in a supporting role, not at the top of the power structure. Possibly owns the land Site-19 is built on. Only a few personnel outside of O5 Command have ever seen him.</p>
+                    <p>References in reports claim this Administrator originates from "The Plane Where Eyes Cannot Follow."</p>
+                    <hr>
+                </div>
+            </id>
 {% endblock %}

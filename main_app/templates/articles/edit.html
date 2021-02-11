@@ -6,7 +6,7 @@
     <h1 class="submitTitle"><br>Edit an SCP</h1>
     <h2 class="submitHead" >- WARNING -</h2>
     <p class="submitWarning">THE SCP FOUNDATION DATABASE IS CLASSIFIED<br>ANY UNAUTHORIZED ACCESS OR ALTERATION IS STRICTLY PROHIBITED <br> PERPETRATORS WILL BE TRACKED, LOCATED, AND DETAINED</p>
-	<form action="{% url 'scp_new' %}" method="POST" >
+	<form action="/scp/edit/{{ scp.id }}/" method="POST" >
 		{% csrf_token %} 
 	<table border="1" class="submitTable">
 	{% for field in form.visible_fields %}
@@ -21,7 +21,7 @@
 	</table>
 	<input type="submit" class="btn-login" value="Submit Post!" id="signUpButton"/>
 	{% if error_message %}
-		<p class="red-text" style="text-align: center;">{{error_message}} {{ form.errors }}</p>
+		<p class="red-text" style="text-align: center;">{{error_message}} </p>
 	{% endif %}
 </form>
 {% endblock%}

@@ -569,6 +569,12 @@ a {
        min-width: 70vw;
    }
 }
+.siteIcon {
+    display: none;
+}
+.areaIcon {
+    display: none;
+}
 .categBorder {
     border: none;
     border-bottom: .25px solid white;

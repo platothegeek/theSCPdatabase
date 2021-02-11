@@ -48,7 +48,15 @@ def about(request):
 def gois(request):
     return render(request, 'gois/index.html')
 def internal(request):
-    return render(request, 'internal/index.html')
+    user_list = Profile.objects.all().order_by('timestamp') 
+    for x in user_list:
+        print(x)
+        list_name = str(x.id) + "_list"
+        vars()[list_name] = Scp.objects.filter(author=x)
+    context = { 'user_list' : user_list}
+    print(user_list)
+    print(context)
+    return render(request, 'internal/index.html', context)
 def staff_new(request):
     error_message=''
     if request.method == "POST":
@@ -67,7 +75,7 @@ def staff_new(request):
 def scp_show(request, scp_number):
     scp = Scp.objects.get(id=scp_number)
     if request.user == scp.author:
-        return redirect('/scp/edit/{}'.format(scp_number))
+        return redirect('/scp/edit/{}/'.format(scp_number))
     else:
         print(scp.body)
         context = { 'scp' : scp }
@@ -98,30 +106,22 @@ def scp_new(request):
     return render(request, 'articles/new.html', context)
 def scp_edit(request, scp_id):
     error_message=''
-    current_scp = Scp.objects.get(id=scp_id)
     if request.method == "POST":
         current_scp = Scp.objects.get(id=scp_id)
-        form = Scp_Form(instance=current_scp)
+        form = Edit_Scp_Form(instance=current_scp, data=request.POST)
         if form.is_valid():
-            article = Scp.objects.get(id=scp_id)
-            if request.POST['title']:
-                article.title = request.POST['title']
-            if request.POST['number']:
-                article.number = request.POST['number']
-            if request.POST['body']:
-                article.body = request.POST['body']
-            if request.POST['canon']:
-                canon_id = request.POST['canon']
-                canon = Canon.objects.get(id=canon_id)
-                post.canon = canon
-            article.save()
+            form.save()
             return redirect('/staff/self')
         else:
             print(form.errors)
             error_message = form.errors
+    current_scp = Scp.objects.get(id=scp_id)
     form = Edit_Scp_Form(initial={'title' : current_scp.title, 'body' : current_scp.body, 'number' : current_scp.number, 'canon' : current_scp.canon})
-    context = {'form' :  form, 'scp' : current_scp}
+    context = {'form' :  form, 'scp' : current_scp,'errors' : form.errors}
     return render(request, 'articles/edit.html', context)
+def scp_delete(request, scp_id):
+    Scp.objects.get(id=scp_id).delete()
+    return redirect('/staff/self')
             
 
 def tale_new(request):
