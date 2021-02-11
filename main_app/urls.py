@@ -11,6 +11,7 @@ urlpatterns = [
     path('scp/', views.scp_index, name='scp_index'),
     path('scp/edit/<int:scp_id>/', views.scp_edit, name='scp_edit'),
     path('scp/delete/<int:scp_id>/', views.scp_delete, name='scp_delete'),
+    path('scp/save/<int:scp_id>/', views.scp_save, name='scp_save'),
     path('tale/<int:tale_id>/', views.tale_show, name='tale_show'),
     path('tale/new/', views.tale_new, name='tale_new'),
     path('staff/self', views.staff_self, name='tale_new'),

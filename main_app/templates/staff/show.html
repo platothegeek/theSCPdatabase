@@ -15,17 +15,22 @@
            <p>{{ user.summary }}</p>
     </div>
     <div class="leftHomeColumn leftProfileColumn moveUp">
-        <button class="makeA taleTitle right">My Pages</button><button class="makeA taleTitle right">Saved Pagess </button><button class="makeA taleTitle right" > <a href="/scp/new">Make New SCP </a></button>
+        <button class="makeA taleTitle right" id="myPgBtn">My Pages</button><button class="makeA taleTitle right" id="saveBtn">Saved Pages </button><button class="makeA taleTitle right" > <a href="/scp/new">Make New SCP </a></button>
     </div>
     <hr class="categBorder">
     <div class="leftHomeColumn rightProfileColumn moveUpRight">
         <h3 class="taleTitle"> - My Pages - </h3>
-        <ul class="homeTaleList">
+        <ul class="homeTaleList" id="myPages">
             {% for Scp in scp_list %}
             <li> <a href="/scp/{{ Scp.id }}"><div class="homeTaleTitle">SCP - {{ Scp.number }} </div> <div  class="homeTaleAuthor">{{ Scp.title }} </div></a><a href="/scp/delete/{{ Scp.id }}" style="color: red;">DELETE</a></li>
             {% endfor %}
             {% for Tales in tale_list %}
             <li> <a href="/tale/{{ Tales.id }}"><div class="homeTaleTitle">{{ Tales.title }} </div></a></li>
+            {% endfor %}
+        </ul>
+        <ul class="homeTaleList" id="savedPages">
+            {% for Scp in savedscp_list %}
+            <li> <a href="/scp/{{ Scp.id }}"><div class="homeTaleTitle">SCP - {{ Scp.number }} </div> <div  class="homeTaleAuthor">{{ Scp.title }} </div></a><a href="/scp/delete/{{ Scp.id }}" style="color: red;">DELETE</a></li>
             {% endfor %}
         </ul>
     </div>

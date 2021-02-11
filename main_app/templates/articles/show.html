@@ -21,6 +21,7 @@
         </div>
         <div class="rightScpColumn">        
                 <h1 style="margin-top: 5vh; text-align: center;">SCP-<strong>{{ scp.number }}</strong> : {{ scp.title}}</h1>
+                <a href="/scp/save/{{ scp.id }}">Save this SCP</a>
                 {{ scp.body.html | safe }}
         </div>
 </div>

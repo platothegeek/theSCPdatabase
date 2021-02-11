@@ -32,15 +32,27 @@ def staff_self(request):
     if request.user.is_authenticated:
         myscp_list = Scp.objects.filter(author = current_user)
         mytale_list = Tales.objects.filter(author = current_user)
-        print(mytale_list)
+        savedscp_list = Scp.objects.filter(saved_by = current_user)
+        print(savedscp_list)
         context = {
             'user': current_user,
             'scp_list': myscp_list,
             'tale_list': mytale_list,
+            'savedscp_list' : savedscp_list,
         }
         return render(request, 'staff/show.html', context)
     else:
-        return redirect('staff/new')
+        return redirect('/staff/new')
+def scp_save(request, scp_id):
+    scp = Scp.objects.filter(id= scp_id)
+    print(scp[0])
+    user = request.user
+    print(user)
+    scp.saved_by = user
+    print(scp.saved_by)
+    my_scp = scp[0]
+    my_scp.save()
+    return redirect('/staff/self')
 def profile_redirect(request):
     return redirect('/staff/self')
 def about(request):
