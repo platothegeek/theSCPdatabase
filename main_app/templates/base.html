@@ -22,11 +22,12 @@
 </head>
 <body>
     <ul class="navBar">
+        <a href="/">
         <li style="float: left; margin-top: -1vh; margin-left: 0px; background: transparent; "><img src="{% static 'images/scp_logo.png' %}" alt="SCP logo" style="max-height: 8vh; background-color: transparent;"></li>
         <li style="float: left;  margin-left: 0px;">
             <h1 style="margin-top: -1vh;" id="logoScp">The SCP Foundation</h1>
             <p style="margin-top: -3vh; font-size: 2vh;">SECURE. CONTAIN. PROTECT.</p>
-        </li>
+        </li></a>
         <div class="phoneNavBar">
         {% if request.user.is_authenticated %}
             <li><p><a href="/staff/self">USER</a> | <a href="{% url 'logout' %}?next=/">LOG OUT</a></p></li>

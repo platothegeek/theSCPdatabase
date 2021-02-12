@@ -5,6 +5,7 @@
 {% endblock%}
 {% block content %}
 <div class="row">
+    <h1>Internal Documentation</h1>
     <hr class="categBorder">
         <div class="leftScpColumn" style="width: 25vw; height: 100vh;">
                 <ul>
@@ -18,9 +19,7 @@
                 <ul class="homeTaleList"> 
                     {% for Profile in user_list %}
                     <li><div class="homeTaleTitle"><p>{{ Profile.username }}</p></div>
-                        <ul>
-                            {{ Profile.scps }}
-                        </ul>
+                        <p>{{ Profile.summary }}</p>
                     </li>
                     {% endfor %}
                 </ul>

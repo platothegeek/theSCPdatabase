@@ -12,13 +12,21 @@
            <ul class="homeTaleList" id="scpList">
                {% for Scp in scp_list %}
                {% if Scp.number == 002 %}
-               <li id="seriesOneMarker"> <a href="{{ Scp.id }}"><div class="homeTaleTitle">SCP - {{ Scp.number }} </div> <div  class="homeTaleAuthor">{{ Scp.title }} </div></a></li>
+               <hr>
+               <p id="seriesOneMarker">SERIES 1</p>
+               <li> <a href="{{ Scp.id }}"><div class="homeTaleTitle">SCP - {{ Scp.number }} </div> <div  class="homeTaleAuthor">{{ Scp.title }} </div></a></li>
                {% elif Scp.number == 1000 %}
-               <li id="seriesTwoMarker"> <a href="{{ Scp.id }}"><div class="homeTaleTitle">SCP - {{ Scp.number }} </div> <div  class="homeTaleAuthor">{{ Scp.title }} </div></a></li>
+               <hr>
+               <p id="seriesTwoMarker">SERIES 2</p>
+               <li> <a href="{{ Scp.id }}"><div class="homeTaleTitle">SCP - {{ Scp.number }} </div> <div  class="homeTaleAuthor">{{ Scp.title }} </div></a></li>
                {% elif Scp.number == 2000 %}
-               <li id="seriesThreeMarker"> <a href="{{ Scp.id }}"><div class="homeTaleTitle">SCP - {{ Scp.number }} </div> <div  class="homeTaleAuthor">{{ Scp.title }} </div></a></li>
+               <hr>
+               <p id="seriesThreeMarker">SERIES 3</p>
+               <li> <a href="{{ Scp.id }}"><div class="homeTaleTitle">SCP - {{ Scp.number }} </div> <div  class="homeTaleAuthor">{{ Scp.title }} </div></a></li>
                {% elif Scp.number == 3000 %}
-               <li id="seriesFourMarker"> <a href="{{ Scp.id }}"><div class="homeTaleTitle">SCP - {{ Scp.number }} </div> <div  class="homeTaleAuthor">{{ Scp.title }} </div></a></li>
+               <hr>
+               <p id="seriesFourMarker">SERIES 4</p>
+               <li> <a href="{{ Scp.id }}"><div class="homeTaleTitle">SCP - {{ Scp.number }} </div> <div  class="homeTaleAuthor">{{ Scp.title }} </div></a></li>
                {% else %}
                <li> <a href="{{ Scp.id }}"><div class="homeTaleTitle">SCP - {{ Scp.number }} </div> <div  class="homeTaleAuthor">{{ Scp.title }} </div></a></li>
                {% endif %}
@@ -27,13 +35,13 @@
     </div>
     <div class="rightHomeColumn scpColumn">
         <ul>
-            <li class="firstHomeChoice"><button class="makeA" onclick="goToSeries1()">Series 1</button></li>
+            <li class="firstHomeChoice"><button class="makeA" onclick="goToSeries1()" style="transform: translate(0, -2.5vw);">Series 1 </button></li>
             <hr class="categBorder">
-            <li><button class="makeA" onclick="goToSeries2()">Series 2</button></li>
+            <li><button class="makeA" onclick="goToSeries2()" style="transform: translate(0, -2.5vw);">Series 2</button></li>
             <hr class="categBorder">
-            <li><button class="makeA" onclick="goToSeries3()">Series 3</button></li>
+            <li><button class="makeA" onclick="goToSeries3()" style="transform: translate(0, -2.5vw);">Series 3</button></li>
             <hr class="categBorder">
-            <li><button class="makeA" onclick="goToSeries4()">Series 4</button></li>
+            <li><button class="makeA" onclick="goToSeries4()" style="transform: translate(0, -2.5vw);">Series 4</button></li>
         </ul>
     </div>
 </div>

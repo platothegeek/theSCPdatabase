@@ -15,11 +15,11 @@
            <p class="profileSummary">{{ user.summary }}</p>
     </div>
     <div class="leftHomeColumn leftProfileColumn moveUp">
-        <button class="makeA taleTitle right" id="myPgBtn">My Pages</button><button class="makeA taleTitle right" id="saveBtn">Saved Pages </button><button class="makeA taleTitle right" > <a href="/scp/new">Make New SCP </a></button>
+        <button class="makeA taleTitle right" id="myPgBtn" style="font-size: 3vw; border-left: 1px solid white;">My Pages</button> <button class="makeA taleTitle right" id="saveBtn" style="font-size: 3vw; border-right: 1px solid white;">Saved Pages</button><button class="makeA taleTitle right" ><a href="/tale/new">Write a Tale</a> </button><button class="makeA taleTitle right" > <a href="/scp/new">Make New SCP </a></button>
     </div>
     <hr class="categBorder">
     <div class="leftHomeColumn rightProfileColumn moveUpRight">
-        <ul class="homeTaleList" id="myPages">
+        <ul class="homeTaleList" id="myPages" style="height: 75vh">
             <h3 class="taleTitle"> - My Pages - </h3>
             {% for Scp in scp_list %}
             <li> <a href="/scp/{{ Scp.id }}"><div class="homeTaleTitle">SCP - {{ Scp.number }} </div> <div  class="homeTaleAuthor">{{ Scp.title }} </div></a><a href="/scp/delete/{{ Scp.id }}" style="color: red;">DELETE</a></li>
@@ -28,10 +28,13 @@
             <li> <a href="/tale/{{ Tales.id }}"><div class="homeTaleTitle">{{ Tales.title }} </div></a></li>
             {% endfor %}
         </ul>
-        <ul class="homeTaleList" id="savedPages">
+        <ul class="homeTaleList" id="savedPages" style="height: 75vh">
             <h3 class="taleTitle"> - Saved Pages - </h3>
             {% for Scp in savedscp_list %}
             <li> <a href="/scp/{{ Scp.id }}"><div class="homeTaleTitle">SCP - {{ Scp.number }} </div> <div  class="homeTaleAuthor">{{ Scp.title }} </div></a></li>
+            {% endfor %}
+            {% for Tales in savedtale_list %}
+            <li> <a href="/tale/{{ Tales.id }}"><div class="homeTaleTitle">{{ Tales.title }} </div></a></li>
             {% endfor %}
         </ul>
     </div>

@@ -11,6 +11,7 @@ from .forms import Scp_Form, Edit_Scp_Form, Tale_Form, Edit_Tale_Form, QuillForm
 # Create your views here.
 def home(request):
     tales_list = Tales.objects.all()
+    tales_start = []
     context = {'tales_list' : tales_list}
     return render(request, 'home.html', context)
 def minor_index(request):
@@ -33,12 +34,14 @@ def staff_self(request):
         myscp_list = Scp.objects.filter(author = current_user)
         mytale_list = Tales.objects.filter(author = current_user)
         savedscp_list = Scp.objects.filter(saved_by = current_user)
+        savedtale_list = Tales.objects.filter(saved_by = current_user)
         print(savedscp_list)
         context = {
             'user': current_user,
             'scp_list': myscp_list,
             'tale_list': mytale_list,
             'savedscp_list' : savedscp_list,
+            'savedtale_list' : savedtale_list,
         }
         return render(request, 'staff/show.html', context)
     else:
@@ -51,6 +54,15 @@ def scp_save(request, scp_id):
     my_scp.saved_by = request.user
     my_scp.save()
     print(my_scp.saved_by)
+    return redirect('/staff/self')
+def tale_save(request, tale_id):
+    tale = Tales.objects.filter(id= tale_id)
+    user = request.user
+    print(user)
+    my_tale = tale[0]
+    my_tale.saved_by = request.user
+    my_tale.save()
+    print(my_tale.saved_by)
     return redirect('/staff/self')
 def profile_redirect(request):
     return redirect('/staff/self')
@@ -91,8 +103,9 @@ def scp_show(request, scp_number):
         return render(request, 'articles/show.html', context)
 def tale_show(request, tale_id):
     tale = Tales.objects.get(id=tale_id)
+    tales_list = Tales.objects.all().order_by('timestamp')
     print(tale.title)
-    context = {'tale' : tale}
+    context = {'tale' : tale, 'tale_list' : tales_list}
     return render(request, 'tales/show.html', context)
 def scp_new(request):
     error_message=''

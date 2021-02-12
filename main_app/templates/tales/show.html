@@ -1,5 +1,18 @@
 {% extends 'base.html' %}
-{% block content %}      
-                <h1 style="margin-top: 5vh; text-align: center;">{{ tale.title }}</h1>
-                {{ tale.body.html | safe }}
+{% block content %}   
+<div class="row">
+    <div class="leftHomeColumn smallerIndex">
+            <h3 class="taleTitle"> - All Tales - </h3>
+            <ul class="homeTaleList makeSmaller">
+                {% for Tales in tale_list %}
+                <li> <a href="/tale/{{ Tales.id }}"><div class="homeTaleTitle">{{ Tales.title }} </div> <div  class="homeTaleAuthor">by {{ Tales.author }} </div></a></li>
+                {% endfor %}
+            </ul>
+    </div>
+    <div class="rightScpColumn" style="font-family: 'EB Garamond', serif;">        
+        <a href="/tale/save/{{ tale.id }}" style="text-align: right;">Save this Tale</a>
+        <h1 style="margin-top: 5vh; text-align: center;">{{ tale.title }}</h1>
+        <div class="mainArea">{{ tale.body.html | safe }}</div>
+    </div>
+</div>
 {% endblock %}

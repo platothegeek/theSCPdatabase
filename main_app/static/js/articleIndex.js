@@ -27,6 +27,6 @@ function goToSeries4() {
     const topPage = document.getElementById('logoScp')
     const targetLi = document.getElementById("seriesFourMarker")
     console.log(targetLi.offsetTop)
-    targetLi.scrollIntoView({ behavior: 'smooth'});
+    targetLi.scrollIntoView();
     topPage.scrollIntoView();
 };

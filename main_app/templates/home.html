@@ -9,11 +9,11 @@
     <div class="leftHomeColumn">
            <h2>Tales</h2><hr class="taleTitleBorder">
            <h3> - Editor's Choice - </h3>
-           <a class="editTaleChoice"href="tale/1">Lorem Ipsum by Mcqueen</a> <hr class="taleTitleBorder" id="taleListBorder">
+           <a class="editTaleChoice"href="tale/2" style="text-decoration: underline;">"Wasteland"</a> <hr class="taleTitleBorder" id="taleListBorder">
            <h3 class="taleTitle"> - All Tales - </h3>
            <ul class="homeTaleList">
                {% for Tales in tales_list %}
-               <li> <a href="tale/{{ Tales.id }}"><div class="homeTaleTitle">{{ Tales.title }} </div> <div  class="homeTaleAuthor">by {{ Tales.author.username }} </div></a></li>
+               <li> <a href="tale/{{ Tales.id }}"><div class="homeTaleTitle">{{ Tales.title }} </div> <div  class="homeTaleAuthor">by {{ Tales.author.username }} <br></div></a></li>
                {% endfor %}
            </ul>
     </div>
@@ -21,9 +21,9 @@
         <ul>
             <li class="firstHomeChoice"><a href="/scp/">SCPs</a></li>
             <hr class="categBorder">
-            <li><a href="/gois/">GOIs</a></li>
+            <li class="longSection"><a href="/gois/">Groups of Interest</a></li>
             <hr class="categBorder">
-            <li class="longSection"><a href="/minor/">Minor Anomolies</a></li>
+            <li class="longSection"><a href="/minor/">Minor Anomalies</a></li>
             <hr class="categBorder">
             <li class="longSection"><a href="/internal/">Sites and Staff</a></li>
         </ul>
