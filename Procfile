@@ -1,1 +1,1 @@
-web: gunicorn SCPdatabase_project_django.wsgi
+web: gunicorn SCPdatabase_project.wsgi
