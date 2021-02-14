@@ -25,7 +25,7 @@ SECRET_KEY = '+o8-4f823bcm1xas6&adxab!qtev^k)5mfsu+caouu&d@u1@f)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['git.heroku.com/',]
+ALLOWED_HOSTS = ['https://frozen-scrubland-73343.herokuapp.com/', 'localhost']
 
 
 # Application definition
