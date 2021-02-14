@@ -138,5 +138,3 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 AUTH_USER_MODEL = "main_app.Profile"
-
-django_heroku.settings(locals())
