@@ -416,6 +416,9 @@ a {
     margin-left: 15vw;
     margin-right: 15vw;
 }
+.minorLeft {
+    text-align: right;
+}
 @media only screen and (max-width: 600px) {
     .mainArea {
         margin-left: -5vw;

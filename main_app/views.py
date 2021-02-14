@@ -115,7 +115,7 @@ def scp_new(request):
             author = request.user
             article = Scp
             article = form.save(commit=False)
-            article.user = author
+            article.author = author
             article.save()
             return redirect('home')
         else:
